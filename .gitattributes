@@ -1,0 +1,5 @@
+taskell.md filter=git-crypt diff=git-crypt
+
+nvim/.config/nvim/.netrwhist filter=git-crypt diff=git-crypt
+
+vim/.vim/.netrwhist filter=git-crypt diff=git-crypt
