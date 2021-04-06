@@ -1,10 +1,10 @@
-# Make alacritty use command prompt (cmd.exe)
+# Set which shell Alacritty uses
 shell:
-  program: Debian
+  program: wsl.exe
 
 
 # Directory the shell is started in
-working_directory: C:\Users\Shreeram Modi
+working_directory: C:\Users\Shreeram Modi\
 
 # Cool little block of text to test out different fonts for readability
 
@@ -17,23 +17,23 @@ working_directory: C:\Users\Shreeram Modi
 
 # Font configuration
 font:
-  # The normal (roman) font face to use.
+  # The normal(roman) font face to use.
   normal:
-    family: SFMono Nerd Font
+    family: Consolas NF
     # Style can be specified to pick a specific face.
-    style: Light
+    style: Book
 
   # The bold font face
   bold:
-    family: SFMono Nerd Font
+    family: Consolas NF
     # Style can be specified to pick a specific face.
-    style: Semibold
+    style: Bold
 
   # The italic font face
   italic:
-    family: SFMono Nerd Font
+    family: Consolas NF
     # Style can be specified to pick a specific face.
-    style: Light Italic
+    style: Italic
   size: 11.0
 
 
@@ -172,27 +172,49 @@ schemes:
       magenta: '0x945e80'
       cyan:    '0x4c7a5d'
       white:   '0xe6d5ae'
-solarized_dark: &solarized_dark
-  primary:
-    background: '0x002b36'
-    foreground: '0x839496'
-  normal:
-    black: '0x073642'
-    red: '0xdc322f'
-    green: '0x859900'
-    yellow: '0xb58900'
-    blue: '0x268bd2'
-    magenta: '0xd33682'
-    cyan: '0x2aa198'
-    white: '0xeee8d5'
-  bright:
-    black: '0x586e75'
-    red: '0xcb4b16'
-    green: '0x586e75'
-    yellow: '0x657b83'
-    blue: '0x839496'
-    magenta: '0x6c71c4'
-    cyan: '0x93a1a1'
-    white: '0xfdf6e3'
+  solarized_dark: &solarized_dark
+    primary:
+      background: '0x002b36'
+      foreground: '0x839496'
+    normal:
+      black:   '0x073642'
+      red:     '0xdc322f'
+      green:   '0x859900'
+      yellow:  '0xb58900'
+      blue:    '0x268bd2'
+      magenta: '0xd33682'
+      cyan:    '0x2aa198'
+      white:   '0xeee8d5'
+    bright:
+      black:   '0x002b36'
+      red:     '0xcb4b16'
+      green:   '0x586e75'
+      yellow:  '0x657b83'
+      blue:    '0x839496'
+      magenta: '0x6c71c4'
+      cyan:    '0x93a1a1'
+      white:   '0xfdf6e3'
+  solarized_light: &solarized_light
+    primary:
+      background: '0xfdf6e3'
+      foreground: '0x586e75'
+    normal:
+      black:   '0x073642'
+      red:     '0xdc322f'
+      green:   '0x859900'
+      yellow:  '0xb58900'
+      blue:    '0x268bd2'
+      magenta: '0xd33682'
+      cyan:    '0x2aa198'
+      white:   '0xeee8d5'
+    bright:
+      black:   '0x002b36'
+      red:     '0xcb4b16'
+      green:   '0x586e75'
+      yellow:  '0x657b83'
+      blue:    '0x839496'
+      magenta: '0x6c71c4'
+      cyan:    '0x93a1a1'
+      white:   '0xfdf6e3'
 
-colors: *gruvbox_material_medium_dark
+colors: *solarized_dark
