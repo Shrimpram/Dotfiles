@@ -1,3 +1,2 @@
-nvim/.config/nvim/.plugged/**
-vim/.vim/.plugged/**
-zsh/.config/zsh/plugins/powerlevel10k/**
+-nvim/.config/nvim/.plugged/**
+-vim/.vim/.plugged/**
