@@ -1,6 +1,8 @@
+" vim: set foldmethod=marker foldlevel=0:
 "-------------------------------------------------
 " GENERAL SETTINGS                               |
 "-------------------------------------------------
+"{{{
 set encoding=UTF-8		" Changes encoding (necessary for devicons)
 set autoindent			" Good auto indent
 set conceallevel=0		" So that I can see `` in markdown files
@@ -21,8 +23,7 @@ set termguicolors
 set updatetime=100		" Sets vim's update time to 100ms instead of default 4000ms
 set timeoutlen=250
 set wrap			" Text wraps after it reaches the end
-
-set statusline=%f\ \ %y%m%r%h%w%=[%l,%v]\ \ \ \ \ \ [%L,%p%%]\ %n
+"}}}
 
 let mapleader = " "		" Maps leader key (to space)
 let maplocalleader = " "	" Maps local leader key (to space)
@@ -67,8 +68,12 @@ Plug 'junegunn/fzf',
 			\ { 'do': { -> fzf#install() } }
 
 Plug 'junegunn/fzf.vim'	
-Plug 'preservim/nerdtree',
-			\ { 'on': ['NERDTree', 'NERDTreeToggle'] }
+
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
+
+"Plug 'preservim/nerdtree',
+"			\ { 'on': ['NERDTree', 'NERDTreeToggle'] }
 
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'dylanaraps/fff.vim'
@@ -112,7 +117,10 @@ Plug 'reedes/vim-wordy'
 
 " Navigation
 Plug 'easymotion/vim-easymotion'
+
 Plug 'karb94/neoscroll.nvim'
+
+
 Plug 'justinmk/vim-sneak'
 
 
@@ -145,6 +153,8 @@ Plug 'srcery-colors/srcery-vim'
 
 
 call plug#end()
+
+lua require('neoscroll').setup()
 
 "-------------------------------------------------
 " Unused Plugins                                 |
@@ -197,6 +207,7 @@ source ~/.config/nvim/plugin-config/vimagit.vim
 source ~/.config/nvim/plugin-config/vimtex.vim
 
 source ~/.config/nvim/plugin-config/quicktex.vim
+
 
 
 "-------------------------------------------------
