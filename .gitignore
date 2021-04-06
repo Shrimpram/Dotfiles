@@ -1,2 +1,2 @@
--nvim/.config/nvim/.plugged/**
--vim/.vim/.plugged/**
+nvim/.config/nvim/.plugged/**
+vim/.vim/.plugged/**
