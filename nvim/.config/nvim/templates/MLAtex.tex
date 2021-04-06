@@ -1,0 +1,61 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Basic document setup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,12pt]{article}	% Sets document type, page zise, font size
+
+\usepackage[margin=1in]{geometry}	% Document margins
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography and References
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[style=mla, autocite=inline, backend=biber]{biblatex}	% Configures biblatex to MLA guides
+\addbibresource{<++>}	% Selects the bibliography file
+
+\usepackage{hyperref}	% Hyperlinks
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Font config
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{microtype}	% Better prose text typesetting
+
+%[<Make sure to set the correct font>]
+%\usepackage{fontspec}	% Allows you to choose system specific fonts
+%\setmainfont{Times New Roman}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Misc
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyphenat}	% Disables hyphenation of words (near the end of lines. It'll just line break instead)
+
+\usepackage{ragged2e}	% Ragged alignment instead of justified
+\RaggedRight	% Ragged right alignment
+
+\usepackage{setspace}	% Config line spacing
+\doublespacing
+
+\usepackage{csquotes}	% Fancier quotes
+
+\begin{document}
+
+\pagestyle{myheadings}
+\markright{\hfill \emph{Modi }}
+
+Shreeram Modi\\
+[<TEACHER>]\\
+[<CLASS>]\\
+[<DATE>]\\
+
+\centerline{[<TITLE>]}
+
+\setlength{\parindent}{.5in}
+
+\nohyphens{
+
+<++>
+
+}
+
+\end{document}
