@@ -1,3 +1,6 @@
 [submodule "zsh/.config/zsh/plugins/powerlevel10k"]
 	path = zsh/.config/zsh/plugins/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "git-crypt"]
+	path = git-crypt
+	url = https://github.com/AGWA/git-crypt.git
