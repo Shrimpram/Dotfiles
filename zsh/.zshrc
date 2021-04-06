@@ -63,7 +63,7 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
-
+source ~/.config/zsh/plugins/ftf.sh
 
 
 # VIFM Config
@@ -92,8 +92,6 @@ source ~/.config/zsh/plugins/colors.sh
 autoload -U colors && colors
 
 LS_COLORS=$LS_COLORS:'ow=1;35:di=1;35:' ; export LS_COLORS
-
-
 
 ##################################################
 # Aliases
