@@ -1,4 +1,3 @@
-" vim: set foldmethod=marker foldlevel=0:
 "-------------------------------------------------
 " GENERAL SETTINGS                               |
 "-------------------------------------------------
@@ -23,6 +22,7 @@ set termguicolors
 set updatetime=100		" Sets vim's update time to 100ms instead of default 4000ms
 set timeoutlen=250
 set wrap			" Text wraps after it reaches the end
+set foldmethod=marker foldlevel=0
 "}}}
 
 let mapleader = " "		" Maps leader key (to space)
