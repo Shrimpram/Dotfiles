@@ -63,15 +63,12 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
-source ~/.config/zsh/plugins/ftf.sh
+for f in ~/.config/zsh/plugins/*; do source $f; done
+# source ~/.config/zsh/plugins/**
 
 
-# VIFM Config
-# adds vifm scripts folder to path
-export PATH=~/.config/vifm/scripts$:$PATH
 
 # FFF Config
-export PATH=~/.config/zsh/plugins$:$PATH  
 source ~/.config/zsh/plugins/fff.sh
 
 export PATH=~/.config/zsh/plugins/showimg:$PATH
