@@ -10,13 +10,12 @@ Another benefit of stow I unintentionally found was the ability to quickly un-li
 
 ## Installation
 ### General
-1. Install yadm via whatever method you prefer
-2. `cd ~` or to whatever directory you want to install my dotfiles to
-3. `yadm clone https://github.com/Shrimpram/dotfiles.git` to clone my dotfiles to your working directory
-4. `yadm submodule update --init --recursive --remote` to initialize and update all the submodules that I have installed
-5. `cd stow` to move to the stow directory where all the non-package manager installable programs are
-6. check if any of the programs here are installable via your package manager. If so, do that and either remove or ignore them when you stow with the `--ignore=REGEX` flag
-7. `stow -v -d . -t /usr/local/ -S *` to stow all the programs in the stow directory to your bin folder
+1. Install stow via whatever method you prefer
+2. `cd ~` or to whatever your home directory is called
+3. Clone this directory
+4. `cd dotfiles` to move to the dotfiles directory
+5. `git submodule update --init --recursive --remote` to initialize and update all the submodules that I have installed
+6. TODO: Make a stow shell script cuz stowing all the files can sometimes be a pita cuz stow throws errors when it hits readme's and the like
 
 ### NeoVim
 1. Install [neovim](https://github.com/neovim/neovim) using whatever method you want
