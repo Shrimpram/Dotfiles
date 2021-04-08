@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 GLight (){
 sed -i '$d' "/mnt/c/Users/Shreeram Modi/AppData/Roaming/alacritty/alacritty.yml"
 
