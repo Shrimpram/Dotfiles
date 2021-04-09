@@ -288,6 +288,7 @@ noremap <silent> <C-j> <C-w>j
 noremap <silent> <C-k> <C-w>k
 noremap <silent> <C-l> <C-w>l
 
+inoremap <silent> <F8> <C-x><C-o>
 
 
 "------------------------
