@@ -147,8 +147,8 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'mhartington/oceanic-next'
 Plug 'joshdick/onedark.vim'
 Plug 'reedes/vim-colors-pencil'
-Plug 'ishan9299/nvim-solarized-lua'
-" Plug 'lifepillar/vim-solarized8'
+" Plug 'ishan9299/nvim-solarized-lua'
+Plug 'lifepillar/vim-solarized8'
 Plug 'srcery-colors/srcery-vim'
 
 
@@ -240,7 +240,7 @@ let g:gruvbox_material_enable_italic = 1	" '1' enables italic text
 
 
 set background=dark
-colorscheme solarized
+colorscheme solarized8
 
 
 "-------------------------------------------------
