@@ -4,3 +4,6 @@
 [submodule "git-crypt"]
 	path = git-crypt
 	url = https://github.com/AGWA/git-crypt.git
+[submodule "zsh/.config/zsh/plugins/fzf-tab"]
+	path = zsh/.config/zsh/plugins/fzf-tab
+	url = git@github.com:Aloxaf/fzf-tab.git
