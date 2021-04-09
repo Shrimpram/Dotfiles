@@ -50,8 +50,6 @@ export PAGER=most
 ##################################################
 # Plugins
 ##################################################
-[[ -s /home/shreeram/.config/zsh/plugins/autojump/.autojump/etc/profile.d/autojump.sh ]] && source /home/shreeram/.config/zsh/plugins/profile.d/autojump.sh
-
 
 # Enable zoxide for fast hopping around directories
 eval "$(zoxide init zsh)"
@@ -64,9 +62,22 @@ compinit
 _comp_options+=(globdots)		# Include hidden files.
 
 for f in ~/.config/zsh/plugins/*; do source $f; done
-# source ~/.config/zsh/plugins/**
 
-
+source ~/.config/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
+#{{{fzf-tab config
+# disable sort when completing `git checkout`
+zstyle ':completion:*:git-checkout:*' sort false
+# set descriptions format to enable group support
+zstyle ':completion:*:descriptions' format '[%d]'
+# set list-colors to enable filename colorizing
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# preview directory's content with exa when completing cd
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa --long --header --git --icons --classify --all -1 --color=always $realpath'
+# switch group using `,` and `.`
+zstyle ':fzf-tab:*' switch-group ',' '.'
+# preview nvim?
+zstyle ':fzf-tab:complete:nvim:*' fzf-preview 'bat --color=always $realpath'
+#}}}
 
 # FFF Config
 source ~/.config/zsh/plugins/fff.sh
