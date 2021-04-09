@@ -283,10 +283,10 @@ nnoremap <nowait><silent> <C-Left> :vertical resize -2<CR>
 nnoremap <nowait><silent> <C-Right> :vertical resize +2<CR>
 
 " Shortcutting split navigation, saving a keypress:
-noremap <C-h> <C-w>h
-noremap <C-j> <C-w>j
-noremap <C-k> <C-w>k
-noremap <C-l> <C-w>l
+noremap <silent> <C-h> <C-w>h
+noremap <silent> <C-j> <C-w>j
+noremap <silent> <C-k> <C-w>k
+noremap <silent> <C-l> <C-w>l
 
 
 
