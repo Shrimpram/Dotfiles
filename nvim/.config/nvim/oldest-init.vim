@@ -1,41 +1,36 @@
-"{{{GENERAL SETTINGS------------------------------
-syntax on
-
-filetype plugin on
-filetype indent on
-
-set autoindent
-set backspace=eol,start,indent
-set cmdheight=1
-set conceallevel=0
-set encoding=UTF-8
-set expandtab
-set foldmethod=marker foldlevel=1
-set hidden
-set ignorecase smartcase
-set incsearch
-set iskeyword+=-
-set nobackup
-set noerrorbells
-set nohlsearch
-set noshowmode
-set noswapfile
-set number relativenumber
-set ruler
-set scrolloff=3
-set shiftwidth=4
-set showmatch 
-set tabstop=4 softtabstop=4
+"-------------------------------------------------
+" GENERAL SETTINGS                               |
+"-------------------------------------------------
+"{{{
+set encoding=UTF-8		" Changes encoding (necessary for devicons)
+set autoindent			" Good auto indent
+set conceallevel=0		" So that I can see `` in markdown files
+set hidden			" Makes buffers hide instead of exit when you load a new file without saving
+set ignorecase
+set smartcase			" 
+set incsearch			" Incremental search (search will start as you type)
+set iskeyword+=-		" treat dash separated words as a word text object"
+set nohlsearch			" Search will stop highlighting the word after you hit 'Enter'
+set noshowmode			" Do not show the --INSERT-- etc. tooltip at the bottom. Since lighline does this the built in feature is redundant
+set noswapfile			" No swap file when editing text. I use Dropbox for a lot of my files and swap files mess with it
+set number			" Shows line numbers on the side
+set relativenumber		" Line numbers become relative instead of absolute
+set ruler			" Show the cursor position all the time
+set scrolloff=3			" Screen starts scrolling 5 lines from the top/bottom
+set smartindent			" Makes indenting smart
 set termguicolors
+set updatetime=100		" Sets vim's update time to 100ms instead of default 4000ms
 set timeoutlen=250
-set undodir=~/.config/nvim/undodir
-set updatetime=100
-set wrap
+set wrap			" Text wraps after it reaches the end
+set foldmethod=marker foldlevel=0
+"}}}
 
 let mapleader = " "		" Maps leader key (to space)
 let maplocalleader = " "	" Maps local leader key (to space)
 
-"{{{CLIPBOARD-------------------------------------
+" Saves folds when I leave a document
+" https://www.reddit.com/r/vim/comments/hch40s/make_views_automatic_error_every_time_i_open_a/
+
 
 set clipboard+=unnamedplus
 
@@ -51,84 +46,125 @@ let g:clipboard = {
 		\	},
 		\	'cache_enabled': 0,
 		\	}
-"----------------------------------------------}}}
-"----------------------------------------------}}}
 
-"{{{PLUGINS---------------------------------------
+
+"-------------------------------------------------
+" PLUGINS                                        |
+"-------------------------------------------------
 call plug#begin('~/.config/nvim/.plugged')
 
+"------------------------
+" Utilities             |
+"------------------------
 " QOL
-Plug 'junegunn/goyo.vim',
-            \{ 'on' : '<Plug>Goyo' }
-Plug 'junegunn/limelight.vim',
-            \{ 'on' : '<Plug>Limelight' }
-Plug 'kyazdani42/nvim-web-devicons'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 Plug 'ryanoasis/vim-devicons'
-Plug 'dstein64/vim-startuptime'
-
-" Utilities
-" Plug 'edkolev/tmuxline.vim'
-Plug 'mbbill/undotree',
-            \{ 'on' : '<Plug>UndotreeToggle' }
-
-Plug 'voldikss/vim-floaterm',
-            \{ 'on' : ['<Plug>FloatermFirst', '<Plug>FloatermHide', 
-            \'<Plug>FloatermKill', '<Plug>FloatermLast', '<Plug>FloatermNew',
-            \'<Plug>FloatermNext', '<Plug>FloatermPrev', '<Plug>FloatermSend',
-            \'<Plug>FloatermShow', '<Plug>FloatermToggle', '<Plug>FloatermUpdate'] }
-Plug 'junegunn/vim-peekaboo',
-            \{ 'on' : '<Plug>(peekaboo)' }
+Plug 'tpope/vim-dispatch'
+Plug 'voldikss/vim-floaterm'
 
 " Files
 Plug 'junegunn/fzf',
-			\{ 'do': { -> fzf#install() } }
+			\ { 'do': { -> fzf#install() } }
+
 Plug 'junegunn/fzf.vim'	
-Plug 'kyazdani42/nvim-tree.lua',
-            \{ 'on' : ['<Plug>NvimTreeOpen', '<Plug>NvimTreeRefresh', '<Plug>NvimTreeToggle', 'NvimTreeFindFile'] }
+
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
+
+"Plug 'preservim/nerdtree',
+"			\ { 'on': ['NERDTree', 'NERDTreeToggle'] }
+
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'dylanaraps/fff.vim'
+
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 
 " Git
-Plug 'rhysd/committia.vim'
-Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'junegunn/gv.vim',
-            \{ 'on' : '<Plug>GV' }
+Plug 'tpope/vim-fugitive'
+Plug 'rhysd/committia.vim'
+Plug 'junegunn/gv.vim'
 
-" Text
+
+" Tmux
+" Plug 'edkolev/tmuxline.vim'
+
+
+" Misc
+Plug 'mbbill/undotree'
+Plug 'junegunn/vim-peekaboo'
+
+
+"------------------------
+" Text Editing          |
+"------------------------
+" Tools
 Plug 'tpope/vim-commentary'
-Plug 'easymotion/vim-easymotion'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'karb94/neoscroll.nvim'
-Plug 'tpope/vim-speeddating'
-Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'wellle/targets.vim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'xuhdev/vim-latex-live-preview',
+			\ { 'for': 'tex' }
+
 Plug 'brennier/quicktex'
+Plug 'reedes/vim-wordy'
+
+
+" Navigation
+Plug 'easymotion/vim-easymotion'
+
+Plug 'karb94/neoscroll.nvim'
+
+
+Plug 'justinmk/vim-sneak'
+
+
+" Syntax
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+" Plug 'nvim-treesitter/playground'
 Plug 'lervag/vimtex',
 			\{ 'for': 'tex' }
 
-"{{{COLORSCHEMES----------------------------------
-Plug 'romainl/Apprentice'
+
+Plug 'tpope/vim-speeddating'
+
+
+"------------------------
+" Colorschemes          |
+"------------------------
 Plug 'ayu-theme/ayu-vim'
+Plug 'dracula/vim'
 Plug 'sainnhe/everforest'
 Plug 'fcpg/vim-fahrenheit'
-Plug 'lifepillar/vim-gruvbox8'
+Plug 'morhetz/gruvbox'
 Plug 'sainnhe/gruvbox-material'
 Plug 'arcticicestudio/nord-vim'
 Plug 'mhartington/oceanic-next'
 Plug 'joshdick/onedark.vim'
 Plug 'reedes/vim-colors-pencil'
-"Plug 'ishan9299/nvim-solarized-lua'
+" Plug 'ishan9299/nvim-solarized-lua'
 Plug 'lifepillar/vim-solarized8'
 Plug 'srcery-colors/srcery-vim'
-"----------------------------------------------}}}
+
 
 call plug#end()
-"{{{UNUSED PLUGINS--------------------------------
+
+lua require('neoscroll').setup()
+
+"-------------------------------------------------
+" Unused Plugins                                 |
+"-------------------------------------------------
+
 " Plug 'itchyny/lightline.vim'
 " Plug 'hoob3rt/lualine.nvim'
 " Plug 'mhinz/vim-startify'				" Vim start screen
 " Plug 'SirVer/ultisnips'				" Engine for using snippets
+" Plug 'psliwka/vim-smoothie'				" Smooth scrolling. Not using because of horrendous screen tearing
 " Plug 'unblevable/quick-scope'
 
 
@@ -138,10 +174,10 @@ call plug#end()
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'Iron-E/nvim-soluarized'
 " Plug 'tpope/vim-vividchalk'
-"----------------------------------------------}}}
-"----------------------------------------------}}}
 
-"{{{PLUGIN CONFIGS--------------------------------
+"-------------------------------------------------
+" Plugin Configs                                 |
+"-------------------------------------------------
 source ~/.config/nvim/plugin-config/airline.vim
 
 source ~/.config/nvim/plugin-config/easymotion.vim
@@ -156,7 +192,11 @@ source ~/.config/nvim/plugin-config/nerdtree.vim
 
 source ~/.config/nvim/plugin-config/peekaboo.vim
 
+"source ~/.config/nvim/plugin-config/startify.vim
+
 source ~/.config/nvim/plugin-config/tmuxline.vim
+
+" source ~/.config/nvim/plugin-config/treesitter.vim
 
 source ~/.config/nvim/plugin-config/ultisnips.vim
 
@@ -167,9 +207,12 @@ source ~/.config/nvim/plugin-config/vimagit.vim
 source ~/.config/nvim/plugin-config/vimtex.vim
 
 source ~/.config/nvim/plugin-config/quicktex.vim
-"----------------------------------------------}}}
 
-"{{{COLORSCHEME CONFIG----------------------------
+
+
+"-------------------------------------------------
+" Colorscheme Config
+"-------------------------------------------------
 " Ayu
 " let ayucolor="light"  " for light version of theme
 let ayucolor="mirage" " for mirage version of theme
@@ -195,13 +238,18 @@ let g:gruvbox_material_background='medium'	" soft contrast. other options are 'h
 let g:gruvbox_material_enable_bold = 1		" '1' enables bold text
 let g:gruvbox_material_enable_italic = 1	" '1' enables italic text
 
+
 set background=dark
 colorscheme solarized8
-"----------------------------------------------}}}
 
-"{{{REMAPS----------------------------------------
-"{{{UTILITY---------------------------------------
 
+"-------------------------------------------------
+" REMAPS                                         |
+"-------------------------------------------------
+
+"------------------------
+" Utility               |
+"------------------------
 " Basic leader commands to write and write+quit
 nnoremap <nowait><silent> <leader>w :w<CR>
 nnoremap <nowait><silent> <leader>wq :wq<CR>
@@ -216,13 +264,12 @@ vnoremap > >gv
 nnoremap <nowait><silent> <leader><tab> /\[<.\+>\]<CR>t]"jyi>da]:let jump = "j"<CR>:echo jump<CR>i
 
 " Opens the "latest url file in my dropbox
-command! LURL vsplit '/mnt/c/Users/Shreeram Modi/dropbox/personal/Latest_Url.txt'
+command! LURL vsplit /mnt/c/Users/Shreeram Modi/dropbox/personal/Latest_Url.txt
 
-" Easy way to escape insert mode in terminal buffer without using the abomination of a default mapping
-tnoremap <esc> <C-\><C-N>
-"----------------------------------------------}}}
 
-"{{{NAVIGATION------------------------------------
+"------------------------
+" Navigation            |
+"------------------------
 " Make j and k move using visual lines instead of hard lines
 nnoremap <expr><silent> j v:count ? 'j' : 'gj'
 nnoremap <expr><silent> k v:count ? 'k' : 'gk'
@@ -240,9 +287,13 @@ noremap <silent> <C-h> <C-w>h
 noremap <silent> <C-j> <C-w>j
 noremap <silent> <C-k> <C-w>k
 noremap <silent> <C-l> <C-w>l
-"----------------------------------------------}}}
 
-"{{{LATEX/MARKDOWN---------------------------------
+inoremap <silent> <F8> <C-x><C-o>
+
+
+"------------------------
+" Latex/Markdown        |
+"------------------------
 " Compiling Latex via xelatex
 nnoremap <nowait><silent> <leader>cl :<c-u>silent !xelatex '%:p:r'<CR>
 " Compile bibliography using biber
@@ -271,29 +322,29 @@ augroup END
 
 " Runs a script that cleans out tex build files whenever I close out of a .tex file.
 autocmd VimLeave *.tex silent !latexmk -c
-"----------------------------------------------}}}
 
-"{{{F-KEYS----------------------------------------
-" Triggers omnifunc
-inoremap <silent> <F8> <C-x><C-o>
 
-" Changes whether search results are highlighted or not
-noremap <nowait><silent> <F11> :set hlsearch!<CR>
-"-----------------------------------------------}}}
-
-"{{{AESTHETICS------------------------------------
+"------------------------
+" Aesthetics            |
+"------------------------
 " Quick way to switch between light and dark mode
 command! Light set background=light
 command! Dark set background=dark
-"----------------------------------------------}}}
 
-"{{{TEMPLATES-------------------------------------
+noremap <nowait><silent> <F11> :set hlsearch!<CR>
+
+"--------------------------------------------------
+" Templates                                       |
+"--------------------------------------------------
+
 " Template for MLA formatted writing in LaTeX. See the file for the actual template
 command! MLAtex read ~/.config/nvim/templates/MLAtex.tex
 
 " Template for MLA formatted markdown document that compiles with pandoc. See the file for the actual template
 command! MLAmd read ~/.config/nvim/templates/MLAmd.md
-"----------------------------------------------}}}
+
+
+
 
 " WRITEMODE
 " Writemode for writing prose
@@ -302,4 +353,3 @@ command! MLAmd read ~/.config/nvim/templates/MLAmd.md
 ":command Writemode set spell | Goyo 70 | set showmode | set guifont=JetBrains_Mono:h12
 "
 ":command Codemode set nospell | Goyo! | set noshowmode | set guifont=JetBrains_Mono:h12
-"----------------------------------------------}}}
