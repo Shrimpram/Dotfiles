@@ -84,7 +84,6 @@ Plug 'junegunn/fzf',
 			\{ 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'	
 Plug 'kyazdani42/nvim-tree.lua',
-            \{ 'on' : ['<Plug>NvimTreeOpen', '<Plug>NvimTreeRefresh', '<Plug>NvimTreeToggle', 'NvimTreeFindFile'] }
 
 " Git
 Plug 'rhysd/committia.vim'
