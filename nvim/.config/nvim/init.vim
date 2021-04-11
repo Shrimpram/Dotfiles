@@ -223,10 +223,10 @@ vnoremap <expr><silent> j v:count ? 'j' : 'gj'
 vnoremap <expr><silent> k v:count ? 'k' : 'gk'
 
 " Use arrow keys to resize splits
-nnoremap <nowait><silent> <C-Up> :resize +2<CR>
-nnoremap <nowait><silent> <C-Down> :resize -2<CR>
-nnoremap <nowait><silent> <C-Left> :vertical resize -2<CR>
-nnoremap <nowait><silent> <C-Right> :vertical resize +2<CR>
+nnoremap <nowait><silent> <M-Up> :resize +2<CR>
+nnoremap <nowait><silent> <M-Down> :resize -2<CR>
+nnoremap <nowait><silent> <M-Left> :vertical resize -2<CR>
+nnoremap <nowait><silent> <M-Right> :vertical resize +2<CR>
 
 " Shortcutting split navigation, saving a keypress:
 noremap <silent> <C-h> <C-w>h
