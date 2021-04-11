@@ -282,3 +282,4 @@ command! MLAmd read ~/.config/nvim/templates/MLAmd.md
 ":command Writemode set spell | Goyo 70 | set showmode | set guifont=JetBrains_Mono:h12
 "
 ":command Codemode set nospell | Goyo! | set noshowmode | set guifont=JetBrains_Mono:h12
+"----------------------------------------------}}}
