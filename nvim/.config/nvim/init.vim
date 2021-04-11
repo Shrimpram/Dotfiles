@@ -25,6 +25,9 @@ let mapleader = " "		" Maps leader key (to space)
 let maplocalleader = " "	" Maps local leader key (to space)
 
 "{{{CLIPBOARD-------------------------------------
+
+set clipboard+=unnamedplus
+
 let g:clipboard = {
 		\	'name': 'win32yank-wsl',
 		\	'copy': {
@@ -48,6 +51,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'ryanoasis/vim-devicons'
+Plug 'dstein64/vim-startuptime'
 
 " Utilities
 " Plug 'edkolev/tmuxline.vim'
