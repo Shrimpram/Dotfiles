@@ -1,25 +1,36 @@
 "{{{GENERAL SETTINGS------------------------------
-set encoding=UTF-8		" Changes encoding (necessary for devicons)
-set autoindent			" Good auto indent
-set conceallevel=0		" So that I can see `` in markdown files
-set hidden			" Makes buffers hide instead of exit when you load a new file without saving
-set ignorecase
-set smartcase			" 
-set incsearch			" Incremental search (search will start as you type)
-set iskeyword+=-		" treat dash separated words as a word text object"
-set nohlsearch			" Search will stop highlighting the word after you hit 'Enter'
-set noshowmode			" Do not show the --INSERT-- etc. tooltip at the bottom. Since lighline does this the built in feature is redundant
-set noswapfile			" No swap file when editing text. I use Dropbox for a lot of my files and swap files mess with it
-set number			" Shows line numbers on the side
-set relativenumber		" Line numbers become relative instead of absolute
-set ruler			" Show the cursor position all the time
-set scrolloff=3			" Screen starts scrolling 5 lines from the top/bottom
-set smartindent			" Makes indenting smart
+syntax on
+
+filetype plugin on
+filetype indent on
+
+set autoindent
+set backspace=eol,start,indent
+set cmdheight=1
+set conceallevel=0
+set encoding=UTF-8
+set expandtab
+set foldmethod=marker foldlevel=1
+set hidden
+set ignorecase smartcase
+set incsearch
+set iskeyword+=-
+set nobackup
+set noerrorbells
+set nohlsearch
+set noshowmode
+set noswapfile
+set number relativenumber
+set ruler
+set scrolloff=3
+set shiftwidth=4
+set showmatch 
+set tabstop=4 softtabstop=4
 set termguicolors
-set updatetime=100		" Sets vim's update time to 100ms instead of default 4000ms
 set timeoutlen=250
-set wrap			" Text wraps after it reaches the end
-set foldmethod=marker foldlevel=0
+set undodir=~/.config/nvim/undodir
+set updatetime=100
+set wrap
 
 let mapleader = " "		" Maps leader key (to space)
 let maplocalleader = " "	" Maps local leader key (to space)
@@ -47,33 +58,40 @@ let g:clipboard = {
 call plug#begin('~/.config/nvim/.plugged')
 
 " QOL
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
-Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'junegunn/goyo.vim',
+            \{ 'on' : '<Plug>Goyo' }
+Plug 'junegunn/limelight.vim',
+            \{ 'on' : '<Plug>Limelight' }
+Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 Plug 'dstein64/vim-startuptime'
 
 " Utilities
 " Plug 'edkolev/tmuxline.vim'
-Plug 'mbbill/undotree'
-Plug 'voldikss/vim-floaterm'
-Plug 'junegunn/vim-peekaboo'
+Plug 'mbbill/undotree',
+            \{ 'on' : '<Plug>UndotreeToggle' }
 
+Plug 'voldikss/vim-floaterm',
+            \{ 'on' : ['<Plug>FloatermFirst', '<Plug>FloatermHide', 
+            \'<Plug>FloatermKill', '<Plug>FloatermLast', '<Plug>FloatermNew',
+            \'<Plug>FloatermNext', '<Plug>FloatermPrev', '<Plug>FloatermSend',
+            \'<Plug>FloatermShow', '<Plug>FloatermToggle', '<Plug>FloatermUpdate'] }
+Plug 'junegunn/vim-peekaboo',
+            \{ 'on' : '<Plug>(peekaboo)' }
 
 " Files
 Plug 'junegunn/fzf',
 			\{ 'do': { -> fzf#install() } }
-
 Plug 'junegunn/fzf.vim'	
-Plug 'kyazdani42/nvim-tree.lua'
-
+Plug 'kyazdani42/nvim-tree.lua',
+            \{ 'on' : ['<Plug>NvimTreeOpen', '<Plug>NvimTreeRefresh', '<Plug>NvimTreeToggle', 'NvimTreeFindFile'] }
 
 " Git
 Plug 'rhysd/committia.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'junegunn/gv.vim'
-
+Plug 'junegunn/gv.vim',
+            \{ 'on' : '<Plug>GV' }
 
 " Text
 Plug 'tpope/vim-commentary'
@@ -90,17 +108,17 @@ Plug 'lervag/vimtex',
 			\{ 'for': 'tex' }
 
 "{{{COLORSCHEMES----------------------------------
+Plug 'romainl/Apprentice'
 Plug 'ayu-theme/ayu-vim'
-Plug 'dracula/vim'
 Plug 'sainnhe/everforest'
 Plug 'fcpg/vim-fahrenheit'
-Plug 'morhetz/gruvbox'
+Plug 'lifepillar/vim-gruvbox8'
 Plug 'sainnhe/gruvbox-material'
 Plug 'arcticicestudio/nord-vim'
 Plug 'mhartington/oceanic-next'
 Plug 'joshdick/onedark.vim'
 Plug 'reedes/vim-colors-pencil'
-" Plug 'ishan9299/nvim-solarized-lua'
+"Plug 'ishan9299/nvim-solarized-lua'
 Plug 'lifepillar/vim-solarized8'
 Plug 'srcery-colors/srcery-vim'
 "----------------------------------------------}}}
@@ -111,7 +129,6 @@ call plug#end()
 " Plug 'hoob3rt/lualine.nvim'
 " Plug 'mhinz/vim-startify'				" Vim start screen
 " Plug 'SirVer/ultisnips'				" Engine for using snippets
-" Plug 'psliwka/vim-smoothie'				" Smooth scrolling. Not using because of horrendous screen tearing
 " Plug 'unblevable/quick-scope'
 
 
@@ -200,6 +217,9 @@ nnoremap <nowait><silent> <leader><tab> /\[<.\+>\]<CR>t]"jyi>da]:let jump = "j"
 
 " Opens the "latest url file in my dropbox
 command! LURL vsplit '/mnt/c/Users/Shreeram Modi/dropbox/personal/Latest_Url.txt'
+
+" Easy way to escape insert mode in terminal buffer without using the abomination of a default mapping
+tnoremap <esc> <C-\><C-N>
 "----------------------------------------------}}}
 
 "{{{NAVIGATION------------------------------------
