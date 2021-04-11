@@ -59,9 +59,9 @@ call plug#begin('~/.config/nvim/.plugged')
 
 " QOL
 Plug 'junegunn/goyo.vim',
-            \{ 'on' : '<Plug>Goyo' }
+            \{ 'on' : 'Goyo' }
 Plug 'junegunn/limelight.vim',
-            \{ 'on' : '<Plug>Limelight' }
+            \{ 'on' : 'Limelight' }
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 Plug 'dstein64/vim-startuptime'
@@ -69,13 +69,13 @@ Plug 'dstein64/vim-startuptime'
 " Utilities
 " Plug 'edkolev/tmuxline.vim'
 Plug 'mbbill/undotree',
-            \{ 'on' : '<Plug>UndotreeToggle' }
+            \{ 'on' : 'UndotreeToggle' }
 
 Plug 'voldikss/vim-floaterm',
-            \{ 'on' : ['<Plug>FloatermFirst', '<Plug>FloatermHide', 
-            \'<Plug>FloatermKill', '<Plug>FloatermLast', '<Plug>FloatermNew',
-            \'<Plug>FloatermNext', '<Plug>FloatermPrev', '<Plug>FloatermSend',
-            \'<Plug>FloatermShow', '<Plug>FloatermToggle', '<Plug>FloatermUpdate'] }
+            \{ 'on' : ['FloatermFirst', 'FloatermHide', 
+            \'FloatermKill', 'FloatermLast', 'FloatermNew',
+            \'FloatermNext', 'FloatermPrev', 'FloatermSend',
+            \'FloatermShow', 'FloatermToggle', 'FloatermUpdate'] }
 Plug 'junegunn/vim-peekaboo',
             \{ 'on' : '<Plug>(peekaboo)' }
 
@@ -91,7 +91,7 @@ Plug 'rhysd/committia.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/gv.vim',
-            \{ 'on' : '<Plug>GV' }
+            \{ 'on' : 'GV' }
 
 " Text
 Plug 'tpope/vim-commentary'
