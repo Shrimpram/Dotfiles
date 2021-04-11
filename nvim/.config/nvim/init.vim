@@ -94,8 +94,7 @@ Plug 'junegunn/gv.vim',
 
 " Text
 Plug 'tpope/vim-commentary'
-Plug 'easymotion/vim-easymotion'
-Plug 'terryma/vim-multiple-cursors'
+"Plug 'terryma/vim-multiple-cursors'
 Plug 'karb94/neoscroll.nvim'
 Plug 'tpope/vim-speeddating'
 Plug 'justinmk/vim-sneak'
@@ -105,6 +104,7 @@ Plug 'wellle/targets.vim'
 Plug 'brennier/quicktex'
 Plug 'lervag/vimtex',
 			\{ 'for': 'tex' }
+Plug 'mg979/vim-visual-multi'
 
 "{{{COLORSCHEMES----------------------------------
 Plug 'romainl/Apprentice'
