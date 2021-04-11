@@ -16,7 +16,7 @@ set noswapfile			" No swap file when editing text. I use Dropbox for a lot of my
 set number			" Shows line numbers on the side
 set relativenumber		" Line numbers become relative instead of absolute
 set ruler			" Show the cursor position all the time
-set scrolloff=5			" Screen starts scrolling 5 lines from the top/bottom
+set scrolloff=3			" Screen starts scrolling 5 lines from the top/bottom
 set smartindent			" Makes indenting smart
 set termguicolors
 set updatetime=100		" Sets vim's update time to 100ms instead of default 4000ms
