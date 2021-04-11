@@ -141,23 +141,17 @@ call plug#end()
 "----------------------------------------------}}}
 
 "{{{PLUGIN CONFIGS--------------------------------
-source ~/.config/nvim/plugin-config/airline.vim
-
-source ~/.config/nvim/plugin-config/easymotion.vim
-
 source ~/.config/nvim/plugin-config/fff.vim
 
 source ~/.config/nvim/plugin-config/fzf.vim
 
-source ~/.config/nvim/plugin-config/latex-live-preview.vim
+lua require('neoscroll').setup()
 
-source ~/.config/nvim/plugin-config/nerdtree.vim
+source ~/.config/nvim/plugin-config/nvimtree.vim
 
 source ~/.config/nvim/plugin-config/peekaboo.vim
 
-source ~/.config/nvim/plugin-config/tmuxline.vim
-
-source ~/.config/nvim/plugin-config/ultisnips.vim
+"source ~/.config/nvim/plugin-config/tmuxline.vim
 
 source ~/.config/nvim/plugin-config/undotree.vim
 
