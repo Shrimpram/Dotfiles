@@ -120,3 +120,4 @@ alias et='exa --tree --level=2 --long --header --git --icons --classify --all'
 
 # alias to quickly access my taskell
 alias 't'="taskell ~/taskell.md"
+if [ -e /home/shreeram/.nix-profile/etc/profile.d/nix.sh ]; then . /home/shreeram/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
