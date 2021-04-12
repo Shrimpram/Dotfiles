@@ -97,7 +97,6 @@ Plug 'junegunn/gv.vim',
 " Navigation
 Plug 'justinmk/vim-sneak'
 
-
 " Text
 Plug 'tpope/vim-commentary'
 "Plug 'terryma/vim-multiple-cursors'
