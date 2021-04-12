@@ -29,6 +29,7 @@ set tabstop=4 softtabstop=4
 set termguicolors
 set timeoutlen=250
 set undodir=~/.config/nvim/undodir
+set undofile
 set updatetime=100
 set wrap
 
