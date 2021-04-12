@@ -100,6 +100,7 @@ Plug 'tpope/vim-speeddating'
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
+Plug 'dhruvasagar/vim-table-mode'
 Plug 'wellle/targets.vim'
 Plug 'brennier/quicktex'
 Plug 'lervag/vimtex',
@@ -144,6 +145,8 @@ call plug#end()
 source ~/.config/nvim/plugin-config/fff.vim
 
 source ~/.config/nvim/plugin-config/fzf.vim
+
+source ~/.config/nvim/plugin-config/gitgutter.vim
 
 lua require('neoscroll').setup()
 
