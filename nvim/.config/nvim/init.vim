@@ -69,7 +69,7 @@ Plug 'karb94/neoscroll.nvim'
 Plug 'dstein64/vim-startuptime'
 
 " Utilities
-" Plug 'edkolev/tmuxline.vim'
+"Plug 'edkolev/tmuxline.vim'
 Plug 'mbbill/undotree',
             \{ 'on' : 'UndotreeToggle' }
 
