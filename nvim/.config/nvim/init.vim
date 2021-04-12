@@ -146,6 +146,8 @@ call plug#end()
 "{{{PLUGIN CONFIGS--------------------------------
 source ~/.config/nvim/plugin-config/fff.vim
 
+source ~/.config/nvim/plugin-config/fugitive.vim
+
 source ~/.config/nvim/plugin-config/fzf.vim
 
 source ~/.config/nvim/plugin-config/gitgutter.vim
@@ -159,8 +161,6 @@ source ~/.config/nvim/plugin-config/peekaboo.vim
 "source ~/.config/nvim/plugin-config/tmuxline.vim
 
 source ~/.config/nvim/plugin-config/undotree.vim
-
-source ~/.config/nvim/plugin-config/vimagit.vim
 
 source ~/.config/nvim/plugin-config/vimtex.vim
 
