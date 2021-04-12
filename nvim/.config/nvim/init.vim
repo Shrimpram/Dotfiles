@@ -58,12 +58,13 @@ let g:clipboard = {
 call plug#begin('~/.config/nvim/.plugged')
 
 " QOL
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/goyo.vim',
             \{ 'on' : 'Goyo' }
 Plug 'junegunn/limelight.vim',
             \{ 'on' : 'Limelight' }
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'ryanoasis/vim-devicons'
+Plug 'karb94/neoscroll.nvim'
 Plug 'dstein64/vim-startuptime'
 
 " Utilities
@@ -78,6 +79,7 @@ Plug 'voldikss/vim-floaterm',
             \'FloatermShow', 'FloatermToggle', 'FloatermUpdate'] }
 Plug 'junegunn/vim-peekaboo',
             \{ 'on' : '<Plug>(peekaboo)' }
+Plug 'mg979/vim-visual-multi'
 
 " Files
 Plug 'junegunn/fzf',
@@ -92,20 +94,20 @@ Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/gv.vim',
             \{ 'on' : 'GV' }
 
+" Navigation
+Plug 'justinmk/vim-sneak'
+
+
 " Text
 Plug 'tpope/vim-commentary'
 "Plug 'terryma/vim-multiple-cursors'
-Plug 'karb94/neoscroll.nvim'
 Plug 'tpope/vim-speeddating'
-Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-surround'
-Plug 'godlygeek/tabular'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'wellle/targets.vim'
 Plug 'brennier/quicktex'
 Plug 'lervag/vimtex',
 			\{ 'for': 'tex' }
-Plug 'mg979/vim-visual-multi'
 
 "{{{COLORSCHEMES----------------------------------
 Plug 'romainl/Apprentice'
