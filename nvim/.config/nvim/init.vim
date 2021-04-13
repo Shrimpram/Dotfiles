@@ -86,7 +86,9 @@ Plug 'mg979/vim-visual-multi'
 Plug 'junegunn/fzf',
 			\{ 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'	
-Plug 'kyazdani42/nvim-tree.lua',
+Plug 'kyazdani42/nvim-tree.lua'
+Plug 'lambdalisue/fern.vim'
+Plug 'dylanaraps/fff.vim'
 
 " Git
 Plug 'rhysd/committia.vim'
