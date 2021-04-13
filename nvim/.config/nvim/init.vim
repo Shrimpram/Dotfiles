@@ -147,6 +147,8 @@ call plug#end()
 "----------------------------------------------}}}
 
 "{{{PLUGIN CONFIGS--------------------------------
+source ~/.config/nvim/plugin-config/fern.vim
+
 source ~/.config/nvim/plugin-config/fff.vim
 
 source ~/.config/nvim/plugin-config/fugitive.vim
