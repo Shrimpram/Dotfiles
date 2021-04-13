@@ -70,9 +70,7 @@ Plug 'dstein64/vim-startuptime'
 
 " Utilities
 "Plug 'edkolev/tmuxline.vim'
-Plug 'mbbill/undotree',
-            \{ 'on' : 'UndotreeToggle' }
-
+Plug 'lifepillar/vim-colortemplate'
 Plug 'voldikss/vim-floaterm',
             \{ 'on' : ['FloatermFirst', 'FloatermHide', 
             \'FloatermKill', 'FloatermLast', 'FloatermNew',
@@ -80,6 +78,8 @@ Plug 'voldikss/vim-floaterm',
             \'FloatermShow', 'FloatermToggle', 'FloatermUpdate'] }
 Plug 'junegunn/vim-peekaboo',
             \{ 'on' : '<Plug>(peekaboo)' }
+Plug 'mbbill/undotree',
+            \{ 'on' : 'UndotreeToggle' }
 Plug 'mg979/vim-visual-multi'
 
 " Files
