@@ -70,7 +70,8 @@ Plug 'dstein64/vim-startuptime'
 
 " Utilities
 "Plug 'edkolev/tmuxline.vim'
-Plug 'lifepillar/vim-colortemplate'
+Plug 'lifepillar/vim-colortemplate',
+            \{ 'on' : 'Colortemplate!' }
 Plug 'voldikss/vim-floaterm',
             \{ 'on' : ['FloatermFirst', 'FloatermHide', 
             \'FloatermKill', 'FloatermLast', 'FloatermNew',
