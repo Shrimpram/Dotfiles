@@ -24,7 +24,6 @@ set number relativenumber
 set ruler
 set scrolloff=3
 set shiftwidth=4
-set showmatch 
 set tabstop=4 softtabstop=4
 set termguicolors
 set timeoutlen=250
