@@ -29,7 +29,6 @@ set termguicolors
 set timeoutlen=250
 set undodir=~/.config/nvim/undodir
 set undofile
-set updatetime=100
 set wrap
 
 let mapleader = " "		" Maps leader key (to space)
