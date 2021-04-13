@@ -13,6 +13,7 @@ set expandtab
 set foldmethod=marker foldlevel=0
 set hidden
 set ignorecase smartcase
+set inccommand=nosplit
 set incsearch
 set iskeyword+=-
 set nobackup
