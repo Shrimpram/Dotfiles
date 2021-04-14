@@ -25,4 +25,3 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-if [ -e /home/shreeram/.nix-profile/etc/profile.d/nix.sh ]; then . /home/shreeram/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
