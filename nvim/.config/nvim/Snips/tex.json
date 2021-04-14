@@ -71,5 +71,25 @@
     "Left Arrow": {
         "prefix": "<=",
         "body": "\\Leftarrow$0"
+    },
+    "Table": {
+        "prefix": "table",
+        "body": [
+            "\\begin{table}[H]",
+            "\\centering",
+            "\\caption{$1}",
+            "\\begin{tabular}{$2}",
+            "$3",
+            "\\end{tabular}",
+            "\\end{table}"
+        ]
+    },
+    "Bold": {
+        "prefix": "bf",
+        "body": "\\textbf{${1:$TM_SELECTED_TEXT}}$0"
+    },
+    "Italics": {
+        "prefix": "it",
+        "body": "\\textit{${1:$TM_SELECTED_TEXT}}$0"
     }
 }
