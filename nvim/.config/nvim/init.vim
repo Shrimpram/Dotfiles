@@ -76,7 +76,6 @@ Plug 'voldikss/vim-floaterm',
             \'FloatermNext', 'FloatermPrev', 'FloatermSend',
             \'FloatermShow', 'FloatermToggle', 'FloatermUpdate'] }
 Plug 'junegunn/vim-peekaboo',
-            \{ 'on' : '<Plug>(peekaboo)' }
 Plug 'mbbill/undotree',
             \{ 'on' : 'UndotreeToggle' }
 Plug 'mg979/vim-visual-multi'
@@ -97,8 +96,6 @@ Plug 'justinmk/vim-sneak'
 
 " Text
 Plug 'tpope/vim-commentary'
-"Plug 'terryma/vim-multiple-cursors'
-Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'wellle/targets.vim'
@@ -129,7 +126,7 @@ call plug#end()
 " Plug 'mhinz/vim-startify'				" Vim start screen
 " Plug 'SirVer/ultisnips'				" Engine for using snippets
 " Plug 'unblevable/quick-scope'
-
+" Plug 'terryma/vim-multiple-cursors'
 
 " Plug 'AlessandroYorba/Despacio'
 " Plug 'romainl/flattened'
