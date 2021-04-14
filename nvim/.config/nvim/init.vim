@@ -299,6 +299,9 @@ command! MLAtex read ~/.config/nvim/templates/MLAtex.tex
 command! MLAmd read ~/.config/nvim/templates/MLAmd.md
 "----------------------------------------------}}}
 
+map f <Plug>Sneak_s
+map F <Plug>Sneak_S
+
 " WRITEMODE
 " Writemode for writing prose
 " Followed this reddit thread
