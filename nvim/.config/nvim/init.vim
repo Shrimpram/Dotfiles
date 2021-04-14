@@ -58,7 +58,6 @@ let g:clipboard = {
 call plug#begin('~/.config/nvim/.plugged')
 
 " QOL
-Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/goyo.vim',
             \{ 'on' : 'Goyo' }
@@ -83,19 +82,15 @@ Plug 'mbbill/undotree',
 Plug 'mg979/vim-visual-multi'
 
 " Files
-Plug 'junegunn/fzf',
-			\{ 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'	
-Plug 'kyazdani42/nvim-tree.lua'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'lambdalisue/fern.vim'
-Plug 'dylanaraps/fff.vim'
 
 " Git
 Plug 'rhysd/committia.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'junegunn/gv.vim',
-            \{ 'on' : 'GV' }
 
 " Navigation
 Plug 'justinmk/vim-sneak'
@@ -161,6 +156,8 @@ lua require('neoscroll').setup()
 source ~/.config/nvim/plugin-config/nvimtree.vim
 
 source ~/.config/nvim/plugin-config/peekaboo.vim
+
+source ~/.config/nvim/plugin-config/telescope.vim
 
 "source ~/.config/nvim/plugin-config/tmuxline.vim
 

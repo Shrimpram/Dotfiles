@@ -1,0 +1,58 @@
+nnoremap <silent> <leader>t :Telescope<CR>
+nnoremap <silent> <leader>tf :Telescope git_files<CR>
+nnoremap <silent> <leader>tb :Telescope buffers<CR>
+nnoremap <silent> <leader>tg :Telescope git_commits<CR>
+nnoremap <silent> <leader>tl :Telescope live_grep:Te<CR>
+nnoremap <silent> <leader>tc :Telescope current_buffer_fuzzy_find<CR>
+
+lua << EOF
+require('telescope').setup{
+  defaults = {
+    vimgrep_arguments = {
+      'rg',
+      '--color=never',
+      '--no-heading',
+      '--with-filename',
+      '--line-number',
+      '--column',
+      '--smart-case'
+    },
+    prompt_position = "bottom",
+    prompt_prefix = "> ",
+    selection_caret = "> ",
+    entry_prefix = "  ",
+    initial_mode = "insert",
+    selection_strategy = "reset",
+    sorting_strategy = "descending",
+    layout_strategy = "horizontal",
+    layout_defaults = {
+      horizontal = {
+        mirror = false,
+      },
+      vertical = {
+        mirror = false,
+      },
+    },
+    file_sorter =  require'telescope.sorters'.get_fuzzy_file,
+    file_ignore_patterns = {},
+    generic_sorter =  require'telescope.sorters'.get_generic_fuzzy_sorter,
+    shorten_path = true,
+    winblend = 0,
+    width = 0.75,
+    preview_cutoff = 120,
+    results_height = 1,
+    results_width = 0.8,
+    border = {},
+    borderchars = { '─', '│', '─', '│', '╭', '╮', '╯', '╰' },
+    color_devicons = true,
+    use_less = true,
+    set_env = { ['COLORTERM'] = 'truecolor' }, -- default = nil,
+    file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
+    grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
+    qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
+
+    -- Developer configurations: Not meant for general override
+    buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker
+  }
+}
+EOF
