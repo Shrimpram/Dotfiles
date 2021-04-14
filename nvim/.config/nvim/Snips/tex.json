@@ -1,0 +1,75 @@
+{
+    "Environment": {
+      "prefix": "beg",
+      "body": [
+        "\\begin{$1}",
+        "\t$0",
+        "\\end{$1}"
+      ]
+    },
+    "Align": {
+      "prefix": "ali",
+      "body": [
+        "\\begin{align}",
+        "\t${1:$TM_SELECTED_TEXT}",
+        "\\end{align}"
+      ]
+    },
+    "Fraction": {
+       "prefix": "//",
+       "body": "\\frac{${1:$TM_SELECTED_TEXT}}{$2}$0"
+    },
+    "Limit": {
+        "prefix": "lim",
+        "body": "\\lim_{${1|x,y,n|} \\to ${2|\\infty, |}}$0"
+    },
+    "Square Root": {
+        "prefix": "sr",
+        "body": "\\sqrt{${1:$TM_SELECTED_TEXT}}$0"
+    },
+    "Square": {
+        "prefix": "^",
+        "body": "^{${1:$TM_SELECTED_TEXT}}$0"
+    },
+    "Section": {
+        "prefix": "sec",
+        "body": [
+          "\\section{${1:$TM_SELECTED_TEXT}}",
+          "$0"
+        ]
+    },
+    "Subsection": {
+        "prefix": "ssec",
+        "body": [
+          "\\subsection{${1:$TM_SELECTED_TEXT}}",
+          "$0"
+        ]
+    },
+    "Subsubsection": {
+        "prefix": "sssec",
+        "body": [
+          "\\subsubsection{${1:$TM_SELECTED_TEXT}}",
+          "$0"
+        ]
+    },
+    "Textnormal": {
+        "prefix": "tn",
+        "body": "\\textnormal{${1:$TM_SELECTED_TEXT}}$0"
+    },
+    "right arrow": {
+        "prefix": "->",
+        "body": "\\rightarrow$0"
+    },
+    "Right Arrow": {
+        "prefix": "=>",
+        "body": "\\Rightarrow$0"
+    },
+    "left arrow": {
+        "prefix": "<-",
+        "body": "\\leftarrow$0"
+    },
+    "Left Arrow": {
+        "prefix": "<=",
+        "body": "\\Leftarrow$0"
+    }
+}
