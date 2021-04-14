@@ -85,7 +85,13 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'lambdalisue/fern.vim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope.nvim',
+            \{ 'on' : ['Telescope', 'Telescope git_files',
+            \'Telescope buffers', 'Telescope git_commits',
+            \'Telescope live_grep', 'Telescope current_buffer_fuzzy_find'] }
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " Git
 Plug 'rhysd/committia.vim'
@@ -156,7 +162,7 @@ source ~/.config/nvim/plugin-config/peekaboo.vim
 
 source ~/.config/nvim/plugin-config/quicktex.vim
 
-source ~/.config/nvim/plugin-config/telescope.vim
+"source ~/.config/nvim/plugin-config/telescope.vim
 
 "source ~/.config/nvim/plugin-config/tmuxline.vim
 
