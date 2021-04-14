@@ -36,7 +36,6 @@ let mapleader = " "		" Maps leader key (to space)
 let maplocalleader = " "	" Maps local leader key (to space)
 
 "{{{CLIPBOARD-------------------------------------
-
 set clipboard+=unnamedplus
 
 let g:clipboard = {
@@ -79,12 +78,14 @@ Plug 'junegunn/vim-peekaboo',
 Plug 'mbbill/undotree',
             \{ 'on' : 'UndotreeToggle' }
 Plug 'mg979/vim-visual-multi'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
 
 " Files
+Plug 'lambdalisue/fern.vim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'lambdalisue/fern.vim'
 
 " Git
 Plug 'rhysd/committia.vim'
@@ -96,10 +97,9 @@ Plug 'justinmk/vim-sneak'
 
 " Text
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-surround'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'wellle/targets.vim'
-Plug 'brennier/quicktex'
 Plug 'lervag/vimtex',
 			\{ 'for': 'tex' }
 
@@ -154,6 +154,8 @@ source ~/.config/nvim/plugin-config/nvimtree.vim
 
 source ~/.config/nvim/plugin-config/peekaboo.vim
 
+source ~/.config/nvim/plugin-config/quicktex.vim
+
 source ~/.config/nvim/plugin-config/telescope.vim
 
 "source ~/.config/nvim/plugin-config/tmuxline.vim
@@ -162,7 +164,7 @@ source ~/.config/nvim/plugin-config/undotree.vim
 
 source ~/.config/nvim/plugin-config/vimtex.vim
 
-source ~/.config/nvim/plugin-config/quicktex.vim
+source ~/.config/nvim/plugin-config/vsnip.vim
 "----------------------------------------------}}}
 
 "{{{COLORSCHEME CONFIG----------------------------
