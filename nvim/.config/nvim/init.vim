@@ -64,6 +64,7 @@ Plug 'junegunn/limelight.vim',
             \{ 'on' : 'Limelight' }
 Plug 'karb94/neoscroll.nvim'
 Plug 'dstein64/vim-startuptime'
+Plug 'itchyny/lightline.vim'
 
 " Utilities
 "Plug 'edkolev/tmuxline.vim'
@@ -153,6 +154,8 @@ source ~/.config/nvim/plugin-config/fugitive.vim
 source ~/.config/nvim/plugin-config/fzf.vim
 
 source ~/.config/nvim/plugin-config/gitgutter.vim
+
+source ~/.config/nvim/plugin-config/lightline.vim
 
 lua require('neoscroll').setup()
 
