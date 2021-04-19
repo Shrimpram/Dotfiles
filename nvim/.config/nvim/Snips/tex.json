@@ -3,7 +3,7 @@
       "prefix": "beg",
       "body": [
         "\\begin{$1}",
-        "\t$0",
+        "\t${0:$TM_SELECTED_TEXT}",
         "\\end{$1}"
       ]
     },
@@ -91,5 +91,33 @@
     "Italics": {
         "prefix": "it",
         "body": "\\textit{${1:$TM_SELECTED_TEXT}}$0"
+    },
+    "Paragraph": {
+        "prefix": "par",
+        "body": "\\paragraph{${1:$TM_SELECTED_TEXT}}$0"
+    },
+    "MLA": {
+        "prefix": "MLA",
+        "body": [
+            "\\begin{document}",
+            "\\pagestyle{myheadings}",
+            "\\markright{\\hfill Modi}",
+            "Shreeram Modi\\\\\\\\",
+            "$1\\\\\\\\",
+            "$2\\\\\\\\",
+            "$3\\\\\\\\",
+            "",
+            "\\centerline{$4}",
+            "",
+            "\\setlength{\\parindent}{0.5in}",
+            "",
+            "\\nohyphens{",
+            "",
+            "$0",
+            "",
+            "}",
+            "",
+            "\\end{document}"
+        ]
     }
 }
