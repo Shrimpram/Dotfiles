@@ -84,14 +84,15 @@ Plug 'hrsh7th/vim-vsnip-integ'
 
 " Files
 Plug 'lambdalisue/fern.vim'
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim',
-            \{ 'on' : ['Telescope', 'Telescope git_files',
-            \'Telescope buffers', 'Telescope git_commits',
-            \'Telescope live_grep', 'Telescope current_buffer_fuzzy_find'] }
+"Plug 'nvim-lua/popup.nvim'
+"Plug 'nvim-lua/plenary.nvim'
+"Plug 'nvim-telescope/telescope.nvim',
+"            \{ 'on' : ['Telescope', 'Telescope git_files',
+"            \'Telescope buffers', 'Telescope git_commits',
+"            \'Telescope live_grep', 'Telescope current_buffer_fuzzy_find'] }
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf', 
+            \{ 'do': { -> fzf#install() } },
 Plug 'junegunn/fzf.vim'
 
 " Git
