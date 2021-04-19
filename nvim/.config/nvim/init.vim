@@ -104,6 +104,7 @@ Plug 'justinmk/vim-sneak'
 
 " Text
 Plug 'tpope/vim-commentary'
+Plug 'machakann/vim-sandwich'
 "Plug 'tpope/vim-surround'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'wellle/targets.vim'
@@ -302,8 +303,8 @@ command! MLAtex read ~/.config/nvim/templates/MLAtex.tex
 command! MLAmd read ~/.config/nvim/templates/MLAmd.md
 "----------------------------------------------}}}
 
-map f <Plug>Sneak_s
-map F <Plug>Sneak_S
+"map f <Plug>Sneak_s
+"map F <Plug>Sneak_S
 
 " WRITEMODE
 " Writemode for writing prose
