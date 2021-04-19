@@ -115,6 +115,7 @@ Plug 'lervag/vimtex',
 "{{{COLORSCHEMES----------------------------------
 Plug 'romainl/Apprentice'
 Plug 'ayu-theme/ayu-vim'
+Plug 'romainl/vim-dichromatic'
 Plug 'sainnhe/everforest'
 Plug 'fcpg/vim-fahrenheit'
 Plug 'lifepillar/vim-gruvbox8'
