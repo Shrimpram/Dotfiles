@@ -17,7 +17,7 @@ function! FernInit() abort
             \ "\<Plug>(fern-action-expand)",
             \ "\<Plug>(fern-action-collapse)",
             \ )
-    nmap <buffer> o <Plug>(fern-my-open-expand-collapse)
+    nmap <buffer> <CR> <Plug>(fern-my-open-expand-collapse)
     nmap <buffer> H <Plug>(fern-action-hidden:toggle)
     nmap <buffer> / <Plug>(fern-action-include)
     nmap <buffer> R <Plug>(fern-action-reload)
@@ -30,7 +30,7 @@ function! FernInit() abort
     nmap <buffer> d <Plug>(fern-action-move)
     nmap <buffer> D <Plug>(fern-action-trash)
     nmap <buffer> r <Plug>(fern-action-rename)
-    nmap <buffer> <CR> <Plug>(fern-action-open:select)
+    nmap <buffer> o <Plug>(fern-action-open:select)
 endfunction
 
 augroup FernGroup
