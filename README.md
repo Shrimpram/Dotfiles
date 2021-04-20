@@ -1,6 +1,8 @@
 # My Dotfiles
 These are my personal dotfiles. Most of what I use can be found here, including specific configs for neovim and the like. If you have any questions feel free to reach out =)
 
+Wallpaper taken from [Louie Zong](https://www.louiezong.com/)
+
 ## Setup
 I use [GNU stow](https://www.gnu.org/software/stow/) to manage my dotfiles. Stow is a symlink farm manager that lets me keep all my dotfiles and then symlink them to my config directory as they are needed.
 
