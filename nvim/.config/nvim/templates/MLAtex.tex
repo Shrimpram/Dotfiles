@@ -1,61 +1,65 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Basic document setup
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[letterpaper,12pt]{article}	% Sets document type, page zise, font size
+%{{{Template
+% For more info, see https://wso.williams.edu/wiki/index.php/LaTeX_MLA_Template
+\documentclass[12pt]{article}
 
-\usepackage[margin=1in]{geometry}	% Document margins
+\usepackage[letterpaper,margin=1in]{geometry}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Bibliography and References
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage[style=mla, autocite=inline, backend=biber]{biblatex}	% Configures biblatex to MLA guides
-\addbibresource{<++>}	% Selects the bibliography file
-
-\usepackage{hyperref}	% Hyperlinks
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Font config
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{microtype}	% Better prose text typesetting
-
-%[<Make sure to set the correct font>]
-%\usepackage{fontspec}	% Allows you to choose system specific fonts
-%\setmainfont{Times New Roman}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Misc
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{hyphenat}	% Disables hyphenation of words (near the end of lines. It'll just line break instead)
-
-\usepackage{ragged2e}	% Ragged alignment instead of justified
-\RaggedRight	% Ragged right alignment
-
-\usepackage{setspace}	% Config line spacing
+\usepackage{setspace}
 \doublespacing
 
-\usepackage{csquotes}	% Fancier quotes
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\usepackage{times}
+
+\usepackage{rotating}
+
+\usepackage{multirow}
+
+\usepackage{lineno} 
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{} 
+\chead{} 
+\rhead{Modi \thepage} 
+\lfoot{} 
+\cfoot{} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt} 
+%To make sure we actually have header 0.5in away from top edge
+%12pt is one-sixth of an inch. Subtract this from 0.5in to get headsep value
+\setlength\headsep{0.333in}
+
+\usepackage[style=mla, autocite=inline, backend=biber]{biblatex}
+\addbibresource{<++>}
+
+\usepackage{hyperref}
+
+\usepackage{hyphenat}
+
+\usepackage{microtype}
+
+\usepackage{ragged2e}
+\RaggedRight
+
+\usepackage{csquotes}
+%}}}
 
 \begin{document}
-
-\pagestyle{myheadings}
-\markright{\hfill \emph{Modi }}
+\begin{flushleft}
 
 Shreeram Modi\\
-[<TEACHER>]\\
-[<CLASS>]\\
-[<DATE>]\\
+<++>\\ %Professor
+<++>\\ %Class
+<++>\\ % Due Date
 
-\centerline{[<TITLE>]}
+\centerline{<++>} %Title
 
-\setlength{\parindent}{.5in}
-
-\nohyphens{
+\setlength{\parindent}{0.5in} 
 
 <++>
 
-}
-
+\end{flushleft}
 \end{document}
