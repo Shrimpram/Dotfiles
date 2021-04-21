@@ -24,3 +24,9 @@ sed -i '$d' "/mnt/c/Users/Shreeram Modi/AppData/Roaming/alacritty/alacritty.yml"
 
 echo "colors: *solarized_dark" >> "/mnt/c/Users/Shreeram Modi/AppData/Roaming/alacritty/alacritty.yml"
 }
+
+Nord (){
+sed -i '$d' "/mnt/c/Users/Shreeram Modi/AppData/Roaming/alacritty/alacritty.yml"
+
+echo "colors: *nord" >> "/mnt/c/Users/Shreeram Modi/AppData/Roaming/alacritty/alacritty.yml"
+}
