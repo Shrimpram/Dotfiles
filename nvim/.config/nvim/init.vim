@@ -205,7 +205,7 @@ let g:gruvbox_material_background='medium'	" soft contrast. other options are 'h
 let g:gruvbox_material_enable_bold = 1		" '1' enables bold text
 let g:gruvbox_material_enable_italic = 1	" '1' enables italic text
 
-set background=dark
+set background=light
 colorscheme solarized8
 "----------------------------------------------}}}
 
@@ -215,7 +215,6 @@ colorscheme solarized8
 " Basic leader commands to write and write+quit
 nnoremap <nowait><silent> <leader>w :w<CR>
 nnoremap <nowait><silent> <leader>wq :wq<CR>
-nnoremap <nowait><silent> <leader>ww :w<CR>
 
 " Better indenting
 " See https://github.com/ChristianChiarulli/nvim/blob/56f65b12a446fe05483a23585dd4e3104205b062/keys/mappings.vim#L13-L14
@@ -260,18 +259,18 @@ nnoremap <nowait><silent> <leader>cb :<c-u>silent !biber '%:p:r'<CR>
 
 " Compiling Markdown via pandoc
 " See https://vi.stackexchange.com/questions/17549/using-pandoc-with-vim-keybindings
-augroup my_markdown
-	autocmd!
-	autocmd FileType markdown nnoremap <buffer><nowait><silent> <leader>cm :<c-u>silent call system('pandoc '.expand('%:p').' -o '.expand('%:p:r').'.pdf --pdf-engine=xelatex')<cr>
-augroup END
-
-
-" command! Compile
-" 		\ autocmd BufWritePost *.md silent! call jobstart('pandoc '.expand('%:p').' -s -o '.expand('%:p:r').'.pdf --pdf-engine=xelatex')
+"augroup my_markdown
+"	autocmd!
+"	autocmd FileType markdown nnoremap <buffer><nowait> <leader>cm :<c-u> call jobstart('pandoc '.expand('%:p').' -o '.expand('%:p:r').'.pdf --pdf-engine=xelatex')<cr>
+"augroup END
+"
+"
+"command! Compile
+        \ autocmd BufWritePost *.md silent! call jobstart('pandoc '.expand('%:p').' -s -o '.expand('%:p:r').'.pdf --pdf-engine=xelatex')
 " 		\ autocmd BufWritePost *.tex silent! call jobstart('xelatex '.expand('%:p:r').')
 " 		\ autocmd BufWritePost *.tex silent! call jobstart('biber '.expand('%:p:r').')
 " 
-" nmap <nowait><silent> <F8> :Compile <CR>
+nmap <nowait><silent> <F8> :Compile <CR>
 
 " autocmd BufWritePost *.md silent! call jobstart('pandoc '.expand('%:p').' -s -o '.expand('%:p:r').'.pdf --pdf-engine=xelatex')
  
