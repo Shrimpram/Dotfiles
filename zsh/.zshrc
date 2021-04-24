@@ -21,8 +21,6 @@ source ~/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
 # Config
 ##################################################
 # https://github.com/microsoft/WSL/issues/4793
-export DISPLAY=$WSL_IF_IP:0
-unset LIBGL_ALWAYS_INDIRECT
 
 
 # adds go to path
