@@ -210,8 +210,8 @@ let g:gruvbox_material_background='medium'	" soft contrast. other options are 'h
 let g:gruvbox_material_enable_bold = 1		" '1' enables bold text
 let g:gruvbox_material_enable_italic = 1	" '1' enables italic text
 
-set background=light
-colorscheme solarized8
+set background=dark
+colorscheme nord
 "----------------------------------------------}}}
 
 "{{{REMAPS----------------------------------------
