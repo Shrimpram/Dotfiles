@@ -158,7 +158,10 @@ source ~/.config/nvim/plugin-config/fugitive.vim
 
 source ~/.config/nvim/plugin-config/fzf.vim
 
-source ~/.config/nvim/plugin-config/gitgutter.vim
+"source ~/.config/nvim/plugin-config/gitgutter.vim
+
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
 
 source ~/.config/nvim/plugin-config/lightline.vim
 
