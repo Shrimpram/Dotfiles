@@ -230,7 +230,7 @@ vnoremap > >gv
 nnoremap <nowait><silent> <leader><tab> /\[<.\+>\]<CR>t]"jyi>da]:let jump = "j"<CR>:echo jump<CR>i
 
 " Opens the "latest url file in my dropbox
-command! LURL vsplit '/mnt/c/Users/Shreeram Modi/dropbox/personal/Latest_Url.txt'
+command! LURL vsplit /mnt/c/Users/Shreeram\ Modi/dropbox/personal/Latest_Url.txt
 
 " Easy way to escape insert mode in terminal buffer without using the abomination of a default mapping
 tnoremap <esc> <C-\><C-N>
