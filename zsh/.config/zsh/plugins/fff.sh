@@ -42,7 +42,7 @@ export FFF_COL4=6
 export FFF_COL5=0
 
 # FFF 'cd' on exit & trigger with 'f'
-function ff {
+function f {
     fff "$@"
     cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
 }
