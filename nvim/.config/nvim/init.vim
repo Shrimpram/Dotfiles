@@ -285,6 +285,14 @@ nmap <nowait><silent> <F8> :Compile <CR>
 
 " Runs a script that cleans out tex build files whenever I close out of a .tex file.
 autocmd VimLeave *.tex silent !latexmk -c
+
+augroup prose_setup
+    autocmd!
+    autocmd Filetype markdown set textwidth=72 | set colorcolumn=73 | HardPencil | spell
+    autocmd Filetype tex set textwidth=72 | set colorcolumn=73 | HardPencil | spell
+augroup END
+
+
 "----------------------------------------------}}}
 
 "{{{F-KEYS----------------------------------------
