@@ -290,14 +290,6 @@ nnoremap <nowait><silent> <leader>cb :<c-u>silent !biber '%:p:r'<CR>
 
 " Runs a script that cleans out tex build files whenever I close out of a .tex file.
 autocmd VimLeave *.tex silent !latexmk -c
-
-augroup prose_setup
-    autocmd!
-    autocmd Filetype markdown set textwidth=72 | set colorcolumn=73 | HardPencil | spell
-    autocmd Filetype tex set textwidth=72 | set colorcolumn=73 | HardPencil | spell
-augroup END
-
-
 "----------------------------------------------}}}
 
 "{{{F-KEYS----------------------------------------
@@ -306,6 +298,15 @@ inoremap <silent> <F8> <C-x><C-o>
 
 " Changes whether search results are highlighted or not
 noremap <nowait><silent> <F11> :set hlsearch!<CR>
+
+" Sets up vim to write prose
+"
+noremap <nowait><silent> <F3> :<C-u>set textwidth=72 colorcolumn=73 spell<CR>:<C-u>HardPencil<CR>
+"
+"augroup vim_prose
+"    autocmd Filetype markdown noremap <F4> <buffer>  ':set textwidth=72 colorcolumn=73 HardPencil spell<CR>'
+"    autocmd Filetype tex noremap <F4> <buffer> ':set textwidth=72 colorcolumn=73 HardPencil spell<CR>'
+"augroup END
 "-----------------------------------------------}}}
 
 "{{{AESTHETICS------------------------------------
