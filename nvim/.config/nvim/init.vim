@@ -135,6 +135,15 @@ call plug#end()
 " Plug 'SirVer/ultisnips'				" Engine for using snippets
 " Plug 'unblevable/quick-scope'
 " Plug 'terryma/vim-multiple-cursors'
+"Plug 'kdav5758/TrueZen.nvim'
+"Plug 'lukas-reineke/indent-blankline.nvim',
+"            \{ 'branch' : 'lua' }
+"Plug 'nvim-lua/popup.nvim'
+"Plug 'nvim-lua/plenary.nvim'
+"Plug 'nvim-telescope/telescope.nvim',
+"            \{ 'on' : ['Telescope', 'Telescope git_files',
+"            \'Telescope buffers', 'Telescope git_commits',
+"            \'Telescope live_grep', 'Telescope current_buffer_fuzzy_find'] }
 
 " Plug 'AlessandroYorba/Despacio'
 " Plug 'romainl/flattened'
