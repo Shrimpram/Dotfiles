@@ -15,13 +15,21 @@
         "\\end{align}"
       ]
     },
+    "No Number Align": {
+      "prefix": "ali*",
+      "body": [
+        "\\begin{align*}",
+        "\t${1:$TM_SELECTED_TEXT}",
+        "\\end{align*}"
+      ]
+    },
     "Fraction": {
-       "prefix": "//",
+       "prefix": "/",
        "body": "\\frac{${1:$TM_SELECTED_TEXT}}{$2}$0"
     },
     "Limit": {
         "prefix": "lim",
-        "body": "\\lim_{${1|x,y,n|} \\to ${2|\\infty, |}}$0"
+        "body": "\\lim_{${1|x,y,n|} \\to${2| \\infty, 0, c, |}}$0"
     },
     "Square Root": {
         "prefix": "sr",
@@ -30,6 +38,14 @@
     "Square": {
         "prefix": "^",
         "body": "^{${1:$TM_SELECTED_TEXT}}$0"
+    },
+    "Infinity": {
+        "prefix": "00",
+        "body": "\\infty"
+    },
+    "Cdot": {
+        "prefix": "*",
+        "body": "\\cdot"
     },
     "Section": {
         "prefix": "sec",
