@@ -121,3 +121,7 @@ alias et='exa --tree --level=2 --long --header --git --icons --classify --all'
 # alias to quickly access my taskell
 alias 't'="taskell ~/taskell.md"
 if [ -e /home/shreeram/.nix-profile/etc/profile.d/nix.sh ]; then . /home/shreeram/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
