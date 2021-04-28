@@ -67,7 +67,6 @@ Plug 'karb94/neoscroll.nvim'
 Plug 'preservim/vim-pencil',
             \{ 'for': ['tex', 'markdown'] }
 Plug 'dstein64/vim-startuptime'
-Plug 'itchyny/lightline.vim'
 
 " Utilities
 "Plug 'edkolev/tmuxline.vim'
