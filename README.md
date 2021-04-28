@@ -6,7 +6,7 @@ Wallpaper taken from [Louie Zong](https://www.louiezong.com/)
 ## Setup
 I use [GNU stow](https://www.gnu.org/software/stow/) to manage my dotfiles. Stow is a symlink farm manager that lets me keep all my dotfiles and then symlink them to my config directory as they are needed.
 
-Other tools exist but stow allows for a much more modular approach where I can choose to only link the dotfiles that I need for whatever job I need to do.
+Other tools exist but stow allows for a much more modular approach where I can choose to only link the dotfiles that I need for whatever job I need to do. It also allows me to keep various shell scripts and other programs here and then symlink them to my /usr/bin/ or /usr/local/bin/ folders.
 
 Another benefit of stow I unintentionally found was the ability to quickly un-link the config files for programs to allow me to create a minimal working environment for debugging while also keeping my config files at an arms reach.
 
