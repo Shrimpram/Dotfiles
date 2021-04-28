@@ -24,6 +24,8 @@ source ~/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
 ##################################################
 # https://github.com/microsoft/WSL/issues/4793
 
+# Configures GPG use
+export GPG_TTY="$(tty)" 
 
 # adds go to path
 export PATH=$PATH:/usr/local/go/bin
