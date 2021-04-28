@@ -276,11 +276,11 @@ nnoremap <nowait><silent> <leader>cb :<c-u>silent !biber '%:p:r'<CR>
 "
 "
 "command! Compile
-        \ autocmd BufWritePost *.md silent! call jobstart('pandoc '.expand('%:p').' -s -o '.expand('%:p:r').'.pdf --pdf-engine=xelatex')
+"        \ autocmd BufWritePost *.md silent! call jobstart('pandoc '.expand('%:p').' -s -o '.expand('%:p:r').'.pdf --pdf-engine=xelatex')
 " 		\ autocmd BufWritePost *.tex silent! call jobstart('xelatex '.expand('%:p:r').')
 " 		\ autocmd BufWritePost *.tex silent! call jobstart('biber '.expand('%:p:r').')
 " 
-nmap <nowait><silent> <F8> :Compile <CR>
+"nmap <nowait><silent> <F8> :Compile <CR>
 
 " autocmd BufWritePost *.md silent! call jobstart('pandoc '.expand('%:p').' -s -o '.expand('%:p:r').'.pdf --pdf-engine=xelatex')
  
