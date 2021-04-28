@@ -44,7 +44,7 @@ setopt autocd		# Automatically cd into typed directory.
 export EDITOR="nvim"
 
 
-export PAGER=most
+export PAGER="more"
 
 
 ##################################################
