@@ -62,6 +62,7 @@ Plug 'junegunn/goyo.vim',
             \{ 'on' : 'Goyo' }
 Plug 'junegunn/limelight.vim',
             \{ 'on' : 'Limelight' }
+Plug 'itchyny/lightline.vim'
 Plug 'karb94/neoscroll.nvim'
 Plug 'preservim/vim-pencil',
             \{ 'for': ['tex', 'markdown'] }
@@ -86,12 +87,6 @@ Plug 'hrsh7th/vim-vsnip-integ'
 
 " Files
 Plug 'lambdalisue/fern.vim'
-"Plug 'nvim-lua/popup.nvim'
-"Plug 'nvim-lua/plenary.nvim'
-"Plug 'nvim-telescope/telescope.nvim',
-"            \{ 'on' : ['Telescope', 'Telescope git_files',
-"            \'Telescope buffers', 'Telescope git_commits',
-"            \'Telescope live_grep', 'Telescope current_buffer_fuzzy_find'] }
 
 Plug 'junegunn/fzf', 
             \{ 'do': { -> fzf#install() } },
