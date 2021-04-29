@@ -57,12 +57,10 @@ let g:clipboard = {
 call plug#begin('~/.config/nvim/.plugged')
 
 " QOL
+Plug 'junegunn/goyo.vim',   { 'on' : 'Goyo' }
+Plug 'junegunn/limelight.vim', { 'on' : 'Limelight' }
+Plug 'ourigen/skyline.vim'
 Plug 'ryanoasis/vim-devicons'
-Plug 'junegunn/goyo.vim',
-            \{ 'on' : 'Goyo' }
-Plug 'junegunn/limelight.vim',
-            \{ 'on' : 'Limelight' }
-Plug 'itchyny/lightline.vim'
 Plug 'karb94/neoscroll.nvim'
 Plug 'dstein64/vim-startuptime'
 
@@ -93,8 +91,7 @@ Plug 'machakann/vim-sandwich'
 "Plug 'tpope/vim-surround'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'wellle/targets.vim'
-Plug 'lervag/vimtex',
-			\{ 'for': 'tex' }
+Plug 'lervag/vimtex', { 'for': 'tex' }
 
 "{{{COLORSCHEMES----------------------------------
 Plug 'romainl/Apprentice'
