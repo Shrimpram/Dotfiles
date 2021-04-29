@@ -68,25 +68,15 @@ Plug 'dstein64/vim-startuptime'
 
 " Utilities
 "Plug 'edkolev/tmuxline.vim'
-Plug 'lifepillar/vim-colortemplate',
-            \{ 'on' : 'Colortemplate!' }
-Plug 'voldikss/vim-floaterm',
-            \{ 'on' : ['FloatermFirst', 'FloatermHide', 
-            \'FloatermKill', 'FloatermLast', 'FloatermNew',
-            \'FloatermNext', 'FloatermPrev', 'FloatermSend',
-            \'FloatermShow', 'FloatermToggle', 'FloatermUpdate'] }
-Plug 'junegunn/vim-peekaboo',
-Plug 'mbbill/undotree',
-            \{ 'on' : 'UndotreeToggle' }
+"Plug 'junegunn/vim-peekaboo',
+Plug 'gennaro-tedesco/nvim-peekup'
+Plug 'mbbill/undotree', { 'on' : 'UndotreeToggle' }
 Plug 'mg979/vim-visual-multi'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 
 " Files
-Plug 'lambdalisue/fern.vim'
-
-Plug 'junegunn/fzf', 
-            \{ 'do': { -> fzf#install() } },
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " Git
