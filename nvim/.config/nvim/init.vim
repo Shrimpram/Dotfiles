@@ -64,8 +64,6 @@ Plug 'junegunn/limelight.vim',
             \{ 'on' : 'Limelight' }
 Plug 'itchyny/lightline.vim'
 Plug 'karb94/neoscroll.nvim'
-Plug 'preservim/vim-pencil',
-            \{ 'for': ['tex', 'markdown'] }
 Plug 'dstein64/vim-startuptime'
 
 " Utilities
