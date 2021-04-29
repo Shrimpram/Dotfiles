@@ -96,19 +96,25 @@ Plug 'lervag/vimtex', { 'for': 'tex' }
 "{{{COLORSCHEMES----------------------------------
 Plug 'romainl/Apprentice'
 Plug 'ayu-theme/ayu-vim'
+Plug 'sjl/badwolf'
+Plug 'nightsense/cosmic_latte'
 Plug 'romainl/vim-dichromatic'
+Plug 'romgrk/doom-one.vim'
 Plug 'sainnhe/everforest'
 Plug 'fcpg/vim-fahrenheit'
 Plug 'lifepillar/vim-gruvbox8'
 Plug 'sainnhe/gruvbox-material'
+Plug 'KeitaNakamura/neodark.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'mhartington/oceanic-next'
 Plug 'joshdick/onedark.vim'
 Plug 'fcpg/vim-orbital'
 Plug 'reedes/vim-colors-pencil'
+Plug 'tyrannicaltoucan/vim-quantum'
 "Plug 'ishan9299/nvim-solarized-lua'
 Plug 'lifepillar/vim-solarized8'
 Plug 'srcery-colors/srcery-vim'
+Plug 'nightsense/stellarized'
 "----------------------------------------------}}}
 
 call plug#end()
