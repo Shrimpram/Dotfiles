@@ -88,7 +88,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'justinmk/vim-sneak'
 
 " Text
-Plug 'tpope/vim-commentary'
+Plug 'b3nj5m1n/kommentary'
 Plug 'machakann/vim-sandwich'
 "Plug 'tpope/vim-surround'
 Plug 'dhruvasagar/vim-table-mode'
