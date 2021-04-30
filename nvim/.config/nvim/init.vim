@@ -19,6 +19,7 @@ set iskeyword+=-
 set nobackup
 set noerrorbells
 set nohlsearch
+set nomodeline
 set noshowmode
 set noswapfile
 set number relativenumber
