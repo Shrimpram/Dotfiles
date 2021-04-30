@@ -1,5 +1,5 @@
 set laststatus=2
 
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'cosmic_latte_dark',
       \ }
