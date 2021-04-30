@@ -191,7 +191,7 @@ let g:gruvbox_material_enable_bold = 1		" '1' enables bold text
 let g:gruvbox_material_enable_italic = 1	" '1' enables italic text
 
 set background=dark
-colorscheme solarized8
+colorscheme doom-one
 "----------------------------------------------}}}
 
 "{{{REMAPS----------------------------------------
