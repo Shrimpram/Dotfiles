@@ -57,41 +57,39 @@ let g:clipboard = {
 "{{{PLUGINS---------------------------------------
 call plug#begin('~/.config/nvim/.plugged')
 
-" QOL
-Plug 'junegunn/goyo.vim',   { 'on' : 'Goyo' }
-Plug 'junegunn/limelight.vim', { 'on' : 'Limelight' }
-Plug 'ourigen/skyline.vim'
-Plug 'ryanoasis/vim-devicons'
-Plug 'karb94/neoscroll.nvim'
-Plug 'dstein64/vim-startuptime'
-
-" Utilities
-"Plug 'edkolev/tmuxline.vim'
-"Plug 'junegunn/vim-peekaboo',
-Plug 'gennaro-tedesco/nvim-peekup'
-Plug 'mbbill/undotree', { 'on' : 'UndotreeToggle' }
-Plug 'mg979/vim-visual-multi'
-Plug 'hrsh7th/vim-vsnip'
-Plug 'hrsh7th/vim-vsnip-integ'
-
-" Files
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-
 " Git
 Plug 'rhysd/committia.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-" Navigation
-Plug 'justinmk/vim-sneak'
+" Junegunn
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim',   { 'on' : 'Goyo' }
+Plug 'junegunn/limelight.vim', { 'on' : 'Limelight' }
 
 " Text
 Plug 'b3nj5m1n/kommentary'
-Plug 'machakann/vim-sandwich'
-"Plug 'tpope/vim-surround'
-Plug 'dhruvasagar/vim-table-mode'
 Plug 'wellle/targets.vim'
+Plug 'machakann/vim-sandwich'
+Plug 'justinmk/vim-sneak'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'mg979/vim-visual-multi'
+
+" Utilities
+Plug 'karb94/neoscroll.nvim'
+Plug 'gennaro-tedesco/nvim-peekup'
+Plug 'ourigen/skyline.vim'
+Plug 'mbbill/undotree', { 'on' : 'UndotreeToggle' }
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
+
+" Misc
+Plug 'ryanoasis/vim-devicons'
+Plug 'dstein64/vim-startuptime'
+"Plug 'edkolev/tmuxline.vim'
+
+" Filetype
 Plug 'lervag/vimtex', { 'for': 'tex' }
 
 "{{{COLORSCHEMES----------------------------------
@@ -112,37 +110,12 @@ Plug 'joshdick/onedark.vim'
 Plug 'fcpg/vim-orbital'
 Plug 'reedes/vim-colors-pencil'
 Plug 'tyrannicaltoucan/vim-quantum'
-"Plug 'ishan9299/nvim-solarized-lua'
 Plug 'lifepillar/vim-solarized8'
 Plug 'srcery-colors/srcery-vim'
 Plug 'nightsense/stellarized'
 "----------------------------------------------}}}
 
 call plug#end()
-"{{{UNUSED PLUGINS--------------------------------
-" Plug 'itchyny/lightline.vim'
-" Plug 'hoob3rt/lualine.nvim'
-" Plug 'mhinz/vim-startify'				" Vim start screen
-" Plug 'SirVer/ultisnips'				" Engine for using snippets
-" Plug 'unblevable/quick-scope'
-" Plug 'terryma/vim-multiple-cursors'
-"Plug 'kdav5758/TrueZen.nvim'
-"Plug 'lukas-reineke/indent-blankline.nvim',
-"            \{ 'branch' : 'lua' }
-"Plug 'nvim-lua/popup.nvim'
-"Plug 'nvim-lua/plenary.nvim'
-"Plug 'nvim-telescope/telescope.nvim',
-"            \{ 'on' : ['Telescope', 'Telescope git_files',
-"            \'Telescope buffers', 'Telescope git_commits',
-"            \'Telescope live_grep', 'Telescope current_buffer_fuzzy_find'] }
-
-" Plug 'AlessandroYorba/Despacio'
-" Plug 'romainl/flattened'
-" Plug 'junegunn/seoul256.vim'
-" Plug 'altercation/vim-colors-solarized'
-" Plug 'Iron-E/nvim-soluarized'
-" Plug 'tpope/vim-vividchalk'
-"----------------------------------------------}}}
 "----------------------------------------------}}}
 
 "{{{PLUGIN CONFIGS--------------------------------
