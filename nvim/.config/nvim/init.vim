@@ -145,36 +145,47 @@ call plug#end()
 "----------------------------------------------}}}
 
 "{{{PLUGIN CONFIGS--------------------------------
-source ~/.config/nvim/plugin-config/fern.vim
 
-source ~/.config/nvim/plugin-config/fff.vim
+"{{{Fugitive
+nnoremap <nowait><silent> <leader>g :Git<CR>
+nnoremap <nowait><silent> <leader>gd :Gvdiffsplit<CR>
+nnoremap <nowait><silent> <leader>gw :Gwrite<CR>
+"}}}
 
-source ~/.config/nvim/plugin-config/fugitive.vim
+"{{{FZF
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-s': 'split',
+  \ 'ctrl-v': 'vsplit' }
 
-source ~/.config/nvim/plugin-config/fzf.vim
+command! Dots GFiles ~/dotfiles
 
-"source ~/.config/nvim/plugin-config/gitgutter.vim
+nnoremap <nowait><silent> <leader>fz :Files <CR>
+nnoremap <nowait><silent> <leader>fg :GFiles <CR>
+nnoremap <nowait><silent> <leader>fl :Lines <CR>
+nnoremap <nowait><silent> <leader>fb :Buffers<CR>
+nnoremap <nowait><silent> <leader>fc :Commits<CR>
+"}}}
 
+"{{{GitGutter
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
-
-source ~/.config/nvim/plugin-config/lightline.vim
+"}}}
 
 lua require('neoscroll').setup()
 
-source ~/.config/nvim/plugin-config/nvimtree.vim
-
-source ~/.config/nvim/plugin-config/peekaboo.vim
-
-source ~/.config/nvim/plugin-config/quicktex.vim
-
-"source ~/.config/nvim/plugin-config/telescope.vim
-
 "source ~/.config/nvim/plugin-config/tmuxline.vim
 
-source ~/.config/nvim/plugin-config/undotree.vim
+" Undotree
+nnoremap <nowait><silent> <leader>ut :UndotreeToggle<CR>
 
-source ~/.config/nvim/plugin-config/vimtex.vim
+"{{{Vimtex
+let g:vimtex_compiler_latexmk_engines = {
+    \ '_'                : '-xelatex',
+    \}
+
+let g:vimtex_view_general_viewer='zathura'
+"}}}
 
 source ~/.config/nvim/plugin-config/vsnip.vim
 "----------------------------------------------}}}
