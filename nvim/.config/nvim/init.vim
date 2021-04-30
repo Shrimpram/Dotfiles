@@ -72,8 +72,8 @@ Plug 'junegunn/limelight.vim', { 'on' : 'Limelight' }
 Plug 'b3nj5m1n/kommentary'
 Plug 'tommcdo/vim-lion'
 Plug 'wellle/targets.vim'
-Plug 'machakann/vim-sandwich'
 Plug 'justinmk/vim-sneak'
+Plug 'machakann/vim-sandwich'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'mg979/vim-visual-multi'
 
