@@ -210,8 +210,6 @@ colorscheme solarized8
 "----------------------------------------------}}}
 
 "{{{REMAPS----------------------------------------
-"{{{UTILITY---------------------------------------
-
 " Basic leader commands to write and write+quit
 nnoremap <nowait><silent> <leader>w :w<CR>
 nnoremap <nowait><silent> <leader>wq :wq<CR>
@@ -221,17 +219,9 @@ nnoremap <nowait><silent> <leader>wq :wq<CR>
 vnoremap < <gv
 vnoremap > >gv
 
-" Jump to the next appearance of my special sequence, delete it, then put me in insert mode.
-nnoremap <nowait><silent> <leader><tab> /\[<.\+>\]<CR>t]"jyi>da]:let jump = "j"<CR>:echo jump<CR>i
-
 " Opens the "latest url file in my dropbox
 command! LURL vsplit /mnt/c/Users/Shreeram\ Modi/dropbox/personal/Latest_Url.txt
 
-" Easy way to escape insert mode in terminal buffer without using the abomination of a default mapping
-tnoremap <esc> <C-\><C-N>
-"----------------------------------------------}}}
-
-"{{{NAVIGATION------------------------------------
 " Make j and k move using visual lines instead of hard lines
 nnoremap <expr><silent> j v:count ? 'j' : 'gj'
 nnoremap <expr><silent> k v:count ? 'k' : 'gk'
@@ -239,8 +229,8 @@ vnoremap <expr><silent> j v:count ? 'j' : 'gj'
 vnoremap <expr><silent> k v:count ? 'k' : 'gk'
 
 " Use arrow keys to resize splits
-nnoremap <nowait><silent> <M-k> :resize +2<CR>
-nnoremap <nowait><silent> <M-j> :resize -2<CR>
+nnoremap <nowait><silent> <M-j> :resize +2<CR>
+nnoremap <nowait><silent> <M-k> :resize -2<CR>
 nnoremap <nowait><silent> <M-h> :vertical resize -2<CR>
 nnoremap <nowait><silent> <M-l> :vertical resize +2<CR>
 
@@ -249,34 +239,12 @@ noremap <silent> <C-h> <C-w>h
 noremap <silent> <C-j> <C-w>j
 noremap <silent> <C-k> <C-w>k
 noremap <silent> <C-l> <C-w>l
-"----------------------------------------------}}}
 
 "{{{LATEX/MARKDOWN---------------------------------
 " Compiling Latex via xelatex
 nnoremap <nowait><silent> <leader>cl :<c-u>silent !xelatex '%:p:r'<CR>
 " Compile bibliography using biber
 nnoremap <nowait><silent> <leader>cb :<c-u>silent !biber '%:p:r'<CR>
-
-" Compiling Markdown via pandoc
-" See https://vi.stackexchange.com/questions/17549/using-pandoc-with-vim-keybindings
-"augroup my_markdown
-"	autocmd!
-"	autocmd FileType markdown nnoremap <buffer><nowait> <leader>cm :<c-u> call jobstart('pandoc '.expand('%:p').' -o '.expand('%:p:r').'.pdf --pdf-engine=xelatex')<cr>
-"augroup END
-"
-"
-"command! Compile
-"        \ autocmd BufWritePost *.md silent! call jobstart('pandoc '.expand('%:p').' -s -o '.expand('%:p:r').'.pdf --pdf-engine=xelatex')
-" 		\ autocmd BufWritePost *.tex silent! call jobstart('xelatex '.expand('%:p:r').')
-" 		\ autocmd BufWritePost *.tex silent! call jobstart('biber '.expand('%:p:r').')
-" 
-"nmap <nowait><silent> <F8> :Compile <CR>
-
-" autocmd BufWritePost *.md silent! call jobstart('pandoc '.expand('%:p').' -s -o '.expand('%:p:r').'.pdf --pdf-engine=xelatex')
- 
-" autocmd BufWritePost *.tex silent! call jobstart('xelatex '.expand('%:p:r').')
-" autocmd BufWritePost *.tex silent! call jobstart('biber '.expand('%:p:r').')
-
 
 " Runs a script that cleans out tex build files whenever I close out of a .tex file.
 autocmd VimLeave *.tex silent !latexmk -c
@@ -290,20 +258,12 @@ inoremap <silent> <F8> <C-x><C-o>
 noremap <nowait><silent> <F11> :set hlsearch!<CR>
 
 " Sets up vim to write prose
-"
-noremap <nowait><silent> <F3> :<C-u>set textwidth=72 colorcolumn=73 spell<CR>:<C-u>HardPencil<CR>
-"
-"augroup vim_prose
-"    autocmd Filetype markdown noremap <F4> <buffer>  ':set textwidth=72 colorcolumn=73 HardPencil spell<CR>'
-"    autocmd Filetype tex noremap <F4> <buffer> ':set textwidth=72 colorcolumn=73 HardPencil spell<CR>'
-"augroup END
+noremap <nowait><silent> <F3> :<C-u>set textwidth=72 colorcolumn=73 spell linebreak<CR>:<C-u>let &showbreak = '   '
 "-----------------------------------------------}}}
 
-"{{{AESTHETICS------------------------------------
 " Quick way to switch between light and dark mode
 command! Light set background=light
 command! Dark set background=dark
-"----------------------------------------------}}}
 
 "{{{TEMPLATES-------------------------------------
 " Template for MLA formatted writing in LaTeX. See the file for the actual template
@@ -312,15 +272,4 @@ command! MLAtex read ~/.config/nvim/templates/MLAtex.tex
 " Template for MLA formatted markdown document that compiles with pandoc. See the file for the actual template
 command! MLAmd read ~/.config/nvim/templates/MLAmd.md
 "----------------------------------------------}}}
-
-"map f <Plug>Sneak_s
-"map F <Plug>Sneak_S
-
-" WRITEMODE
-" Writemode for writing prose
-" Followed this reddit thread
-" https://www.reddit.com/r/vim/comments/ckyspu/heres_how_to_create_custom_workspaces_to_switch/
-":command Writemode set spell | Goyo 70 | set showmode | set guifont=JetBrains_Mono:h12
-"
-":command Codemode set nospell | Goyo! | set noshowmode | set guifont=JetBrains_Mono:h12
 "----------------------------------------------}}}
