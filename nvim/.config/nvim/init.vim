@@ -113,6 +113,7 @@ Plug 'fcpg/vim-orbital'
 Plug 'tyrannicaltoucan/vim-quantum'
 Plug 'lifepillar/vim-solarized8'
 Plug 'srcery-colors/srcery-vim'
+Plug '~/stella'
 Plug 'nightsense/stellarized'
 "----------------------------------------------}}}
 
