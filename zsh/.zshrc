@@ -65,6 +65,9 @@ _comp_options+=(globdots)		# Include hidden files.
 
 for f in ~/.config/zsh/plugins/*; do source $f; done
 
+setopt correct
+export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color ([Y]es, [N]o, [A]bort, [E]dit) "
+
 source ~/.config/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
 #{{{fzf-tab config
 # disable sort when completing `git checkout`
