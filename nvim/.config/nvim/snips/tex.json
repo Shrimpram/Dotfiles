@@ -111,5 +111,13 @@
     "Paragraph": {
         "prefix": "par",
         "body": "\\paragraph{${1:$TM_SELECTED_TEXT}}$0"
+    },
+    "Textquote": {
+        "prefix": "tq",
+        "body": "\\textquote[${1|\\cite{, |}][$2]{${3:$TM_SELECTED_TEXT}}$0"
+    },
+    "Enquote": {
+        "prefix": "eq",
+        "body": "\\enquote{${1:$TM_SELECTED_TEXT}}$0"
     }
 }
