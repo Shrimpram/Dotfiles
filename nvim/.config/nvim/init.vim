@@ -247,7 +247,10 @@ inoremap <silent> <F8> <C-x><C-o>
 noremap <nowait><silent> <F11> :set hlsearch!<CR>
 
 " Sets up vim to write prose
-noremap <nowait><silent> <F3> :<C-u>set textwidth=72 colorcolumn=73 spell linebreak<CR>:<C-u>let &showbreak = '   '
+noremap <nowait><silent> <F3> :<C-u>set textwidth=72 colorcolumn=73 spell linebreak<CR>:<C-u>let &showbreak = '   '<CR>
+
+" Enables word count
+noremap <nowait><silent> <F2> :call Proseline()<CR>
 "-----------------------------------------------}}}
 
 " Quick way to switch between light and dark mode
