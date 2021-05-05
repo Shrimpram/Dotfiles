@@ -1,35 +1,45 @@
 neofetch
 
-##################################################
-# Powerlevel 10k (my zsh theme of choice)
-##################################################
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+#{{{Powerlevel 10k
+
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 source ~/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+#}}}
 
-# Run neofetch. --ascii flag allows custom ASCII art to show up. Mine links to an ASCII art of Butthead from Beavis and Butthead
-# neofetch
-
-##################################################
-# Config
-##################################################
-# https://github.com/microsoft/WSL/issues/4793
+#{{{Environment Variables
 
 # Configures GPG use
 export GPG_TTY=$TTY
 
-# adds go to path
+# Adds go to path
 export PATH=$PATH:/usr/local/go/bin
 
+export PAGER="more"
+
+export EDITOR="nvim"
+export VISUAL="nvim"
+
+#{{{Nvm
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#}}}
+
+. "$HOME/.cargo/env"
+
+#}}}
+
+#{{{Zsh Specific
+
+#{{{Settings
 
 # vi mode
 bindkey -v
@@ -39,38 +49,26 @@ export KEYTIMEOUT=1
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-setopt autocd		# Automatically cd into typed directory.
+# Automatically cd into typed directory.
+setopt autocd
 
 
-# Set editor to nvim
-export EDITOR="nvim"
-export VISUAL="nvim"
-export NNN_USE_EDITOR=1
-
-
-export PAGER="more"
-
-
-##################################################
-# Plugins
-##################################################
-
-# Enable zoxide for fast hopping around directories
-eval "$(zoxide init zsh)"
-
-# Basic auto/tab complete:
+# Basic auto/tab complete (using fzf-tab now, this is just in case I don't have that installed)
 autoload -U compinit && compinit -u
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
+#}}}
+
+#{{{Plugins
+
 for f in ~/.config/zsh/plugins/*; do source $f; done
 
-setopt correct
-export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color ([Y]es, [N]o, [A]bort, [E]dit) "
+# Enable zoxide for fast hopping around directories
+eval "$(zoxide init zsh)"
 
-source ~/.config/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
 #{{{fzf-tab config
 # disable sort when completing `git checkout`
 zstyle ':completion:*:git-checkout:*' sort false
@@ -86,39 +84,28 @@ zstyle ':fzf-tab:*' switch-group ',' '.'
 zstyle ':fzf-tab:complete:nvim:*' fzf-preview 'bat --color=always $realpath'
 #}}}
 
-# FFF Config
-source ~/.config/zsh/plugins/fff.sh
+#}}}
 
-export PATH=~/.config/zsh/plugins/showimg:$PATH
-export PATH=~/.config/zsh/plugins/mintheme:$PATH
+#}}}
 
-# Alias necessary for nvbn/thefuck to work
-# eval $(thefuck --alias)
+#{{{Colors
 
-# For transfer.sh config
-source ~/.config/zsh/plugins/transfer.sh
-
-# My own color-switching script
-source ~/.config/zsh/plugins/colors.sh
-
-##################################################
-# Colors
-##################################################
 autoload -U colors && colors
 
 LS_COLORS=$LS_COLORS:'ow=1;35:di=1;35:' ; export LS_COLORS
 
-##################################################
-# Aliases
-##################################################
-# some ls aliases
+#}}}
+
+#{{{Aliases
+
+# ls aliases
 alias ls='ls --color=auto --group-directories-first'
 alias ll='ls --color=auto --group-directories-first -alF'
 alias la='ls --color=auto --group-directories-first -A'
 alias l='ls --color=auto --group-directories-first -CF'
 
 
-# some exa aliases
+# exa aliases
 alias e='exa'
 alias ea='exa --all'
 alias el='exa --long --header --git --icons --classify --all'
@@ -128,7 +115,6 @@ alias et='exa --tree --level=2 --long --header --git --icons --classify --all'
 # alias to quickly access my taskell
 alias 't'="taskell ~/taskell.md"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-. "$HOME/.cargo/env"
+#}}}
+
+export NNN_USE_EDITOR=1
