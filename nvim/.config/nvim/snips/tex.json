@@ -31,6 +31,10 @@
         "prefix": "lim",
         "body": "\\lim_{${1|x,y,n|} \\to${2| \\infty, 0, c, |}}$0"
     },
+    "Sum": {
+        "prefix": "sum",
+        "body": "\\sum_{${1|x,y,k|} =${2| k, \\infty, |}}^{${3|n,\\infty, |}}$0"
+    },
     "Square Root": {
         "prefix": "sr",
         "body": "\\sqrt{${1:$TM_SELECTED_TEXT}}$0"
