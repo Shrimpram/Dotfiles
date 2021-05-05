@@ -44,6 +44,8 @@ setopt autocd		# Automatically cd into typed directory.
 
 # Set editor to nvim
 export EDITOR="nvim"
+export VISUAL="nvim"
+export NNN_USE_EDITOR=1
 
 
 export PAGER="more"
