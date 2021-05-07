@@ -64,7 +64,8 @@ _comp_options+=(globdots)		# Include hidden files.
 
 #{{{Plugins
 
-for f in ~/.config/zsh/plugins/*; do source $f; done
+for f (~/.config/zsh/plugins/*(N.))  . $f
+for f (~/.config/zsh/plugins/fzf-tab/*.zsh(N.))  . $f
 
 # Enable zoxide for fast hopping around directories
 eval "$(zoxide init zsh)"
@@ -116,5 +117,3 @@ alias et='exa --tree --level=2 --long --header --git --icons --classify --all'
 alias 't'="taskell ~/taskell.md"
 
 #}}}
-
-export NNN_USE_EDITOR=1
