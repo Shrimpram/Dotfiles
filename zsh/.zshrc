@@ -20,7 +20,7 @@ export GPG_TTY=$TTY
 # Adds go to path
 export PATH=$PATH:/usr/local/go/bin
 
-export PAGER="more"
+export PAGER="most"
 
 export EDITOR="nvim"
 export VISUAL="nvim"
