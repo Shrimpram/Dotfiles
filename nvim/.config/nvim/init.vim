@@ -69,6 +69,7 @@ Plug 'junegunn/goyo.vim',   { 'on' : 'Goyo' }
 Plug 'junegunn/limelight.vim', { 'on' : 'Limelight' }
 
 " Text
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'b3nj5m1n/kommentary'
 Plug 'tommcdo/vim-lion'
 Plug 'wellle/targets.vim'
@@ -149,6 +150,8 @@ nnoremap <nowait><silent> <leader>fc :Commits<CR>
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 "}}}
+
+let g:Hexokinase_highlighters = ['virtual']
 
 lua require('neoscroll').setup()
 
