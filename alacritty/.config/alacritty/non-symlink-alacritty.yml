@@ -264,5 +264,34 @@ schemes:
       magenta: '#8c738c'
       cyan: '#6d96a5'
       white: '#aeb3bb'
+  cosmic_latte_dark: &cosmic_latte_dark
+    primary:
+        background: '#202a31'
+        foreground: '#abb0c0'
+    normal:
+      black:   '#2b3740'
+      red:     '#c17b8d'
+      green:   '#7d9761'
+      yellow:  '#b28761'
+      blue:    '#5496bd'
+      magenta: '#9b85bb'
+      cyan:    '#459d90'
+      white:   '#c5cbdb'
+  doom-one: &doom-one
+    primary:
+        background: '#282c34'
+        dim_background: '#21242b'
+        foreground: '#bbc2cf'
+        dim_foreground: '#5B6268'
+    normal:
+        red: '#ff6c6b'
+        orange: '#da8548'
+        green: '#98be65'
+        teal: '#4db5bd'
+        yellow: '#ECBE7B'
+        blue: '#51afef'
+        magenta: '#c678dd'
+        violet: '#a9a1e1'
+        cyan: '#46D9FF'
 
-colors: *nord
+colors: *doom-one
