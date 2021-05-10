@@ -112,6 +112,10 @@
         "prefix": "it",
         "body": "\\textit{${1:$TM_SELECTED_TEXT}}$0"
     },
+    "Underline": {
+        "prefix": "ul",
+        "body": "\\underline{${1:$TM_SELECTED_TEXT}}$0"
+    },
     "Paragraph": {
         "prefix": "par",
         "body": "\\paragraph{${1:$TM_SELECTED_TEXT}}$0"
