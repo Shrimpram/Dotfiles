@@ -44,7 +44,7 @@
         "body": "^{${1:$TM_SELECTED_TEXT}}$0"
     },
     "Infinity": {
-        "prefix": "00",
+        "prefix": "oo",
         "body": "\\infty"
     },
     "Cdot": {
