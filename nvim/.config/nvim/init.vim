@@ -4,6 +4,9 @@ syntax on
 filetype plugin on
 filetype indent on
 
+let mapleader = " "		" Maps leader key (to space)
+let maplocalleader = " "	" Maps local leader key (to space)
+
 set autoindent
 set backspace=eol,start,indent
 set cmdheight=1
@@ -30,12 +33,10 @@ set shiftwidth=4
 set tabstop=4 softtabstop=4
 set termguicolors
 set timeoutlen=250
+set title
 set undodir=~/.config/nvim/undodir
 set undofile
 set wrap
-
-let mapleader = " "		" Maps leader key (to space)
-let maplocalleader = " "	" Maps local leader key (to space)
 
 "{{{CLIPBOARD-------------------------------------
 set clipboard+=unnamedplus
