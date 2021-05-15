@@ -116,7 +116,7 @@ Plug 'fcpg/vim-orbital'
 Plug 'tyrannicaltoucan/vim-quantum'
 Plug 'lifepillar/vim-solarized8'
 Plug 'srcery-colors/srcery-vim'
-Plug '~/stella'
+Plug 'shrimpram/vim-stella'
 Plug 'nightsense/stellarized'
 "----------------------------------------------}}}
 
@@ -207,7 +207,7 @@ let g:gruvbox_material_enable_bold = 1		" '1' enables bold text
 let g:gruvbox_material_enable_italic = 1	" '1' enables italic text
 
 set background=dark
-colorscheme erb-stella
+colorscheme stella
 "----------------------------------------------}}}
 
 "{{{REMAPS----------------------------------------
