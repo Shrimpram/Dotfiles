@@ -293,5 +293,30 @@ schemes:
         magenta: '#c678dd'
         violet: '#a9a1e1'
         cyan: '#46D9FF'
+  stella: &stella
+    primary:
+      background: '0x2B213C'
+      foreground: '0xA598BB'
+    cursor:
+      text: '0x2B213C'
+      cursor: '0xA598BB'
+    normal:
+      black:   '0x2B213C'
+      red:     '0xBA9184'
+      green:   '0x9DBA84'
+      yellow:  '0xBAAD84'
+      blue:    '0xA49FD1'
+      magenta: '0xBF9FD1'
+      cyan:    '0x8DBAAF'
+      white:   '0xA598BB'
+    bright:
+      black:   '0x7E7292'
+      red:     '0xBA9184'
+      green:   '0x9DBA84'
+      yellow:  '0xBAAD84'
+      blue:    '0xA49FD1'
+      magenta: '0xBF9FD1'
+      cyan:    '0x8DBAAF'
+      white:   '0xFCEEFF'
 
-colors: *doom-one
+colors: *stella
