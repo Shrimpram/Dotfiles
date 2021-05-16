@@ -19,7 +19,6 @@ set ignorecase smartcase
 set inccommand=nosplit
 set incsearch
 set iskeyword+=-
-set mouse=a
 set nobackup
 set noerrorbells
 set nohlsearch
