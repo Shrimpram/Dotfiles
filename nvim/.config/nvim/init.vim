@@ -83,6 +83,7 @@ Plug 'mg979/vim-visual-multi'
 Plug 'karb94/neoscroll.nvim'
 Plug 'gennaro-tedesco/nvim-peekup'
 Plug 'ourigen/skyline.vim'
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'mbbill/undotree', { 'on' : 'UndotreeToggle' }
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
