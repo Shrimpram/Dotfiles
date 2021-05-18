@@ -92,6 +92,7 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'ryanoasis/vim-devicons'
 Plug 'dstein64/vim-startuptime'
 "Plug 'edkolev/tmuxline.vim'
+Plug 'folke/zen-mode.nvim'
 
 " Filetype
 Plug 'lervag/vimtex', { 'for': 'tex' }
@@ -184,6 +185,16 @@ let g:VM_Normal_Cursor_hl = 'DiffChange'
 "}}}
 
 source ~/.config/nvim/plugin-config/vsnip.vim
+
+"{{{Zen Mode
+lua << EOF
+  require("zen-mode").setup {
+    -- your configuration comes here
+    -- or leave it empty to use the default settings
+    -- refer to the configuration section below
+  }
+EOF
+"}}}
 "----------------------------------------------}}}
 
 "{{{COLORSCHEME CONFIG----------------------------
