@@ -3,38 +3,38 @@ set adjust-open width
 
 set sandbox none
 
-# Base16 Solarized Dark
-# Author: Ethan Schoonover (modified by aramisgithub)
+# Base16 Stella
+# Author: Shrimpram
 
-set default-bg                  "#002b36"
-set default-fg                  "#073642"
+set default-bg                  "#2B213C"
+set default-fg                  "#362C48"
 
-set statusbar-fg                "#839496"
-set statusbar-bg                "#586e75"
+set statusbar-fg                "#988BAD"
+set statusbar-bg                "#716585"
 
-set inputbar-bg                 "#002b36"
-set inputbar-fg                 "#fdf6e3"
+set inputbar-bg                 "#2B213C"
+set inputbar-fg                 "#FCEEFF"
 
-set notification-bg             "#002b36"
-set notification-fg             "#fdf6e3"
+set notification-bg             "#2B213C"
+set notification-fg             "#FCEEFF"
 
-set notification-error-bg       "#002b36"
-set notification-error-fg       "#dc322f"
+set notification-error-bg       "#2B213C"
+set notification-error-fg       "#BA9184"
 
-set notification-warning-bg     "#002b36"
-set notification-warning-fg     "#dc322f"
+set notification-warning-bg     "#2B213C"
+set notification-warning-fg     "#BA9184"
 
-set highlight-color             "#b58900"
-set highlight-active-color      "#268bd2"
+set highlight-color             "#BAAD84"
+set highlight-active-color      "#A49FD1"
 
-set completion-bg               "#073642"
-set completion-fg               "#268bd2"
+set completion-bg               "#362C48"
+set completion-fg               "#A49FD1"
 
-set completion-highlight-fg     "#fdf6e3"
-set completion-highlight-bg     "#268bd2"
+set completion-highlight-fg     "#FCEEFF"
+set completion-highlight-bg     "#A49FD1"
 
-set recolor-lightcolor          "#002b36"
-set recolor-darkcolor           "#eee8d5"
+set recolor-lightcolor          "#2B213C"
+set recolor-darkcolor           "#F1E2FF"
 
 set recolor                     "false"
 set recolor-keephue             "false"
