@@ -2,6 +2,7 @@
     link:
       relink: true
       glob: true
+      create: true
 
 - clean: ['~']
 
