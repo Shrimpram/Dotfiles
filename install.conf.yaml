@@ -31,3 +31,4 @@
 
 - shell:
   - [git submodule update --init --recursive --remote, Installing submodules]
+  - [cd binaries && sudo stow -R * -t /usr/local/, Stowing binaries]
