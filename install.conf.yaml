@@ -22,7 +22,7 @@
       path: profile/profile
     ~/.tmux.conf: tmux/tmux.conf
     ~/.vim: vim/vim
-    ~/.vimrc: vimrc
+    ~/.vimrc: vim/vimrc
     ~/.config/zathura/zathurarc: zathura/zathurarc
     ~/.zshrc:
       force: true
