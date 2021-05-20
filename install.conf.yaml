@@ -29,7 +29,5 @@
       path: zsh/zshrc
     ~/.config/zsh/plugins/: zsh/plugins/*
 
-- create:
-
 - shell:
   - [git submodule update --init --recursive --remote, Installing submodules]
