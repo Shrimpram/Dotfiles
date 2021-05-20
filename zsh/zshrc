@@ -65,8 +65,8 @@ _comp_options+=(globdots)		# Include hidden files.
 
 #{{{Plugins
 
-for f (~/.config/zsh/plugins/*(N.))  . $f
-for f (~/.config/zsh/plugins/fzf-tab/*.zsh(N.))  . $f
+for f in ~/.config/zsh/plugins/*; do source $f; done
+for f in ~/.config/zsh/plugins/fzf-tab/*.zsh; do source $f; done
 
 # Enable zoxide for fast hopping around directories
 eval "$(zoxide init zsh)"
