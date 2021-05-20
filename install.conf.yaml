@@ -1,0 +1,32 @@
+- defaults:
+    link:
+      relink: true
+      glob: true
+
+- clean: ['~']
+
+- link:
+    '/mnt/c/Users/Shreeram Modi/AppData/Roaming/alacritty/alacritty.yml':
+        force: true
+        if: '[ `uname -n` = Shreeram-Laptop ]'
+        path: alacritty/alacritty.yml
+    ~/.bashrc: bash/bashrc
+    ~/.config/bat/config: bat/config
+    ~/.config/fish/: fish/*
+    ~/.config/lf/lfrc: lf/lfrc
+    ~/.config/neofetch/config.conf: neofetch/config.conf
+    ~/.config/nvim/: 
+      path: nvim/*
+      exclude: [ nvim/deprecated-vim-stuff.vim, old-init.vim, oldest-init.vim, ]
+    ~/.profile: profile/profile
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.vim: vim/vim
+    ~/.vimrc: vimrc
+    ~/.config/zathura/zathurarc: zathura/zathurarc
+    ~/.zshrc: zsh/zshrc
+    ~/.config/zsh/plugins/: zsh/plugins/*
+
+- create:
+
+- shell:
+  - [git submodule update --init --recursive --remote, Installing submodules]
