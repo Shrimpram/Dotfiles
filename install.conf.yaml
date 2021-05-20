@@ -7,10 +7,6 @@
 - clean: ['~']
 
 - link:
-    '/mnt/c/Users/Shreeram Modi/AppData/Roaming/alacritty/alacritty.yml':
-        force: true
-        if: '[ `uname -n` = Shreeram-Laptop ]'
-        path: alacritty/alacritty.yml
     ~/.bashrc:
       force: true
       path: bash/bashrc
