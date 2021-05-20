@@ -10,7 +10,9 @@
         force: true
         if: '[ `uname -n` = Shreeram-Laptop ]'
         path: alacritty/alacritty.yml
-    ~/.bashrc: bash/bashrc
+    ~/.bashrc:
+      force: true
+      path: bash/bashrc
     ~/.config/bat/config: bat/config
     ~/.config/fish/: fish/*
     ~/.config/lf/lfrc: lf/lfrc
@@ -18,12 +20,16 @@
     ~/.config/nvim/: 
       path: nvim/*
       exclude: [ nvim/deprecated-vim-stuff.vim, old-init.vim, oldest-init.vim, ]
-    ~/.profile: profile/profile
+    ~/.profile:
+      force: true
+      path: profile/profile
     ~/.tmux.conf: tmux/tmux.conf
     ~/.vim: vim/vim
     ~/.vimrc: vimrc
     ~/.config/zathura/zathurarc: zathura/zathurarc
-    ~/.zshrc: zsh/zshrc
+    ~/.zshrc:
+      force: true
+      path: zsh/zshrc
     ~/.config/zsh/plugins/: zsh/plugins/*
 
 - create:
