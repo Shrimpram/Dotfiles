@@ -18,4 +18,4 @@ else
     exit
 fi
 
-sudo stow -v -"$x" * -t /usr/local/
+sudo stow -v -"$x" stow-* -t /usr/local/
