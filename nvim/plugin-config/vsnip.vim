@@ -16,4 +16,4 @@ xmap <leader>d <Plug>(vsnip-select-text)
 nmap <leader>c <Plug>(vsnip-cut-text)
 xmap <leader>c <Plug>(vsnip-cut-text)
 
-let g:vsnip_snippet_dir = expand('~/dotfiles/nvim/.config/nvim/snips')
+let g:vsnip_snippet_dir = expand('~/dotfiles/nvim/snips')
