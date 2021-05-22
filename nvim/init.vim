@@ -82,16 +82,17 @@ Plug 'mg979/vim-visual-multi'
 " Utilities
 Plug 'karb94/neoscroll.nvim'
 Plug 'gennaro-tedesco/nvim-peekup'
+Plug 'kyazdani42/nvim-tree.lua' | Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ourigen/skyline.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'mbbill/undotree', { 'on' : 'UndotreeToggle' }
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
+Plug 'folke/zen-mode.nvim'
 
 " Misc
 Plug 'ryanoasis/vim-devicons'
 Plug 'dstein64/vim-startuptime'
-Plug 'folke/zen-mode.nvim'
 
 " Filetype
 Plug 'lervag/vimtex', { 'for': 'tex' }
@@ -161,6 +162,8 @@ nmap [h <Plug>(GitGutterPrevHunk)
 let g:Hexokinase_highlighters = ['virtual']
 
 lua require('neoscroll').setup()
+
+source ~/.config/nvim/plugin-config/nvim-tree.vim
 
 source ~/.config/nvim/plugin-config/skyline.vim
 
