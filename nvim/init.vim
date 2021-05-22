@@ -91,7 +91,6 @@ Plug 'hrsh7th/vim-vsnip-integ'
 " Misc
 Plug 'ryanoasis/vim-devicons'
 Plug 'dstein64/vim-startuptime'
-"Plug 'edkolev/tmuxline.vim'
 Plug 'folke/zen-mode.nvim'
 
 " Filetype
