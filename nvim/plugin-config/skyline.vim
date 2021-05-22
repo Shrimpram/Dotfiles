@@ -12,6 +12,3 @@ function Proseline()
         let s:proseline_toggled=1
     endif
 endfunction
-
-"autocmd FileType tex call Proseline()
-"autocmd FileType markdown call Proseline()
