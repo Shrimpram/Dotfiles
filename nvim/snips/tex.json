@@ -43,6 +43,10 @@
         "prefix": "^",
         "body": "^{${1:$TM_SELECTED_TEXT}}$0"
     },
+    "Subscript": {
+        "prefix": "_",
+        "body": "_{${1:$TM_SELECTED_TEXT}}$0"
+    },
     "Infinity": {
         "prefix": "oo",
         "body": "\\infty"
