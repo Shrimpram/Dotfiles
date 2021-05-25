@@ -1,13 +1,12 @@
-[submodule "zsh/.config/zsh/plugins/powerlevel10k"]
-	path = zsh/.config/zsh/plugins/powerlevel10k
-	url = https://github.com/romkatv/powerlevel10k.git
 [submodule "git-crypt"]
 	path = git-crypt
-	url = https://github.com/AGWA/git-crypt.git
-[submodule "zsh/.config/zsh/plugins/fzf-tab"]
-	path = zsh/.config/zsh/plugins/fzf-tab
-	url = git@github.com:Aloxaf/fzf-tab.git
+	url = https://github.com/AGWA/git-crypt
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-	ignore = dirty
+[submodule "zsh/plugins/fzf-tab"]
+	path = zsh/plugins/fzf-tab
+	url = https://github.com/Aloxaf/fzf-tab
+[submodule "zsh/plugins/powerlevel10k"]
+	path = zsh/plugins/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k
