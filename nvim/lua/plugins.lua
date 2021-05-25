@@ -64,6 +64,7 @@ use { 'dstein64/vim-startuptime' }
 use { 'lervag/vimtex', ft = 'tex' }
 use { 'preservim/vim-lexical' }
 --- Colorschemes
+use { '~/stella/vim-stella' }
 use { 'romainl/Apprentice' }
 use { 'ayu-theme/ayu-vim' }
 use { 'sjl/badwolf' }
@@ -90,7 +91,6 @@ use { 'drewtempelmeyer/palenight.vim' }
 use { 'tyrannicaltoucan/vim-quantum' }
 use { 'lifepillar/vim-solarized8' }
 use { 'srcery-colors/srcery-vim' }
-use { 'shrimpram/vim-stella' }
 use { 'nightsense/stellarized' }
 
 end)
