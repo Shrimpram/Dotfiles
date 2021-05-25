@@ -1,9 +1,10 @@
 [submodule "git-crypt"]
 	path = git-crypt
-	url = https://github.com/AGWA/git-crypt
+	url = https://github.com/AGWA/git-crypt.git
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
 [submodule "zsh/plugins/fzf-tab"]
 	path = zsh/plugins/fzf-tab
 	url = https://github.com/Aloxaf/fzf-tab
