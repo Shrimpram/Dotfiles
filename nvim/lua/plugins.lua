@@ -1,5 +1,8 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
+-- Automatically compiles packer after writing to the plugins.lua file
+vim.cmd [[autocmd BufWritePost plugins.lua PackerCompile]]
+
 -- Packer bootstrapping function
 
 local execute = vim.api.nvim_command
