@@ -1,0 +1,93 @@
+-- This file can be loaded by calling `lua require('plugins')` from your init.vim
+
+-- Packer bootstrapping function
+
+local execute = vim.api.nvim_command
+local fn = vim.fn
+
+local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+if fn.empty(fn.glob(install_path)) > 0 then
+  fn.system({'git', 'clone', 'https://github.com/wbthomason/packer.nvim', install_path})
+  execute 'packadd packer.nvim'
+end
+
+-- Only required if you have packer configured as `opt`
+vim.cmd [[packadd packer.nvim]]
+
+return require('packer').startup(function()
+
+use 'wbthomason/packer.nvim'
+
+--- Git
+use { 'rhysd/committia.vim' }
+use { 'tpope/vim-fugitive' }
+use { 'airblade/vim-gitgutter' }
+
+--- Junegunn
+use { 'junegunn/fzf', run = function() vim.fn['fzf#install']() end }
+use { 'junegunn/fzf.vim' }
+use { 'junegunn/goyo.vim', cmd = 'Goyo' }
+use { 'junegunn/limelight.vim', cmd = 'Limelight' }
+
+--- Text
+use { 'rrethy/vim-hexokinase', run = 'make hexokinase' }
+use { 'b3nj5m1n/kommentary' }
+use { 'tommcdo/vim-lion' }
+use { 'wellle/targets.vim' }
+use { 'machakann/vim-sandwich' }
+use { 'justinmk/vim-sneak' }
+use { 'dhruvasagar/vim-table-mode' }
+use { 'mg979/vim-visual-multi' }
+
+--- Utilities
+use { 'karb94/neoscroll.nvim' }
+use { 'gennaro-tedesco/nvim-peekup' }
+use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+}
+use { 'ourigen/skyline.vim' }
+use { 'christoomey/vim-tmux-navigator' }
+use { 'mbbill/undotree', cmd = 'UndotreeToggle' }
+use { 'hrsh7th/vim-vsnip' }
+use { 'hrsh7th/vim-vsnip-integ' }
+use { 'folke/zen-mode.nvim' }
+
+--- Misc
+use { 'ryanoasis/vim-devicons' }
+use { 'dstein64/vim-startuptime' }
+
+--- Filetype
+use { 'lervag/vimtex', ft = 'tex' }
+use { 'preservim/vim-lexical' }
+--- Colorschemes
+use { 'romainl/Apprentice' }
+use { 'ayu-theme/ayu-vim' }
+use { 'sjl/badwolf' }
+use { 'chriskempson/base16-vim' }
+use { 'archseer/colibri.vim' }
+use { 'reedes/vim-colors-pencil' }
+use { 'nightsense/cosmic_latte' }
+use { 'romainl/vim-dichromatic' }
+use { 'wadackel/vim-dogrun' }
+use { 'romgrk/doom-one.vim' }
+use { 'dracula/vim', as = 'dracula' }
+use { 'sainnhe/everforest' }
+use { 'fcpg/vim-fahrenheit' }
+use { 'jaredgorski/fogbell.vim' }
+use { 'sainnhe/gruvbox-material' }
+use { 'lifepillar/vim-gruvbox8' }
+use { 'savq/melange' }
+use { 'KeitaNakamura/neodark.vim' }
+use { 'arcticicestudio/nord-vim' }
+use { 'mhartington/oceanic-next' }
+use { 'joshdick/onedark.vim' }
+use { 'fcpg/vim-orbital' }
+use { 'drewtempelmeyer/palenight.vim' }
+use { 'tyrannicaltoucan/vim-quantum' }
+use { 'lifepillar/vim-solarized8' }
+use { 'srcery-colors/srcery-vim' }
+use { 'shrimpram/vim-stella' }
+use { 'nightsense/stellarized' }
+
+end)
