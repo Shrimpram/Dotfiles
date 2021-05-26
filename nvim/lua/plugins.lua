@@ -50,6 +50,7 @@ use {
 }
 use { 'ourigen/skyline.vim' }
 use { 'christoomey/vim-tmux-navigator' }
+use { 'RyanMillerC/better-vim-tmux-resizer' }
 use { 'mbbill/undotree', cmd = 'UndotreeToggle' }
 use { 'hrsh7th/vim-vsnip' }
 use { 'hrsh7th/vim-vsnip-integ' }
