@@ -40,7 +40,6 @@ use { 'wellle/targets.vim' }
 use { 'machakann/vim-sandwich' }
 use { 'justinmk/vim-sneak' }
 use { 'dhruvasagar/vim-table-mode' }
-use { 'mg979/vim-visual-multi' }
 
 --- Utilities
 use { 'karb94/neoscroll.nvim' }
