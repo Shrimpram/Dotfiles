@@ -41,17 +41,17 @@ set wrap
 set clipboard+=unnamedplus
 
 let g:clipboard = {
-		\	'name': 'win32yank-wsl',
-		\	'copy': {
-		\	'+': 'win32yank.exe -i --crlf',
-		\	'*': 'win32yank.exe -i --crlf',
-		\	},
-		\	'paste': {
-		\	'+': 'win32yank.exe -o --lf',
-		\	'*': 'win32yank.exe -o --lf',
-		\	},
-		\	'cache_enabled': 0,
-		\	}
+    \	'name': 'win32yank-wsl',
+    \	'copy': {
+    \	'+': 'win32yank.exe -i --crlf',
+    \	'*': 'win32yank.exe -i --crlf',
+    \	},
+    \	'paste': {
+    \	'+': 'win32yank.exe -o --lf',
+    \	'*': 'win32yank.exe -o --lf',
+    \	},
+    \	'cache_enabled': 0,
+    \	}
 "----------------------------------------------}}}
 "----------------------------------------------}}}
 
@@ -67,9 +67,9 @@ nnoremap <nowait><silent> <leader>gw :Gwrite<CR>
 
 "{{{FZF
 let g:fzf_action = {
-  \ 'ctrl-t': 'tab split',
-  \ 'ctrl-s': 'split',
-  \ 'ctrl-v': 'vsplit' }
+    \ 'ctrl-t': 'tab split',
+    \ 'ctrl-s': 'split',
+    \ 'ctrl-v': 'vsplit' }
 
 command! Dots GFiles ~/dotfiles
 
@@ -89,10 +89,10 @@ let g:Hexokinase_highlighters = ['virtual']
 
 "{{{Lexical
 augroup lexical
-  autocmd!
-  autocmd FileType markdown,mkd call lexical#init()
-  autocmd FileType textile call lexical#init()
-  autocmd FileType text call lexical#init({ 'spell': 0 })
+    autocmd!
+    autocmd FileType markdown,mkd call lexical#init()
+    autocmd FileType textile call lexical#init()
+    autocmd FileType text call lexical#init({ 'spell': 0 })
 augroup END
 
 let g:lexical#thesaurus = ['~/.config/nvim/spell/moby-thesaurus.txt']
