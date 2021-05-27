@@ -59,6 +59,16 @@ use {
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
 }
 use { 'tversteeg/registers.nvim' }
+
+
+use {
+    '/home/shreeram/projects/nvim-hardline',
+    config = [[require('hardline').setup { theme = 'stella' } ]]
+}
+
+
+
+
 use { 'christoomey/vim-tmux-navigator' }
 use { 'RyanMillerC/better-vim-tmux-resizer' }
 use { 'mbbill/undotree', cmd = 'UndotreeToggle' }
