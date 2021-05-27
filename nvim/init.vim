@@ -106,8 +106,6 @@ lua require('neoscroll').setup()
 
 source ~/.config/nvim/plugin-config/nvim-tree.vim
 
-source ~/.config/nvim/plugin-config/skyline.vim
-
 "source ~/.config/nvim/plugin-config/tmuxline.vim
 
 " Undotree

@@ -58,7 +58,6 @@ use {
     'kyazdani42/nvim-tree.lua',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
 }
-use { 'ourigen/skyline.vim' }
 use { 'tversteeg/registers.nvim' }
 use { 'christoomey/vim-tmux-navigator' }
 use { 'RyanMillerC/better-vim-tmux-resizer' }
