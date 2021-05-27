@@ -35,10 +35,6 @@ use {
 use {
     { 'rhysd/committia.vim' },
     {
-        'tpope/vim-fugitive',
-        cmd = {'Git', 'Gstatus', 'Gblame', 'Gpush', 'Gpull'}
-    },
-    {
       'lewis6991/gitsigns.nvim',
       requires = { 'nvim-lua/plenary.nvim', opt = true },
       config = [[require('config.gitsigns')]],
