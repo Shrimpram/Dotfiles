@@ -65,7 +65,10 @@ use { 'RyanMillerC/better-vim-tmux-resizer' }
 use { 'mbbill/undotree', cmd = 'UndotreeToggle' }
 use { 'hrsh7th/vim-vsnip' }
 use { 'hrsh7th/vim-vsnip-integ' }
-use { 'folke/zen-mode.nvim' }
+use {
+    'folke/zen-mode.nvim',
+    config = [[require("zen-mode").setup{}]]
+}
 
 --- Misc
 use { 'ryanoasis/vim-devicons' }

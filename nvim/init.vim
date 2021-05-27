@@ -129,16 +129,6 @@ let g:VM_Normal_Cursor_hl = 'DiffChange'
 "}}}
 
 source ~/.config/nvim/plugin-config/vsnip.vim
-
-"{{{Zen Mode
-lua << EOF
-  require("zen-mode").setup {
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- refer to the configuration section below
-  }
-EOF
-"}}}
 "----------------------------------------------}}}
 
 "{{{COLORSCHEME CONFIG----------------------------
