@@ -72,6 +72,11 @@ use { 'machakann/vim-sandwich' }
 use { 'dhruvasagar/vim-table-mode' }
 
 --- Utilities
+use {
+    'romainl/vim-cool',
+    config = vim.cmd([[set hlsearch]])
+}
+
 use { 'karb94/neoscroll.nvim' }
 
 use {
