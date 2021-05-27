@@ -54,26 +54,25 @@ use { 'dhruvasagar/vim-table-mode' }
 
 --- Utilities
 use { 'karb94/neoscroll.nvim' }
+
 use {
     'kyazdani42/nvim-tree.lua',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
 }
-use { 'tversteeg/registers.nvim' }
 
+use { 'tversteeg/registers.nvim' }
 
 use {
     '/home/shreeram/projects/nvim-hardline',
     config = [[require('hardline').setup { theme = 'stella' } ]]
 }
 
-
-
-
 use { 'christoomey/vim-tmux-navigator' }
 use { 'RyanMillerC/better-vim-tmux-resizer' }
 use { 'mbbill/undotree', cmd = 'UndotreeToggle' }
 use { 'hrsh7th/vim-vsnip' }
 use { 'hrsh7th/vim-vsnip-integ' }
+
 use {
     'folke/zen-mode.nvim',
     config = [[require("zen-mode").setup{}]]
