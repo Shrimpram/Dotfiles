@@ -21,6 +21,16 @@ return require('packer').startup(function()
 
 use 'wbthomason/packer.nvim'
 
+--- Treesitter
+use {
+  'nvim-treesitter/nvim-treesitter',
+  requires = {
+    'nvim-treesitter/nvim-treesitter-refactor', 'nvim-treesitter/nvim-treesitter-textobjects'
+  },
+  config = [[require('config.treesitter')]],
+  run = ':TSUpdate'
+}
+
 --- Git
 use {
     { 'rhysd/committia.vim' },
