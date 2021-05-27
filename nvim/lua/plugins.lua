@@ -22,9 +22,20 @@ return require('packer').startup(function()
 use 'wbthomason/packer.nvim'
 
 --- Git
-use { 'rhysd/committia.vim' }
-use { 'tpope/vim-fugitive' }
-use { 'airblade/vim-gitgutter' }
+use {
+    { 'rhysd/committia.vim' },
+    {
+        'tpope/vim-fugitive',
+        cmd = {'Git', 'Gstatus', 'Gblame', 'Gpush', 'Gpull'}
+    },
+    {
+      'lewis6991/gitsigns.nvim',
+      requires = { 'nvim-lua/plenary.nvim', opt = true },
+      config = [[require('config.gitsigns')]],
+      event = 'BufEnter'
+    }
+}
+
 
 --- Junegunn
 use { 'junegunn/fzf', run = function() vim.fn['fzf#install']() end }
