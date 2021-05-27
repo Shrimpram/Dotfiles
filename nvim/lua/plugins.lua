@@ -45,11 +45,24 @@ use { 'junegunn/limelight.vim', cmd = 'Limelight' }
 
 --- Text
 use { 'rrethy/vim-hexokinase', run = 'make hexokinase' }
+
+use {
+  'phaazon/hop.nvim',
+  config = function()
+    -- Configured for Colemak
+    require'hop'.setup { keys = 'arstneioplfuywdhgj' }
+    -- Keybind to make hop work like sneak
+    vim.api.nvim_set_keymap('n', 's', "<cmd>lua require'hop'.hint_char2()<cr>", {})
+    ---- Improfe usage of 'f' and 't'
+    --vim.api.nvim_set_keymap('n', 'f', "<cmd>lua require'hop'.hint_char1()<cr>", {})
+    --vim.api.nvim_set_keymap('n', 't', "<cmd>lua require'hop'.hint_char1()<cr>", {})
+  end
+}
+
 use { 'b3nj5m1n/kommentary' }
 use { 'tommcdo/vim-lion' }
 use { 'wellle/targets.vim' }
 use { 'machakann/vim-sandwich' }
-use { 'justinmk/vim-sneak' }
 use { 'dhruvasagar/vim-table-mode' }
 
 --- Utilities
