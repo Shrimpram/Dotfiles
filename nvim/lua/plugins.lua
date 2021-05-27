@@ -54,12 +54,12 @@ use { 'dhruvasagar/vim-table-mode' }
 
 --- Utilities
 use { 'karb94/neoscroll.nvim' }
-use { 'gennaro-tedesco/nvim-peekup' }
 use {
     'kyazdani42/nvim-tree.lua',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
 }
 use { 'ourigen/skyline.vim' }
+use { 'tversteeg/registers.nvim' }
 use { 'christoomey/vim-tmux-navigator' }
 use { 'RyanMillerC/better-vim-tmux-resizer' }
 use { 'mbbill/undotree', cmd = 'UndotreeToggle' }
