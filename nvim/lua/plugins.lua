@@ -67,12 +67,6 @@ use {
 
 use { 'b3nj5m1n/kommentary' }
 use { 'tommcdo/vim-lion' }
-
-use {
-    'steelsojka/pears.nvim',
-    config = [[require "pears".setup()]]
-}
-
 use { 'wellle/targets.vim' }
 use { 'machakann/vim-sandwich' }
 use { 'dhruvasagar/vim-table-mode' }
