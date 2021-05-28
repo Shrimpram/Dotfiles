@@ -14,7 +14,7 @@
     ~/.config/fish/: fish/*
     ~/.config/lf/lfrc: lf/lfrc
     ~/.config/neofetch/config.conf: neofetch/config.conf
-    ~/.config/nvim/: 
+    ~/.config/nvim/:
       path: nvim/*
       exclude: [ nvim/deprecated-vim-stuff.vim, old-init.vim, oldest-init.vim, ]
     ~/.profile:
