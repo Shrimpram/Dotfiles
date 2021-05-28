@@ -1,21 +1,23 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-read -p "What do you want to do? ([S]tow/[D]elete links/[R]estow): " x
+echo "What do you want to do?"
 
-cd binaries
+select x in "Stow" "Delete links" "Restow"
 
-if [ "$x" = S ]
-then
-    echo "Stowing binaries"
-elif [ "$x" = D ]
-then
-    echo "Deleting symlinks"
-elif [ "$x" = R ]
-then
-    echo "Restowing binaries"
-else
-    echo "Invalid input, aborting"
-    exit
-fi
+do
+    case $x in
+        "Stow" )
+            echo "Stowing binaries"
+            break;;
+        "Delete links" )
+            echo "Deleting symlinks"
+            break;;
+        "Restow" )
+            echo "Restowing binaries"
+            break;;
+    esac
+done
 
-sudo stow -v -"$x" stow-* -t /usr/local/
+o=$(echo "$x" | sed 's/\(^.\).*/\1/')
+
+(cd binaries && sudo stow -v -"$o" -t /usr/local/ stow-*)
