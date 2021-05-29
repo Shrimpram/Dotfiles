@@ -34,8 +34,6 @@ export NVM_DIR="$HOME/.nvm"
 
 #}}}
 
-. "$HOME/.cargo/env"
-
 #}}}
 
 #{{{Zsh Specific
@@ -94,7 +92,7 @@ zstyle ':fzf-tab:complete:nvim:*' fzf-preview 'bat --color=always $realpath'
 
 autoload -U colors && colors
 
-LS_COLORS=$LS_COLORS:'ow=1;35:di=1;35:' ; export LS_COLORS
+#LS_COLORS=$LS_COLORS:'ow=1;35:di=1;35:' ; export LS_COLORS
 
 #}}}
 
