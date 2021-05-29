@@ -204,9 +204,6 @@ autocmd VimLeave *.tex silent !latexmk -c
 " Triggers omnifunc
 inoremap <silent> <F8> <C-x><C-o>
 
-" Changes whether search results are highlighted or not
-noremap <nowait><silent> <F11> :set hlsearch!<CR>
-
 " Sets up vim to write prose
 noremap <nowait><silent> <F3> :<C-u>set textwidth=72 colorcolumn=73 spell linebreak<CR>:<C-u>let &showbreak = '   '<CR>
 
