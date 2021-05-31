@@ -8,8 +8,8 @@ working_directory: C:\Users\Shreeram Modi\
 
 # Cool little block of text to test out different fonts for readability
 
-#               o0O s5S z2Z !|l1Iij {([|})] .,;: ``''"" 
-#               a@#* vVuUwW <>;^°=-~ öÖüÜäÄßµ \/\/ 
+#               o0O s5S z2Z !|l1Iij {([|})] .,;: ``''""
+#               a@#* vVuUwW <>;^°=-~ öÖüÜäÄßµ \/\/
 #               the quick brown fox jumps over the lazy dog
 #               THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
 #               0123456789 &-+@ for (int i=0; i<j; ++i) { }
@@ -296,27 +296,27 @@ schemes:
   stella: &stella
     primary:
       background: '0x2B213C'
-      foreground: '0xA598BB'
+      foreground: '0xA697BA'
     cursor:
       text: '0x2B213C'
-      cursor: '0xA598BB'
+      cursor: '0xA697BA'
     normal:
       black:   '0x2B213C'
-      red:     '0xBA9184'
-      green:   '0x9DBA84'
-      yellow:  '0xBAAD84'
-      blue:    '0xA49FD1'
-      magenta: '0xBF9FD1'
-      cyan:    '0x8DBAAF'
-      white:   '0xA598BB'
+      red:     '0xDEB3AD'
+      green:   '0xB6D4A5'
+      yellow:  '0xC7C691'
+      blue:    '0xA5AAD4'
+      magenta: '0xC594FF'
+      cyan:    '0xADD9DE'
+      white:   '0xA697BA'
     bright:
-      black:   '0x7E7292'
-      red:     '0xBA9184'
-      green:   '0x9DBA84'
-      yellow:  '0xBAAD84'
-      blue:    '0xA49FD1'
-      magenta: '0xBF9FD1'
-      cyan:    '0x8DBAAF'
+      black:   '0x4F3F6B'
+      red:     '0xDEB3AD'
+      green:   '0xB6D4A5'
+      yellow:  '0xC7C691'
+      blue:    '0xA5AAD4'
+      magenta: '0xC594FF'
+      cyan:    '0xADD9DE'
       white:   '0xFCEEFF'
 
 colors: *stella
