@@ -12,16 +12,17 @@ read_only = ''
 
 [git_commit]
 commit_hash_length = '7'
-format = '[\[$hash\]]($style) [$tag]($style)'	
+format = '[\[$hash\]]($style) [$tag]($style)'
 tag_disabled = false
 
 [git_status]
-conflicted = '~$count '
-ahead = '⇡$count '
-behind = '⇣$count '
-untracked = '?$count '
-stashed = '*$count '
-modified = '!$count '
-staged = '+$count '
-renamed = '»$count '
-deleted = '-$count '
+conflicted = '~$count'
+ahead = '⇡$count'
+behind = '⇣$count'
+diverged = '⇕ $ahead$behind'
+untracked = '?$count'
+stashed = '*$count'
+modified = '!$count'
+staged = '+$count'
+renamed = '»$count'
+deleted = '-$count'
