@@ -35,4 +35,6 @@
     ~/.config/zsh/plugins/: zsh/plugins/*
 
 - shell:
-  - [git submodule update --init --recursive --remote, Installing submodules]
+  -
+    command: git submodule update --init --recursive --remote
+    description: Installing submodules
