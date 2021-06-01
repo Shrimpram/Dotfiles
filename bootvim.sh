@@ -9,13 +9,13 @@ do
             echo "Installing packer..."
             if [ -e ~/.local/share/nvim/site/pack/packer/start/packer.nvim ]
             then
-                >&2 echo "Error: Packer already exists. Installation cancelled."
+                echo "Error: Packer already exists. Installation cancelled." 1>&2
             else
                 git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
             fi
             break;;
         No )
-            echo "Ok, moving on"
+            echo "Ok, moving on..."
             break;;
     esac
 done
@@ -32,11 +32,11 @@ do
             then
                 nvim --headless -c PackerCompile -c PackerUpdate -c q
             else
-                >&2 echo "Error: Nvim not found. Installation cancelled."
+                echo "Error: Nvim not found. Installation cancelled." 1>&2
             fi
             break;;
         No )
-            echo "Ok, moving on"
+            echo "Ok, moving on..."
             break;;
     esac
 done
@@ -49,7 +49,7 @@ do
         "Dwyl Dictionary" )
             if [ -e ~/.config/nvim/spell/dwyl-dict.txt ]
             then
-                >&2 echo "Error: Dwyl Dictionary already exists. Installation cancelled."
+                echo "Error: Dwyl Dictionary already exists. Installation cancelled." 1>&2
             else
                 echo "Installing the dwyl english words dictionary..."
                 curl -s https://raw.githubusercontent.com/dwyl/english-words/master/words.txt > ~/.config/nvim/spell/dwyl-dict.txt
@@ -58,7 +58,7 @@ do
         "Moby Thesaurus" )
             if [ -e ~/.config/nvim/spell/moby-thesaurus.txt ]
             then
-                >&2 echo "Error: Moby Thesaurus already exist. Installation cancelled."
+                echo "Error: Moby Thesaurus already exist. Installation cancelled." 1>&2
             else
                 echo "Installing the moby words thesaurus..."
                 curl -s https://raw.githubusercontent.com/words/moby/master/words.txt > ~/.config/nvim/spell/moby-thesaurus.txt
@@ -67,21 +67,21 @@ do
         "Both" )
             if [ -e ~/.config/nvim/spell/dwyl-dict.txt ]
             then
-                >&2 echo "Error: Dwyl Dictionary already exist. Installation cancelled."
+                echo "Error: Dwyl Dictionary already exist. Installation cancelled." 1>&2
             else
                 echo "Installing the dwyl english words dictionary..."
                 curl -s https://raw.githubusercontent.com/dwyl/english-words/master/words.txt > ~/.config/nvim/spell/dwyl-dict.txt
             fi
             if [ -e ~/.config/nvim/spell/moby-thesaurus.txt ]
             then
-                >&2 echo "Error: Moby Thesaurus already exist. Installation cancelled."
+                echo "Error: Moby Thesaurus already exist. Installation cancelled." 1>&2
             else
                 echo "Installing the moby words thesaurus..."
                 curl -s https://raw.githubusercontent.com/words/moby/master/words.txt > ~/.config/nvim/spell/moby-thesaurus.txt
             fi
             break;;
         "None" )
-            echo "Ok, moving on"
+            echo "Ok, moving on..."
             break;;
     esac
 done
