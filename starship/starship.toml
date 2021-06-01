@@ -4,7 +4,12 @@ add_newline = false
 [character]
 vicmd_symbol = '[V](green) '
 
-# Git symbols
+[directory]
+truncation_length = '5'
+truncate_to_repo = false
+format = '[$path]($style)[$lock_symbol]($lock_style) '
+read_only = ''
+
 [git_status]
 conflicted = '~$count '
 ahead = '⇡$count '
