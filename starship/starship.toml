@@ -1,9 +1,8 @@
 # Inserts a blank line between shell prompts
 add_newline = false
 
-# Custom shapes
 [character]
-vicmd_symbol = "[V](bold green) "
+vicmd_symbol = '[V](green) '
 
 # Git symbols
 [git_status]
