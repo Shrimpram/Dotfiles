@@ -1,0 +1,18 @@
+# Inserts a blank line between shell prompts
+add_newline = false
+
+# Custom shapes
+[character]
+vicmd_symbol = "[V](bold green) "
+
+# Git symbols
+[git_status]
+conflicted = '~$count '
+ahead = '⇡$count '
+behind = '⇣$count '
+untracked = '?$count '
+stashed = '*$count '
+modified = '!$count '
+staged = '+$count '
+renamed = '»$count '
+deleted = '-$count '

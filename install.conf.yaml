@@ -20,6 +20,7 @@
     ~/.profile:
       force: true
       path: profile/profile
+    ~/.config/starship.toml: starship/starship.toml
     ~/.tmux.conf: tmux/tmux.conf
     ~/.vim: vim/vim
     ~/.vimrc: vim/vimrc
