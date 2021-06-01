@@ -4,7 +4,11 @@
       glob: true
       create: true
 
-- clean: ['~']
+- clean:
+    ~/:
+    ~/.config:
+      recursive: true
+
 
 - link:
     ~/.bashrc:
