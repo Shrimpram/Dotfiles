@@ -45,7 +45,10 @@ use {
 
 --- Junegunn
 use { 'junegunn/fzf', run = function() vim.fn['fzf#install']() end }
-use { 'junegunn/fzf.vim' }
+use {
+    'junegunn/fzf.vim',
+    requires = { 'tpope/vim-fugitive', opt = true }
+}
 use { 'junegunn/goyo.vim', cmd = 'Goyo' }
 use { 'junegunn/limelight.vim', cmd = 'Limelight' }
 
