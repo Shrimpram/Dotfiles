@@ -296,27 +296,27 @@ schemes:
   stella: &stella
     primary:
       background: '0x2B213C'
-      foreground: '0xA697BA'
+      foreground: '0x998BAD'
     cursor:
       text: '0x2B213C'
-      cursor: '0xA697BA'
+      cursor: '0x998BAD'
     normal:
       black:   '0x2B213C'
-      red:     '0xDEB3AD'
-      green:   '0xB6D4A5'
+      red:     '0xC79987'
+      green:   '0xACC79B'
       yellow:  '0xC7C691'
       blue:    '0xA5AAD4'
       magenta: '0xC594FF'
-      cyan:    '0xADD9DE'
-      white:   '0xA697BA'
+      cyan:    '0x9BC7BF'
+      white:   '0x998BAD'
     bright:
-      black:   '0x4F3F6B'
-      red:     '0xDEB3AD'
-      green:   '0xB6D4A5'
+      black:   '0x655978'
+      red:     '0xC79987'
+      green:   '0xACC79B'
       yellow:  '0xC7C691'
       blue:    '0xA5AAD4'
       magenta: '0xC594FF'
-      cyan:    '0xADD9DE'
-      white:   '0xFCEEFF'
+      cyan:    '0x9BC7BF'
+      white:   '0xEBDCFF'
 
 colors: *stella
