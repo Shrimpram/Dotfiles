@@ -41,65 +41,24 @@ call plug#begin('~/.vim/.plugged')
 " Utilities             |
 "------------------------
 " QOL
-Plug 'kana/vim-fakeclip'
-Plug 'junegunn/goyo.vim'				" Distraction-free writing, focuses only on the text input
-" Plug 'itchyny/lightline.vim'				" Status bar
-Plug 'junegunn/limelight.vim'				" Dim every line except the one you're on
-Plug 'mhinz/vim-startify'				" Vim start screen
 Plug 'ryanoasis/vim-devicons'				" Adds filetype glyphs for plugins
 
 
 " Files
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }	" Fuzzy file finding in vim
-Plug 'junegunn/fzf.vim'					" ^
-Plug 'preservim/nerdtree', { 'on': ['NERDTree', 'NERDTreeToggle'] }		" File explorer
-Plug 'Xuyuanp/nerdtree-git-plugin'			" Git symbols in nerdtree
-Plug 'dylanaraps/fff.vim'				" FFF but inside vim
-
+Plug 'junegunn/fzf.vim'
 
 " Git
-Plug 'airblade/vim-gitgutter'				" Display git icons in signcolumn
-Plug 'tpope/vim-fugitive'				" Vim tool for git
-Plug 'rhysd/committia.vim'				" Better Git commit editing
-Plug 'junegunn/gv.vim'					" Browse through commit history
-
-
-" Tmux
-Plug 'edkolev/tmuxline.vim'				" Tmux statusline to match vim's statusline
-
+Plug 'airblade/vim-gitgutter'
+Plug 'rhysd/committia.vim'
 
 " Misc
-Plug 'mbbill/undotree'					" Undo history
-Plug 'junegunn/vim-peekaboo'				" View register contents
-
-
-"------------------------
-" Text Editing          |
-"------------------------
-" Tools
-Plug 'tpope/vim-commentary'				" Improved comments
-Plug 'tpope/vim-surround'				" Edit surrounding environments easier
-Plug 'godlygeek/tabular'
-Plug 'terryma/vim-multiple-cursors'			" Multiple cursors
-" Plug 'SirVer/ultisnips'				" Engine for using snippets
-Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }	" Latex live preview
-Plug 'brennier/quicktex'				" Faster and better snippets, especially since my use case is mostly latex
-Plug 'reedes/vim-wordy'					" Grammar and word usage problem finder
-
+Plug 'mbbill/undotree'
+Plug 'junegunn/vim-peekaboo'
 
 " Navigation
-Plug 'easymotion/vim-easymotion'			" MUCH better navigation
-" Plug 'psliwka/vim-smoothie'				" Smooth scrolling. Not using because of horrendous screen tearing
-" Plug 'unblevable/quick-scope'
+Plug 'easymotion/vim-easymotion'
 Plug 'justinmk/vim-sneak'
-
-
-" Syntax
-
-" Misc latex functions & syntax highlighting
-Plug 'lervag/vimtex',
-			\{ 'for': 'tex' }
-Plug 'tpope/vim-speeddating'				" Change dates better
 
 
 "------------------------
@@ -124,40 +83,9 @@ Plug 'lifepillar/vim-solarized8'
 " Plug 'altercation/vim-colors-solarized'
 Plug 'srcery-colors/srcery-vim'
 " Plug 'tpope/vim-vividchalk'
-
+Plug 'savq/melange'
 
 call plug#end()
-
-
-"-------------------------------------------------
-" Plugin Configs                                 |
-"-------------------------------------------------
-source ~/.config/nvim/plugin-config/airline.vim
-
-source ~/.config/nvim/plugin-config/easymotion.vim
-
-source ~/.config/nvim/plugin-config/fff.vim
-
-source ~/.config/nvim/plugin-config/fzf.vim
-
-source ~/.config/nvim/plugin-config/latex-live-preview.vim
-
-source ~/.config/nvim/plugin-config/nerdtree.vim
-
-source ~/.config/nvim/plugin-config/peekaboo.vim
-
-source ~/.config/nvim/plugin-config/startify.vim
-
-source ~/.config/nvim/plugin-config/tmuxline.vim
-
-source ~/.config/nvim/plugin-config/ultisnips.vim
-
-source ~/.config/nvim/plugin-config/undotree.vim
-
-source ~/.config/nvim/plugin-config/vimagit.vim
-
-source ~/.config/nvim/plugin-config/quicktex.vim
-
 
 "-------------------------------------------------
 " Colorscheme Config
