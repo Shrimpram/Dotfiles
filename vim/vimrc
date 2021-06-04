@@ -79,6 +79,7 @@ Plug 'mhartington/oceanic-next'
 Plug 'joshdick/onedark.vim'
 Plug 'reedes/vim-colors-pencil'
 " Plug 'junegunn/seoul256.vim'
+Plug 'Shrimpram/vim-stella'
 Plug 'lifepillar/vim-solarized8'
 " Plug 'altercation/vim-colors-solarized'
 Plug 'srcery-colors/srcery-vim'
@@ -117,7 +118,7 @@ let g:gruvbox_material_enable_italic = 1	" '1' enables italic text
 
 
 set background=dark
-colorscheme gruvbox-material
+colorscheme stella
 
 
 "-------------------------------------------------
