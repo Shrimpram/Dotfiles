@@ -22,7 +22,8 @@ fi
 #{{{Environment Variables
 
 # Configures GPG use
-export GPG_TTY=$TTY
+GPG_TTY=`tty`
+export GPG_TTY
 
 # Adds go to path
 export PATH=$PATH:/usr/local/go/bin
