@@ -195,17 +195,6 @@ nnoremap <nowait><silent> <leader>cb :<c-u>silent !biber '%:p:r'<CR>
 autocmd VimLeave *.tex silent !latexmk -c
 "----------------------------------------------}}}
 
-"{{{F-KEYS----------------------------------------
-" Triggers omnifunc
-inoremap <silent> <F8> <C-x><C-o>
-
-" Sets up vim to write prose
-noremap <nowait><silent> <F3> :<C-u>set textwidth=72 colorcolumn=73 spell linebreak<CR>:<C-u>let &showbreak = '   '<CR>
-
-" Enables word count
-noremap <nowait><silent> <F2> :call Proseline()<CR>
-"-----------------------------------------------}}}
-
 " Quick way to switch between light and dark mode
 command! Light set background=light
 command! Dark set background=dark
