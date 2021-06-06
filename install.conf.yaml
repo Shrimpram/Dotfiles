@@ -37,8 +37,3 @@
   -
     command: git submodule update --init --recursive --remote
     description: Installing submodules
-  -
-    command: chsh -s $(which zsh)
-    stdin: true
-    stdout: true
-    description: Making zsh the default shell
