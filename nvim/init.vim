@@ -218,3 +218,10 @@ nnoremap <nowait><silent> <F9> :<C-u>TSHighlightCapturesUnderCursor<CR>
 "----------------------------------------------}}}
 
 "----------------------------------------------}}}
+
+"{{{SKELETONS-------------------------------------
+augroup templates
+    autocmd!
+    autocmd BufNewFile *.sh 0r $XDG_CONFIG_HOME/nvim/templates/skeleton.sh
+augroup END
+"-------------------------------------------------
