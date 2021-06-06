@@ -72,11 +72,6 @@ let g:fzf_action = {
 
 command! Dots GFiles ~/dotfiles
 
-"}}}
-
-"{{{GitGutter
-nmap ]h <Plug>(GitGutterNextHunk)
-nmap [h <Plug>(GitGutterPrevHunk)
 nnoremap <silent> <leader>fz :Files <CR>
 nnoremap <silent> <leader>fg :GFiles <CR>
 nnoremap <silent> <leader>fl :Lines <CR>
