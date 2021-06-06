@@ -208,4 +208,13 @@ command! Mathtex read ~/.config/nvim/templates/Mathtex.tex
 " Template for MLA formatted markdown document that compiles with pandoc. See the file for the actual template
 command! MLAmd read ~/.config/nvim/templates/MLAmd.md
 "----------------------------------------------}}}
+
+"{{{F-KEYS----------------------------------------
+map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+
+nnoremap <nowait><silent> <F9> :<C-u>TSHighlightCapturesUnderCursor<CR>
+"----------------------------------------------}}}
+
 "----------------------------------------------}}}
