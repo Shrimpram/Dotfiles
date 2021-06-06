@@ -1,6 +1,6 @@
-nnoremap <nowait> <silent> <leader>nt :NvimTreeToggle<CR>
-nnoremap <nowait> <silent> <leader>nr :NvimTreeRefresh<CR>
-nnoremap <nowait> <silent> <leader>nf :NvimTreeFindFile<CR>
+nnoremap <silent> <leader>nt :NvimTreeToggle<CR>
+nnoremap <silent> <leader>nr :NvimTreeRefresh<CR>
+nnoremap <silent> <leader>nf :NvimTreeFindFile<CR>
 
 let g:nvim_tree_ignore = [ '.git', 'node_modules', '.cache' ] "empty by default
 

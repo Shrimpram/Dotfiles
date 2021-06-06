@@ -59,9 +59,9 @@ lua require('plugins')
 "{{{PLUGIN CONFIGS--------------------------------
 
 "{{{Fugitive
-nnoremap <nowait><silent> <leader>g :Git<CR>
-nnoremap <nowait><silent> <leader>gd :Gvdiffsplit<CR>
-nnoremap <nowait><silent> <leader>gw :Gwrite<CR>
+nnoremap <silent> <leader>g :Git<CR>
+nnoremap <silent> <leader>gd :Gvdiffsplit<CR>
+nnoremap <silent> <leader>gw :Gwrite<CR>
 "}}}
 
 "{{{FZF
@@ -72,16 +72,16 @@ let g:fzf_action = {
 
 command! Dots GFiles ~/dotfiles
 
-nnoremap <nowait><silent> <leader>fz :Files <CR>
-nnoremap <nowait><silent> <leader>fg :GFiles <CR>
-nnoremap <nowait><silent> <leader>fl :Lines <CR>
-nnoremap <nowait><silent> <leader>fb :Buffers<CR>
-nnoremap <nowait><silent> <leader>fc :Commits<CR>
 "}}}
 
 "{{{GitGutter
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
+nnoremap <silent> <leader>fz :Files <CR>
+nnoremap <silent> <leader>fg :GFiles <CR>
+nnoremap <silent> <leader>fl :Lines <CR>
+nnoremap <silent> <leader>fb :Buffers<CR>
+nnoremap <silent> <leader>fc :Commits<CR>
 "}}}
 
 let g:Hexokinase_highlighters = ['virtual']
@@ -104,7 +104,7 @@ let g:lexical#spellfile = ['~/.config/nvim/spell/en.utf-8.add']
 lua require('neoscroll').setup()
 
 " Undotree
-nnoremap <nowait><silent> <leader>ut :UndotreeToggle<CR>
+nnoremap <silent> <leader>ut :UndotreeToggle<CR>
 
 "{{{Vimtex
 let g:vimtex_compiler_latexmk_engines = {
@@ -155,8 +155,8 @@ colorscheme stella
 
 "{{{REMAPS----------------------------------------
 " Basic leader commands to write and write+quit
-nnoremap <nowait><silent> <leader>w :w<CR>
-nnoremap <nowait><silent> <leader>wq :wq<CR>
+nnoremap <silent> <leader>w :w<CR>
+nnoremap <silent> <leader>wq :wq<CR>
 
 " Better indenting
 " See https://github.com/ChristianChiarulli/nvim/blob/56f65b12a446fe05483a23585dd4e3104205b062/keys/mappings.vim#L13-L14
@@ -173,10 +173,10 @@ vnoremap <expr><silent> j v:count ? 'j' : 'gj'
 vnoremap <expr><silent> k v:count ? 'k' : 'gk'
 
 " Use arrow keys to resize splits
-nnoremap <nowait><silent> <M-j> :resize +2<CR>
-nnoremap <nowait><silent> <M-k> :resize -2<CR>
-nnoremap <nowait><silent> <M-h> :vertical resize -2<CR>
-nnoremap <nowait><silent> <M-l> :vertical resize +2<CR>
+nnoremap <silent> <M-j> :resize +2<CR>
+nnoremap <silent> <M-k> :resize -2<CR>
+nnoremap <silent> <M-h> :vertical resize -2<CR>
+nnoremap <silent> <M-l> :vertical resize +2<CR>
 
 " Shortcutting split navigation, saving a keypress:
 noremap <silent> <C-h> <C-w>h
@@ -186,9 +186,9 @@ noremap <silent> <C-l> <C-w>l
 
 "{{{LATEX/MARKDOWN---------------------------------
 " Compiling Latex via xelatex
-nnoremap <nowait><silent> <leader>cl :<c-u>silent !xelatex '%:p:r'<CR>
+nnoremap <silent> <leader>cl :<c-u>silent !xelatex '%:p:r'<CR>
 " Compile bibliography using biber
-nnoremap <nowait><silent> <leader>cb :<c-u>silent !biber '%:p:r'<CR>
+nnoremap <silent> <leader>cb :<c-u>silent !biber '%:p:r'<CR>
 
 " Runs a script that cleans out tex build files whenever I close out of a .tex file.
 autocmd VimLeave *.tex silent !latexmk -c
@@ -213,9 +213,8 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
-nnoremap <nowait><silent> <F9> :<C-u>TSHighlightCapturesUnderCursor<CR>
+nnoremap <silent> <F9> :<C-u>TSHighlightCapturesUnderCursor<CR>
 "----------------------------------------------}}}
-
 "----------------------------------------------}}}
 
 "{{{SKELETONS-------------------------------------
