@@ -54,13 +54,7 @@ use { 'junegunn/limelight.vim', cmd = 'Limelight' }
 --- Text
 use { 'rrethy/vim-hexokinase', run = 'make hexokinase' }
 
-use 'justinmk/vim-sneak'
-
---use {
---  'phaazon/hop.nvim',
---    config = [[require('config.hop')]],
---}
-
+use { 'justinmk/vim-sneak' }
 use { 'b3nj5m1n/kommentary' }
 use { 'tommcdo/vim-lion' }
 use { 'wellle/targets.vim' }
