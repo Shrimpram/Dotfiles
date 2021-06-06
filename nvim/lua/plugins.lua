@@ -25,7 +25,7 @@ use 'wbthomason/packer.nvim'
 use {
   'nvim-treesitter/nvim-treesitter',
   requires = {
-    'nvim-treesitter/nvim-treesitter-refactor', 'nvim-treesitter/nvim-treesitter-textobjects'
+    'nvim-treesitter/nvim-treesitter-refactor', 'nvim-treesitter/nvim-treesitter-textobjects', 'nvim-treesitter/playground'
   },
   config = [[require('config.treesitter')]],
   run = ':TSUpdate'
@@ -36,9 +36,8 @@ use {
     { 'rhysd/committia.vim' },
     {
       'lewis6991/gitsigns.nvim',
-      requires = { 'nvim-lua/plenary.nvim', opt = true },
+      requires = { 'nvim-lua/plenary.nvim' },
       config = [[require('config.gitsigns')]],
-      event = 'BufEnter'
     }
 }
 
@@ -55,18 +54,12 @@ use { 'junegunn/limelight.vim', cmd = 'Limelight' }
 --- Text
 use { 'rrethy/vim-hexokinase', run = 'make hexokinase' }
 
-use {
-  'phaazon/hop.nvim',
-  config = function()
-    -- Configured for Colemak
-    require'hop'.setup { keys = 'arstneioplfuywdhgj' }
-    -- Keybind to make hop work like sneak
-    vim.api.nvim_set_keymap('n', 's', "<cmd>lua require'hop'.hint_char2()<cr>", {})
-    ---- Improfe usage of 'f' and 't'
-    --vim.api.nvim_set_keymap('n', 'f', "<cmd>lua require'hop'.hint_char1()<cr>", {})
-    --vim.api.nvim_set_keymap('n', 't', "<cmd>lua require'hop'.hint_char1()<cr>", {})
-  end
-}
+use 'justinmk/vim-sneak'
+
+--use {
+--  'phaazon/hop.nvim',
+--    config = [[require('config.hop')]],
+--}
 
 use { 'b3nj5m1n/kommentary' }
 use { 'tommcdo/vim-lion' }

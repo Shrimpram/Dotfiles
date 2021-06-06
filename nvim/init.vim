@@ -104,10 +104,6 @@ let g:lexical#spellfile = ['~/.config/nvim/spell/en.utf-8.add']
 
 lua require('neoscroll').setup()
 
-source ~/.config/nvim/plugin-config/nvim-tree.vim
-
-"source ~/.config/nvim/plugin-config/tmuxline.vim
-
 " Undotree
 nnoremap <nowait><silent> <leader>ut :UndotreeToggle<CR>
 
@@ -126,7 +122,6 @@ let g:VM_Ins_Mode_hl      = 'Visual'
 let g:VM_Normal_Cursor_hl = 'DiffChange'
 "}}}
 
-source ~/.config/nvim/plugin-config/vsnip.vim
 "----------------------------------------------}}}
 
 "{{{COLORSCHEME CONFIG----------------------------
