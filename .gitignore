@@ -1,1 +1,3 @@
 nvim/spell/*.txt
+
+nvim/plugin/packer_compiled.vim
