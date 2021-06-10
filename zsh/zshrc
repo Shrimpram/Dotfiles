@@ -1,3 +1,5 @@
+. /Users/shreeram/.nix-profile/etc/profile.d/nix.sh
+
 neofetch
 
 #{{{Base16-shell
