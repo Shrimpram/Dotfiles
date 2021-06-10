@@ -2,4 +2,6 @@ nvim/spell/*.txt
 
 nvim/plugin/packer_compiled.vim
 
+binaries/stow-nvim/**
+
 *.DS_STORE
