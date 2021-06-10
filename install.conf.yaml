@@ -16,6 +16,7 @@
       path: bash/bashrc
     ~/.config/bat/config: bat/config
     ~/.config/fish/: fish/*
+    ~/.gitconfig: git/gitconfig
     ~/.config/lf/lfrc: lf/lfrc
     ~/.config/neofetch/config.conf: neofetch/config.conf
     ~/.config/nvim/:
