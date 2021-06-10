@@ -106,13 +106,6 @@ autoload -U colors && colors
 
 #{{{Aliases
 
-# ls aliases
-alias ls='ls --color=auto --group-directories-first'
-alias ll='ls --color=auto --group-directories-first -alF'
-alias la='ls --color=auto --group-directories-first -A'
-alias l='ls --color=auto --group-directories-first -CF'
-
-
 # exa aliases
 alias e='exa'
 alias ea='exa --all'
