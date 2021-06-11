@@ -77,7 +77,7 @@ use {
 use { 'tversteeg/registers.nvim' }
 
 use {
-    '/home/shreeram/projects/nvim-hardline',
+    'shrimpram/nvim-hardline',
     config = [[require('hardline').setup { theme = 'stella' } ]]
 }
 
@@ -100,7 +100,7 @@ use { 'dstein64/vim-startuptime' }
 use { 'lervag/vimtex', ft = 'tex' }
 use { 'preservim/vim-lexical' }
 --- Colorschemes
-use { '~/projects/stella/vim-stella' }
+use { 'shrimpram/vim-stella' }
 use { 'romainl/Apprentice' }
 use { 'ayu-theme/ayu-vim' }
 use { 'sjl/badwolf' }
