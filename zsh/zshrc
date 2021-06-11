@@ -95,7 +95,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa --long --header --git --icons -
 # switch group using `,` and `.`
 zstyle ':fzf-tab:*' switch-group ',' '.'
 # preview nvim?
-zstyle ':fzf-tab:complete:nvim:*' fzf-preview 'bat --color=always $realpath'
+zstyle ':fzf-tab:complete:nvim:*' fzf-preview 'bat --style="numbers,changes" --color=always $realpath'
 #}}}
 
 #}}}
