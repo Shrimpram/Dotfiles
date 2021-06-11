@@ -2,5 +2,5 @@
 
 git-ssh-init (){
     eval $("ssh-agent")
-    ssh-add ~/.ssh/github
+    ssh-add
 }
