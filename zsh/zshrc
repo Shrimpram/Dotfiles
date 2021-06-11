@@ -26,12 +26,6 @@ fi
 #}}}
 
 #{{{Environment Variables
-
-# Configures GPG use
-export GPG_TTY=$TTY
-
-export KEYID=0x163B16EE76ED24CE
-
 # Adds go to path
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:~/go/bin
