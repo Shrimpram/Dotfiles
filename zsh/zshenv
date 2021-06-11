@@ -1,0 +1,5 @@
+envfile="$HOME/.config/zsh/zshenv-`uname`"
+
+if [ -r $envfile ]; then
+    . $envfile
+fi
