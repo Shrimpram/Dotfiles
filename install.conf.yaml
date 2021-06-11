@@ -19,6 +19,9 @@
     ~/.gitconfig: git/gitconfig
     ~/.config/lf/lfrc: lf/lfrc
     ~/.config/neofetch/config.conf: neofetch/config.conf
+    ~/.nixpkgs/darwin-configuration.nix:
+      if: '[ `uname` = Darwin ]'
+      path: nix/home.nix
     ~/.config/nvim/:
       path: nvim/*
       exclude: [ nvim/deprecated-vim-stuff.vim, old-init.vim, oldest-init.vim, ]
