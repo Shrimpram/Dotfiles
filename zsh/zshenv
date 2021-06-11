@@ -3,3 +3,7 @@ envfile="$HOME/.config/zsh/zshenv-`uname`"
 if [ -r $envfile ]; then
     . $envfile
 fi
+
+export GPG_TTY=$TTY
+
+export KEYID=0x163B16EE76ED24CE
