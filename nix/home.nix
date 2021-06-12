@@ -6,6 +6,7 @@
     pkgs.exa
     pkgs.fzf
     pkgs.git-crypt
+    pkgs.git-lfs
     pkgs.gnupg
     pkgs.gnused
     pkgs.htop
