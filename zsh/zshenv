@@ -1,4 +1,4 @@
-envfile="$HOME/.config/zsh/zshenv-`uname`"
+envfile="$HOME/.config/zsh/`uname`/zshenv-`uname`"
 
 if [ -r $envfile ]; then
     . $envfile

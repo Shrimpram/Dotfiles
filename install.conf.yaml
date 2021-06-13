@@ -36,9 +36,9 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.vimrc: vim/vimrc
     ~/.config/zathura/zathurarc: zathura/zathurarc
-    ~/.config/zsh/:
+    ~/.config/zsh/darwin:
       if: '[ `uname` = Darwin ]'
-      path: zsh/darwin/*
+      path: zsh/darwin
     ~/.zshenv:
       force: true
       path: zsh/zshenv

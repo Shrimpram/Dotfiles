@@ -1,5 +1,11 @@
 neofetch
 
+envfile="$HOME/.config/zsh/`uname`/zshenv-`uname`"
+
+if [ -r $envfile ]; then
+    . $envfile
+fi
+
 #{{{Base16-shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
