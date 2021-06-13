@@ -25,10 +25,7 @@
       path: nix/home.nix
     ~/.config/nvim/:
       path: nvim/*
-      exclude: [ nvim/deprecated-vim-stuff.vim, old-init.vim, oldest-init.vim, ]
-      ~/.config/nvim/plugin/:
-        if: '[ -e $(which cmd.exe) ]'
-        path: nvim/windows/*
+      exclude: [ nvim/deprecated-vim-stuff.vim ]
     ~/.profile:
       force: true
       path: profile/profile
