@@ -30,7 +30,6 @@
     ~/.profile:
       force: true
       path: profile/profile
-    ~/.config/starship.toml: starship/starship.toml
     ~/.tmux.conf: tmux/tmux.conf
     ~/.vimrc: vim/vimrc
     ~/.config/zathura/zathurarc: zathura/zathurarc
