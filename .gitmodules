@@ -11,3 +11,6 @@
 [submodule "zsh/plugins/powerlevel10k"]
 	path = zsh/plugins/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "vim/stella"]
+	path = vim/stella
+	url = https://github.com/Shrimpram/vim-stella.git
