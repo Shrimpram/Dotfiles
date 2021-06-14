@@ -71,7 +71,7 @@ use { 'karb94/neoscroll.nvim' }
 
 use {
     'kyazdani42/nvim-tree.lua',
-    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+    requires = { 'kyazdani42/nvim-web-devicons' }
 }
 
 use { 'tversteeg/registers.nvim' }
@@ -93,7 +93,6 @@ use {
 }
 
 --- Misc
-use { 'ryanoasis/vim-devicons' }
 use { 'dstein64/vim-startuptime' }
 
 --- Filetype
