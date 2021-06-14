@@ -6,5 +6,3 @@
     rebase = false
 [gpg]
     program = gpg
-[commit]
-    gpgsign = true
