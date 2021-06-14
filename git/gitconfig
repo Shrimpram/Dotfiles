@@ -6,3 +6,5 @@
     rebase = false
 [gpg]
     program = gpg
+[core]
+	excludesfile = ~/.gitignore

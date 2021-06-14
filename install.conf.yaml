@@ -17,6 +17,7 @@
     ~/.config/bat/config: bat/config
     ~/.config/fish/: fish/*
     ~/.gitconfig: git/gitconfig
+    ~/.gitignore: git/gitignore
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
     ~/.config/lf/lfrc: lf/lfrc
     ~/.config/neofetch/config.conf: neofetch/config.conf
