@@ -11,9 +11,6 @@
 
 
 - link:
-    ~/.bashrc:
-      force: true
-      path: bash/bashrc
     ~/.config/bat/config: bat/config
     ~/.config/fish/: fish/*
     ~/.gitconfig: git/gitconfig
