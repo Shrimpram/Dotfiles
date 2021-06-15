@@ -2,12 +2,16 @@
 These are my dotfiles.
 
 ## Installation
+### Setup
 1. `cd ~`
-2. git clone this repo:
-    - https: `git clone https://github.com/shrimpram/dotfiles.git`
-    - ssh: `git@github.com:shrimpram/dotfiles.git`
+2. git clone this repo
 3. `cd dotfiles`
 4. `./install`
-5. If you want to stow the binaries: `./stow.sh`
-6. To set up nvim `./bootvim.sh`
-7. If you're on a debian based system you can install my nvim and exa packages which I keep up to date manually
+
+### Nix
+1. Install [nix](https://nixos.org)
+2. Install [home manager](https://github.com/nix-community/home-manager)
+3. Run `home-manager switch`
+
+### Vim
+1. Run `./bootvim.sh`
