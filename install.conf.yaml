@@ -16,9 +16,9 @@
     ~/.gitignore: git/gitignore
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
     ~/.config/neofetch/config.conf: neofetch/config.conf
-    ~/.config/nixpkgs/home.nix:
+    ~/.config/nixpkgs/:
       if: '[ `uname` = Darwin ]'
-      path: nix/home.nix
+      path: nix/*
     ~/.config/nvim/:
       path: nvim/*
       exclude: [ nvim/deprecated-vim-stuff.vim ]

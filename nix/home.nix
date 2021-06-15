@@ -1,21 +1,24 @@
 { pkgs, ... }:
 
 {
-  home.packages = [
-    pkgs.bat
-    pkgs.exa
-    pkgs.fzf
-    pkgs.git-crypt
-    pkgs.git-lfs
-    pkgs.gnupg
-    pkgs.gnused
-    pkgs.htop
-    pkgs.lazygit
-    pkgs.neofetch
-    pkgs.nnn
-    pkgs.stow
-    pkgs.wget
-    pkgs.zoxide
+  home.packages = with pkgs; [
+    bat
+    exa
+    fzf
+    git-crypt
+    git-lfs
+    gnupg
+    gnused
+    htop
+    lazygit
+    neofetch
+    nnn
+    stow
+    vim
+    emacs
+    wget
+    zoxide
+    vscode
   ];
 
   programs.home-manager = {
