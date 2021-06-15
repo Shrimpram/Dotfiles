@@ -74,6 +74,8 @@ for f in ~/.config/zsh/plugins/*; do source $f; done
 for f in ~/.config/zsh/plugins/fzf-tab/*.zsh; do source $f; done
 for f in ~/.config/zsh/plugins/powerlevel10k/*.zsh-theme; do source $f; done
 
+eval "$(/usr/libexec/path_helper)"
+
 # Enable zoxide for fast hopping around directories
 eval "$(zoxide init zsh)"
 
