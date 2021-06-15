@@ -23,6 +23,14 @@
         "\\end{align*}"
       ]
     },
+      "Definition": {
+          "prefix": "def",
+          "body": [
+        "\\begin{definition}[$1]",
+        "\t${2:$TM_SELECTED_TEXT}",
+        "\\end{definition}"
+          ]
+    },
     "Fraction": {
        "prefix": "/",
        "body": "\\frac{${1:$TM_SELECTED_TEXT}}{$2}$0"
