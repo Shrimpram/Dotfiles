@@ -9,5 +9,3 @@ export GPG_TTY=$TTY
 export KEYID=0x163B16EE76ED24CE
 
 if [ -e /Users/shreeram/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/shreeram/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-
-export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
