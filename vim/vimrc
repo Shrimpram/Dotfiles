@@ -53,7 +53,7 @@ endif
 "----------------------------------------------}}}
 
 set background=dark
-colorscheme koehler
+colorscheme desert
 
 "{{{REMAPS----------------------------------------
 " Basic leader commands to write and write+quit
