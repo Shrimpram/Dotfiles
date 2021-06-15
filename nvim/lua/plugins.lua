@@ -54,6 +54,14 @@ use { 'junegunn/limelight.vim', cmd = 'Limelight' }
 --- Text
 use { 'rrethy/vim-hexokinase', run = 'make hexokinase' }
 
+use { 'ggandor/lightspeed.nvim',
+    config = require'lightspeed'.setup {
+        jump_to_first_match = true,
+        cycle_group_fwd_key = ';',
+        cycle_group_bwd_key = ',',
+        full_inclusive_prefix_key = '<tab>',
+    }
+}
 use { 'b3nj5m1n/kommentary' }
 use { 'tommcdo/vim-lion' }
 use { 'wellle/targets.vim' }
