@@ -90,7 +90,7 @@ use {
 }
 
 --- Misc
-use { 'dstein64/vim-startuptime' }
+use { 'tweekmonster/startuptime.vim' }
 
 --- Filetype
 use { 'lervag/vimtex', ft = 'tex' }
