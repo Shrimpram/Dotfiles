@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     bat
+    emacs
     exa
     fzf
     git-crypt
@@ -15,10 +16,9 @@
     nnn
     stow
     vim
-    emacs
+    vscode
     wget
     zoxide
-    vscode
   ];
 
   programs.home-manager = {
