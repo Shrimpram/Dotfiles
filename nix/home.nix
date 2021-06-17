@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     bat
+    buku
     exa
     fzf
     git-crypt
