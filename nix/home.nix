@@ -3,7 +3,6 @@
 {
   home.packages = with pkgs; [
     bat
-    emacs
     exa
     fzf
     git-crypt
