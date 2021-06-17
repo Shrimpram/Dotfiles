@@ -5,6 +5,7 @@
     bat
     buku
     exa
+    fd
     fzf
     git-crypt
     git-lfs
