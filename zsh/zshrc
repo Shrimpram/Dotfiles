@@ -1,9 +1,9 @@
 neofetch
 
-envfile="$HOME/.config/zsh/`uname`/zshenv-`uname`"
+osfile="$HOME/.config/zsh/`uname`/zshrc-`uname`"
 
-if [ -r $envfile ]; then
-    . $envfile
+if [ -r $osfile ]; then
+    . $osfile
 fi
 
 #{{{Base16-shell

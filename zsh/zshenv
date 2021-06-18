@@ -1,7 +1,7 @@
-envfile="$HOME/.config/zsh/`uname`/zshenv-`uname`"
+osfile="$HOME/.config/zsh/`uname`/zshenv-`uname`"
 
-if [ -r $envfile ]; then
-    . $envfile
+if [ -r $osfile ]; then
+    . $osfile
 fi
 
 export GPG_TTY=$TTY
