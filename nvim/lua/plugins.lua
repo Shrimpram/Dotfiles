@@ -52,7 +52,7 @@ use { 'junegunn/limelight.vim', cmd = 'Limelight' }
 use { 'rrethy/vim-hexokinase', run = 'make hexokinase' }
 
 use { 'justinmk/vim-sneak' }
-use { 'gennaro-tedesco/nvim-commaround', opt = true }
+use { 'tpope/vim-commentary' }
 use { 'tommcdo/vim-lion' }
 use { 'wellle/targets.vim' }
 use { 'machakann/vim-sandwich' }
