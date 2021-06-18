@@ -1,8 +1,8 @@
 # Set the theme to base16 Stella (see themes directory)
 --theme='base16-stella'
 
-# Show line numbers, Git modifications and file header (but no grid)
---style="numbers,changes,header,grid"
+# Style to use (what bat should show)
+--style="full"
 
 # Use italic text on the terminal (not supported on all terminals)
 --italic-text=always
