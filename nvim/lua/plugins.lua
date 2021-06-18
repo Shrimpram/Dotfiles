@@ -74,7 +74,7 @@ use {
 use { 'tversteeg/registers.nvim' }
 
 use {
-    'shrimpram/nvim-hardline',
+    'ojroques/nvim-hardline',
     config = [[require('hardline').setup { theme = 'stella' } ]]
 }
 
