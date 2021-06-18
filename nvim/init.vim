@@ -215,6 +215,15 @@ nnoremap <silent> <F9> :<C-u>TSHighlightCapturesUnderCursor<CR>
 "----------------------------------------------}}}
 "----------------------------------------------}}}
 
+nnoremap <silent> <leader>m :make<CR>
+
+augroup compilation
+    autocmd!
+    autocmd BufEnter *.java setlocal makeprg=javac\ %
+    autocmd BufEnter *.java set errorformat=%f:%l:%c:%*\\d:%*\\d:%*\\s%m
+    autocmd BufEnter *.java nnoremap <silent><nowait> <leader>r :!java %:r<CR>
+augroup END
+
 "{{{SKELETONS-------------------------------------
 augroup templates
     autocmd!
