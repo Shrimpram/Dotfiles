@@ -20,6 +20,9 @@
     vscode
     wget
     zoxide
+
+    nodejs
+    nodePackages.npm
   ];
 
   programs.home-manager = {
