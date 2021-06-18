@@ -7,4 +7,9 @@
 [gpg]
     program = gpg
 [core]
-	excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore
+[pager]
+    diff = less
+    log = less
+    reflog = less
+    show = less
