@@ -14,7 +14,7 @@
   - $HOME/.local/share/nvim/undo
 
 - link:
-    ~/.config/bat/config: bat/config
+    ~/.config/bat/: bat/*
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
