@@ -57,6 +57,8 @@ endif
 
 lua require('plugins')
 
+lua require('utils')
+
 "{{{PLUGIN CONFIGS--------------------------------
 
 "{{{Fugitive
@@ -169,10 +171,10 @@ vnoremap <expr><silent> j v:count ? 'j' : 'gj'
 vnoremap <expr><silent> k v:count ? 'k' : 'gk'
 
 " Use arrow keys to resize splits
-nnoremap <silent> <M-j> :resize +2<CR>
-nnoremap <silent> <M-k> :resize -2<CR>
-nnoremap <silent> <M-h> :vertical resize -2<CR>
-nnoremap <silent> <M-l> :vertical resize +2<CR>
+lua vim.api.nvim_set_keymap("n", [[<M-j>]], "<cmd>lua require('utils').resize(false, 2)<CR>", {silent=true, noremap=true})
+lua vim.api.nvim_set_keymap("n", [[<M-k>]], "<cmd>lua require('utils').resize(false, -2)<CR>", {silent=true, noremap=true})
+lua vim.api.nvim_set_keymap("n", [[<M-h>]], "<cmd>lua require('utils').resize(true, -2)<CR>", {silent=true, noremap=true})
+lua vim.api.nvim_set_keymap("n", [[<M-l>]], "<cmd>lua require('utils').resize(true, 2)<CR>", {silent=true, noremap=true})
 
 " Shortcutting split navigation, saving a keypress:
 noremap <silent> <C-h> <C-w>h
