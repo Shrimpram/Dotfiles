@@ -12,6 +12,7 @@
     git-lfs
     gnupg
     gnused
+    haste-client
     htop
     lazygit
     neofetch
