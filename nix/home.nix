@@ -18,6 +18,7 @@
     neofetch
     nnn
     pandoc
+    ripgrep
     shellcheck
     stow
     vim
