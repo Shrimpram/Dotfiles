@@ -7,6 +7,7 @@
     exa
     fd
     fzf
+    gdu
     git-crypt
     git-lfs
     gnupg
