@@ -87,7 +87,9 @@ use { 'hrsh7th/vim-vsnip-integ' }
 
 use {
     'folke/zen-mode.nvim',
-    config = [[require("zen-mode").setup{}]]
+    config = [[require("zen-mode").setup{}]],
+    opt = true,
+    cmd = 'ZenMode'
 }
 
 --- Misc
