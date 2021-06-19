@@ -56,7 +56,6 @@ use { 'tpope/vim-commentary' }
 use { 'tommcdo/vim-lion' }
 use { 'wellle/targets.vim' }
 use { 'machakann/vim-sandwich' }
-use { 'dhruvasagar/vim-table-mode' }
 
 --- Utilities
 use {
