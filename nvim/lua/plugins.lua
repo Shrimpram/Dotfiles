@@ -79,6 +79,7 @@ use {
     config = [[require('hardline').setup { theme = 'stella' } ]]
 }
 
+use { 'tpope/vim-dispatch', opt = true, cmd = {'Dispatch', 'Make', 'Focus', 'Start'} }
 use { 'editorconfig/editorconfig-vim' }
 use { 'christoomey/vim-tmux-navigator' }
 use { 'RyanMillerC/better-vim-tmux-resizer' }
