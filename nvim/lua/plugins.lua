@@ -79,6 +79,7 @@ use {
     config = [[require('hardline').setup { theme = 'stella' } ]]
 }
 
+use { 'editorconfig/editorconfig-vim' }
 use { 'christoomey/vim-tmux-navigator' }
 use { 'RyanMillerC/better-vim-tmux-resizer' }
 use { 'mbbill/undotree', cmd = 'UndotreeToggle' }
