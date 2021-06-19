@@ -17,6 +17,7 @@
     lazygit
     neofetch
     nnn
+    pandoc
     stow
     vim
     vscode
