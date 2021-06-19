@@ -18,6 +18,7 @@
     neofetch
     nnn
     pandoc
+    shellcheck
     stow
     vim
     vscode
