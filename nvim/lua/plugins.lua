@@ -22,7 +22,11 @@ return require('packer').startup(function()
     { 'rhysd/committia.vim' }, {
       'lewis6991/gitsigns.nvim',
       requires = { 'nvim-lua/plenary.nvim', opt = true },
-      config = [[require('config.gitsigns')]],
+      config = [[require('config.gitsigns')]]
+    }, {
+      'TimUntersberger/neogit',
+      requires = { 'nvim-lua/plenary.nvim', opt = true },
+      config = [[require('neogit').setup{}]]
     }
   }
 
