@@ -13,5 +13,5 @@ These are my dotfiles.
 2. Install [home manager](https://github.com/nix-community/home-manager)
 3. Run `home-manager switch`
 
-### Vim
+### Nvim
 1. Run `./bootvim.sh`
