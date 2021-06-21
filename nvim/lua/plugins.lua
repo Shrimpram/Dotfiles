@@ -26,7 +26,8 @@ return require('packer').startup(function()
     }, {
       'TimUntersberger/neogit',
       requires = { 'nvim-lua/plenary.nvim', opt = true },
-      config = [[require('neogit').setup{}]]
+      config = [[require('neogit').setup{}]],
+      cmd = 'Neogit'
     },
     { 'kdheepak/lazygit.nvim' }
   }
