@@ -28,6 +28,8 @@
 
     nodejs
     nodePackages.npm
+
+    hugo
   ];
 
   programs.home-manager = {
