@@ -38,6 +38,12 @@ return require('packer').startup(function()
     { 'junegunn/fzf', opt = true, run = function() vim.fn['fzf#install']() end },
     { 'junegunn/fzf.vim', opt = true },
   }
+
+  -- Telescope
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}},
+    event = 'VimEnter'
   }
 
   -- Better movement
