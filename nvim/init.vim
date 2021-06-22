@@ -112,13 +112,6 @@ let g:vimtex_compiler_latexmk_engines = {
 let g:vimtex_view_general_viewer='zathura'
 "}}}
 
-"{{{Visual Multi
-let g:VM_Selection_hl     = 'Visual'
-let g:VM_Mono_Cursor_hl   = 'DiffChange'
-let g:VM_Ins_Mode_hl      = 'Visual'
-let g:VM_Normal_Cursor_hl = 'DiffChange'
-"}}}
-
 "----------------------------------------------}}}
 
 "{{{COLORSCHEME CONFIG----------------------------
