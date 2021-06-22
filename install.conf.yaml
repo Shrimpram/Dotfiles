@@ -9,10 +9,6 @@
     ~/.config:
       recursive: true
 
-- create:
-  - $HOME/.local/share/vim/undo
-  - $HOME/.local/share/nvim/undo
-
 - link:
     ~/.config/bat/: bat/*
     ~/.gitconfig: git/gitconfig
