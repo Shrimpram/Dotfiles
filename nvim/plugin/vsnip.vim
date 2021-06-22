@@ -12,8 +12,8 @@ smap <expr> <C-h> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab
 
 " Select or cut text to use as $TM_SELECTED_TEXT in the next snippet.
 " See https://github.com/hrsh7th/vim-vsnip/pull/50
-nmap <leader>d <Plug>(vsnip-select-text)
-xmap <leader>d <Plug>(vsnip-select-text)
+nmap <leader>y <Plug>(vsnip-select-text)
+xmap <leader>y <Plug>(vsnip-select-text)
 nmap <leader>c <Plug>(vsnip-cut-text)
 xmap <leader>c <Plug>(vsnip-cut-text)
 
