@@ -44,6 +44,7 @@ _comp_options+=(globdots)		# Include hidden files.
 
 #{{{Plugins
 
+for f in $ZDOTDIR/*.sh; do source $f; done
 for f in $ZDOTDIR/fzf-tab/*.zsh; do source $f; done
 for f in $ZDOTDIR/powerlevel10k/*.zsh-theme; do source $f; done
 
