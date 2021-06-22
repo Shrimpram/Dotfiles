@@ -35,8 +35,9 @@ return require('packer').startup(function()
 
   -- Fzf
   use {
-    { 'junegunn/fzf', run = function() vim.fn['fzf#install']() end },
-    { 'junegunn/fzf.vim' }
+    { 'junegunn/fzf', opt = true, run = function() vim.fn['fzf#install']() end },
+    { 'junegunn/fzf.vim', opt = true },
+  }
   }
 
   -- Better movement

@@ -61,21 +61,6 @@ lua require('utils')
 
 "{{{PLUGIN CONFIGS--------------------------------
 
-"{{{FZF
-let g:fzf_action = {
-    \ 'ctrl-t': 'tab split',
-    \ 'ctrl-s': 'split',
-    \ 'ctrl-v': 'vsplit' }
-
-command! Dots GFiles ~/dotfiles
-
-nnoremap <silent> <leader>fz :Files <CR>
-nnoremap <silent> <leader>fg :GFiles <CR>
-nnoremap <silent> <leader>fl :Lines <CR>
-nnoremap <silent> <leader>fb :Buffers<CR>
-nnoremap <silent> <leader>fc :Commits<CR>
-"}}}
-
 let g:Hexokinase_highlighters = ['virtual']
 
 "{{{Lexical
