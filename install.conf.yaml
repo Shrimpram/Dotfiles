@@ -30,15 +30,18 @@
     ~/.config/zsh/darwin:
       if: '[ `uname` = Darwin ]'
       path: zsh/darwin
-    ~/.zshenv:
+    ~/.config/zsh/.zshenv:
       force: true
       path: zsh/zshenv
-    ~/.zshrc:
+    ~/.config/zsh/.zshrc:
       force: true
       path: zsh/zshrc
-    ~/.config/zsh/plugins/: zsh/plugins/*
+    ~/.config/zsh/: zsh/plugins/*
 
 - shell:
   -
     command: git submodule update --init --recursive --remote
     description: Installing submodules
+  -
+    command: "rm $HOME/.zshenv && touch $HOME/.zshenv && echo 'ZDOTDIR=$HOME/.config/zsh' >> $HOME/.zshenv && echo '. $ZDOTDIR/.zshenv' >> $HOME/.zshenv"
+    description: Setting up ZDOTDIR

@@ -1,11 +1,5 @@
 neofetch
 
-osfile="$HOME/.config/zsh/`uname`/zshrc-`uname`"
-
-if [ -r $osfile ]; then
-    . $osfile
-fi
-
 #{{{Base16-shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
@@ -50,9 +44,8 @@ _comp_options+=(globdots)		# Include hidden files.
 
 #{{{Plugins
 
-for f in ~/.config/zsh/plugins/*; do source $f; done
-for f in ~/.config/zsh/plugins/fzf-tab/*.zsh; do source $f; done
-for f in ~/.config/zsh/plugins/powerlevel10k/*.zsh-theme; do source $f; done
+for f in ~/.config/zsh/fzf-tab/*.zsh; do source $f; done
+for f in ~/.config/zsh/powerlevel10k/*.zsh-theme; do source $f; done
 
 eval "$(/usr/libexec/path_helper)"
 
