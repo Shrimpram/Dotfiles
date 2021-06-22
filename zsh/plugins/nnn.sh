@@ -4,8 +4,7 @@ export NNN_USE_EDITOR=1
 
 export NNN_PLUG='f:fzopen;v:imgview;p:preview-tui;d:pdfview;'
 
-n ()
-{
+n () {
     # Block nesting of nnn in subshells
     if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then
         echo "nnn is already running"
