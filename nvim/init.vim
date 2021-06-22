@@ -61,12 +61,6 @@ lua require('utils')
 
 "{{{PLUGIN CONFIGS--------------------------------
 
-"{{{Fugitive
-nnoremap <silent> <leader>g :Git<CR>
-nnoremap <silent> <leader>gd :Gvdiffsplit<CR>
-nnoremap <silent> <leader>gw :Gwrite<CR>
-"}}}
-
 "{{{FZF
 let g:fzf_action = {
     \ 'ctrl-t': 'tab split',
