@@ -29,7 +29,6 @@ set noerrorbells
 set nohlsearch
 set nomodeline
 set noshowmode
-set noswapfile
 set number relativenumber
 set ruler
 set scrolloff=3
