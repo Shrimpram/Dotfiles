@@ -97,6 +97,9 @@ return require('packer').startup(function()
     config = [[vim.g.undotree_SetFocusWhenToggle = 1]]
   }
 
+  --- Diff swap files
+  use 'chrisbra/Recover.vim'
+
   --- Statusline
   use {
     'ojroques/nvim-hardline',
