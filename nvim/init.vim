@@ -7,6 +7,11 @@ filetype indent on
 let mapleader = " "		" Maps leader key (to space)
 let maplocalleader = " "	" Maps local leader key (to space)
 
+"{{{DIRECTORIES-----------------------------------
+set directory^=~/.local/share/nvim/swap
+set undodir=~/.local/share/nvim/undo
+"----------------------------------------------}}}
+
 set autoindent
 set backspace=eol,start,indent
 set cmdheight=1
