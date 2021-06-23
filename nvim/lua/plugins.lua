@@ -106,12 +106,6 @@ return require('packer').startup(function()
   --- Show registers
   use 'tversteeg/registers.nvim'
 
-  --- Async building
-  use {
-    'tpope/vim-dispatch',
-    cmd = {'Dispatch', 'Make', 'Focus', 'Start'}
-  }
-
   --- Snippets
   use {
     { 'hrsh7th/vim-vsnip' },
