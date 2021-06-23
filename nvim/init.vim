@@ -193,12 +193,22 @@ nnoremap <silent> <F9> :<C-u>TSHighlightCapturesUnderCursor<CR>
 
 nnoremap <silent> <leader>m :silent make!<CR>
 
-augroup compilation
+augroup java_compilation
     autocmd!
-    autocmd BufEnter *.java setlocal makeprg=javac\ %
-    autocmd BufEnter *.java set errorformat=%f:%l:%c:%*\\d:%*\\d:%*\\s%m
-    autocmd BufEnter *.java nnoremap <silent><nowait> <leader>r :!java %:r<CR>
-    autocmd BufWritePost *.java Make %
+    autocmd Filetype java setlocal makeprg=javac\ %
+    autocmd Filetype java set errorformat=%f:%l:%c:%*\\d:%*\\d:%*\\s%m
+    autocmd Filetype java nnoremap <silent><nowait> <leader>r :!java %:r<CR>
+augroup END
+
+augroup rmd_compilation
+    autocmd!
+    autocmd FileType rmd setlocal makeprg=Rscript\ -e\ \"rmarkdown::render('%',\ clean=TRUE)\"
+    autocmd Filetype rmd set errorformat=%f:%l:%c:%*\\d:%*\\d:%*\\s%m
+augroup END
+
+augroup auto_compilation
+    autocmd!
+    autocmd BufWritePost *.java,*.rmd silent make! %
     autocmd QuickFixCmdPost [^l]* cwindow
 augroup END
 
