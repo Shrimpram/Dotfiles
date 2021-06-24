@@ -7,6 +7,7 @@ ts_configs.setup {
     },
     highlight = {
         enable = true,
+        disable = { "html" },
         use_languagetree = true,
     }
 }
