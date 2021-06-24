@@ -80,7 +80,11 @@ return require('packer').startup(function()
   }
 
   --- Smooth scroll
-  use 'karb94/neoscroll.nvim'
+  vim.opt_local.scrolloff = 0
+  use {
+    'karb94/neoscroll.nvim',
+    config = [[require('neoscroll').setup { use_local_scrolloff = true }]],
+  }
 
   --- File Tree (lua NERDTree)
   use {
