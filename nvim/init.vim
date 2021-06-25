@@ -187,7 +187,7 @@ nnoremap <silent> <F9> :<C-u>TSHighlightCapturesUnderCursor<CR>
 "----------------------------------------------}}}
 "----------------------------------------------}}}
 
-nnoremap <silent> <leader>m :silent Make!<CR>
+nnoremap <silent> <leader>m :silent Make<CR>
 
 augroup java_compilation
     autocmd!
@@ -204,7 +204,7 @@ augroup END
 
 augroup auto_compilation
     autocmd!
-    autocmd BufWritePost *.java,*.rmd silent Make! %
+    autocmd BufWritePost *.java,*.rmd silent Make %
     autocmd QuickFixCmdPost [^l]* cwindow
 augroup END
 
