@@ -37,11 +37,12 @@
       force: true
       path: zsh/zshrc
     ~/.config/zsh/: zsh/plugins/*
+    ~/.config/zsh/: zsh/scripts/*
 
 - shell:
   -
-    command: "git submodule update --init --recursive --remote"
-    description: Installing submodules
-  -
     command: "rm $HOME/.zshenv && touch $HOME/.zshenv && echo 'ZDOTDIR=$HOME/.config/zsh' >> $HOME/.zshenv && echo '. $ZDOTDIR/.zshenv' >> $HOME/.zshenv"
     description: Setting up ZDOTDIR
+  -
+    command: "git submodule update --init --recursive --remote"
+    description: Installing submodules
