@@ -22,3 +22,6 @@ export NVM_DIR="$HOME/.nvm"
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
+
+for f in $ZDOTDIR/`uname`/zshenv*.sh; do source $f; done
+for f in $ZDOTDIR/env/*.sh; do source $f; done
