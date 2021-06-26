@@ -27,17 +27,18 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.vimrc: vim/vimrc
     ~/.config/zathura/zathurarc: zathura/zathurarc
-    ~/.config/zsh/darwin:
-      if: '[ `uname` = Darwin ]'
-      path: zsh/darwin
     ~/.config/zsh/.zshenv:
       force: true
       path: zsh/zshenv
     ~/.config/zsh/.zshrc:
       force: true
       path: zsh/zshrc
-    ~/.config/zsh/: zsh/plugins/*
-    ~/.config/zsh/: zsh/scripts/*
+    ~/.config/zsh/darwin:
+      if: '[ `uname` = Darwin ]'
+      path: zsh/darwin/
+    ~/.config/zsh/:
+      path: zsh/*
+      exclude: [ zsh/zshrc, zsh/zshenv, zsh/darwin ]
 
 - shell:
   -
