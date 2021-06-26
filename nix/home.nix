@@ -20,6 +20,7 @@
     pandoc
     ripgrep
     shellcheck
+    tree
     stow
     vim
     vscode
