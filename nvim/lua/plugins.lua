@@ -68,7 +68,10 @@ return require('packer').startup(function()
   use 'editorconfig/editorconfig-vim'
 
   --- Align
-  use 'junegunn/vim-easy-align'
+  use {
+    'junegunn/vim-easy-align',
+    'dhruvasagar/vim-table-mode'
+  }
 
 
   -- Utilities
