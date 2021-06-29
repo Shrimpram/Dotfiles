@@ -103,9 +103,6 @@ nnoremap <silent> <leader>wq :wq<CR>
 vnoremap < <gv
 vnoremap > >gv
 
-" Opens the "latest url file in my dropbox
-command! LURL vsplit /mnt/c/Users/Shreeram\ Modi/dropbox/personal/Latest_Url.txt
-
 " Make j and k move using visual lines instead of hard lines
 nnoremap <expr><silent> j v:count ? 'j' : 'gj'
 nnoremap <expr><silent> k v:count ? 'k' : 'gk'
