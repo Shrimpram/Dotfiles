@@ -86,7 +86,7 @@ return require('packer').startup(function()
   vim.opt_local.scrolloff = 0
   use {
     'karb94/neoscroll.nvim',
-    config = [[require('neoscroll').setup { use_local_scrolloff = true }]],
+    config = [[require('neoscroll').setup{}]],
   }
 
   --- File Tree (lua NERDTree)
