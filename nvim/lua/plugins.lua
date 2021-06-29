@@ -102,9 +102,8 @@ return require('packer').startup(function()
   --- File Tree (lua NERDTree)
   use {
     'kyazdani42/nvim-tree.lua',
-    requires = { 'kyazdani42/nvim-web-devicons' },
-    opt = true,
-    cmd = 'NvimTreeToggle'
+    config = [[require('config.nvim-tree')]],
+    requires = { 'kyazdani42/nvim-web-devicons' }
   }
 
   --- Undo History
