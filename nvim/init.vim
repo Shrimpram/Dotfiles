@@ -77,8 +77,6 @@ let g:lexical#dictionary = ['~/.config/nvim/spell/dwyl-dict.txt']
 let g:lexical#spellfile = ['~/.config/nvim/spell/en.utf-8.add']
 "}}}
 
-lua require('neoscroll').setup()
-
 " Undotree
 nnoremap <silent> <leader>ut :UndotreeToggle<CR>
 
