@@ -90,35 +90,8 @@ let g:vimtex_view_general_viewer='zathura'
 
 "----------------------------------------------}}}
 
-"{{{COLORSCHEME CONFIG----------------------------
-" Ayu
-" let ayucolor="light"  " for light version of theme
-let ayucolor="mirage" " for mirage version of theme
-" let ayucolor="dark"   " for dark version of theme
-
-
-" Despacio
-let g:despacio_Sunset = 1	" dark gray background
-" let g:despacio_Twilight = 1	" darker gray background
-" let g:despacio_Midnight = 1	" almost black background
-" let g:despacio_Pitch = 1	" black background
-
-
-" Gruvbox
-let g:gruvbox_contrast_dark = 'medium'	" medium contrast
-let g:gruvbox_italicize_comments = '1'	" comments are not italicized
-let g:gruvbox_italic = '1'	" enables italic text
-
-
-" Gruvbox Material
-let g:gruvbox_material_palette='material'	" colors settings -- 'material' is the new version, 'original' is default gruvbox, 'mix' is in between
-let g:gruvbox_material_background='medium'	" soft contrast. other options are 'hard' and 'medium'
-let g:gruvbox_material_enable_bold = 1		" '1' enables bold text
-let g:gruvbox_material_enable_italic = 1	" '1' enables italic text
-
 set background=dark
 colorscheme stella
-"----------------------------------------------}}}
 
 "{{{REMAPS----------------------------------------
 " Basic leader commands to write and write+quit
