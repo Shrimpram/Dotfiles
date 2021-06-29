@@ -117,7 +117,10 @@ return require('packer').startup(function()
   use 'tversteeg/registers.nvim'
 
   --- Async building
-  use { 'tpope/vim-dispatch' }
+  use {
+    'neomake/neomake',
+    event = 'VimEnter'
+  }
 
   --- Snippets
   use {
