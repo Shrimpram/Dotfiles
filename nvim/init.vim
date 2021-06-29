@@ -143,25 +143,9 @@ command! MLAmd read ~/.config/nvim/templates/MLAmd.md
 
 "----------------------------------------------}}}
 
-nnoremap <silent> <leader>m :silent Make<CR>
-
-augroup java_compilation
+augroup neomake
     autocmd!
-    autocmd Filetype java setlocal makeprg=javac\ %
-    autocmd Filetype java set errorformat=%f:%l:%c:%*\\d:%*\\d:%*\\s%m
-    autocmd Filetype java nnoremap <silent><nowait> <leader>r :!java %:r<CR>
-augroup END
-
-augroup rmd_compilation
-    autocmd!
-    autocmd FileType rmd setlocal makeprg=Rscript\ -e\ \"rmarkdown::render('%',\ clean=TRUE)\"
-    autocmd Filetype rmd set errorformat=%f:%l:%c:%*\\d:%*\\d:%*\\s%m
-augroup END
-
-augroup auto_compilation
-    autocmd!
-    autocmd BufWritePost *.java,*.rmd silent Make %
-    autocmd QuickFixCmdPost [^l]* cwindow
+    autocmd VimEnter call neomake#configure#automake('nwi')
 augroup END
 
 "{{{SKELETONS-------------------------------------
