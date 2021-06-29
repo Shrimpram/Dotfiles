@@ -147,7 +147,8 @@ return require('packer').startup(function()
   --- Display colors
   use {
     'rrethy/vim-hexokinase',
-    run = 'make hexokinase'
+    run = 'make hexokinase',
+    cmd = { 'HexokinaseToggle', 'HexokinaseTurnOn', 'HexokinaseTurnOff' }
   }
 
   --- Focus window
