@@ -22,7 +22,6 @@ set foldmethod=marker foldlevel=0
 set hidden
 set ignorecase smartcase
 set incsearch
-set iskeyword+=-
 set nobackup
 set noerrorbells
 set nohlsearch
