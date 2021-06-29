@@ -179,7 +179,6 @@ return require('packer').startup(function()
     { 'sainnhe/gruvbox-material' },
     { 'lifepillar/vim-gruvbox8' },
     { 'savq/melange' },
-    { 'KeitaNakamura/neodark.vim' },
     { 'arcticicestudio/nord-vim' },
     { 'mhartington/oceanic-next' },
     { 'joshdick/onedark.vim' },
