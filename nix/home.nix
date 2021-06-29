@@ -31,6 +31,9 @@
     nodePackages.npm
 
     hugo
+
+    lua53Packages.luacheck
+    vim-vint
   ];
 
   programs.home-manager = {
