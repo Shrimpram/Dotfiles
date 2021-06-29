@@ -175,13 +175,6 @@ command! Mathtex read ~/.config/nvim/templates/Mathtex.tex
 command! MLAmd read ~/.config/nvim/templates/MLAmd.md
 "----------------------------------------------}}}
 
-"{{{F-KEYS----------------------------------------
-map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
-\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
-\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
-
-nnoremap <silent> <F9> :<C-u>TSHighlightCapturesUnderCursor<CR>
-"----------------------------------------------}}}
 "----------------------------------------------}}}
 
 nnoremap <silent> <leader>m :silent Make<CR>
