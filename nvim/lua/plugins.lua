@@ -51,7 +51,7 @@ return require('packer').startup(function()
   }
 
   -- Better movement
-  use 'justinmk/vim-sneak'
+  use { 'justinmk/vim-sneak', config = [[require('config.sneak')]] }
 
   -- Commenting
   use 'tpope/vim-commentary'
