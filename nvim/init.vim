@@ -140,11 +140,6 @@ command! MLAmd read ~/.config/nvim/templates/MLAmd.md
 
 "----------------------------------------------}}}
 
-augroup neomake
-    autocmd!
-    autocmd VimEnter call neomake#configure#automake('nwi')
-augroup END
-
 "{{{SKELETONS-------------------------------------
 augroup templates
     autocmd!
