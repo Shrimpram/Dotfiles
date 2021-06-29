@@ -124,8 +124,9 @@ return require('packer').startup(function()
 
   --- Snippets
   use {
-    { 'hrsh7th/vim-vsnip' },
-    { 'hrsh7th/vim-vsnip-integ' }
+    'hrsh7th/vim-vsnip',
+    requires = { 'hrsh7th/vim-vsnip-integ', opt = true },
+    ft = 'tex'
   }
 
   --- Better spellcheck & thesaurus (use with dwyl dictionary and moby thesaurus)
