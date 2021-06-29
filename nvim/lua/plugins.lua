@@ -123,7 +123,8 @@ return require('packer').startup(function()
   --- Async building
   use {
     'neomake/neomake',
-    event = 'VimEnter'
+    config = [[require('config.neomake')]],
+    event = 'BufEnter'
   }
 
   --- Snippets
