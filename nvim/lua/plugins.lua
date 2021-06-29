@@ -29,7 +29,10 @@ return require('packer').startup(function()
       config = [[require('neogit').setup{}]],
       cmd = 'Neogit'
     },
-    { 'kdheepak/lazygit.nvim' }
+    {
+      'kdheepak/lazygit.nvim',
+      cmd = { 'LazyGit', 'LazyGitConfig', 'LazyGitFilter' }
+    }
   }
 
 
