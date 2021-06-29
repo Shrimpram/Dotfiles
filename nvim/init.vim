@@ -151,15 +151,8 @@ noremap <silent> <C-j> <C-w>j
 noremap <silent> <C-k> <C-w>k
 noremap <silent> <C-l> <C-w>l
 
-"{{{LATEX/MARKDOWN---------------------------------
-" Compiling Latex via xelatex
-nnoremap <silent> <leader>cl :<c-u>silent !xelatex '%:p:r'<CR>
-" Compile bibliography using biber
-nnoremap <silent> <leader>cb :<c-u>silent !biber '%:p:r'<CR>
-
 " Runs a script that cleans out tex build files whenever I close out of a .tex file.
 autocmd VimLeave *.tex silent !latexmk -c
-"----------------------------------------------}}}
 
 " Quick way to switch between light and dark mode
 command! Light set background=light
