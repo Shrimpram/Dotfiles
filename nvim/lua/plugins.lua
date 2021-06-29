@@ -73,7 +73,10 @@ return require('packer').startup(function()
 
   --- Align
   use {
-    'junegunn/vim-easy-align',
+    {
+      'junegunn/vim-easy-align',
+      config = [[require('config.easy-align')]]
+    },
     {
       'dhruvasagar/vim-table-mode',
       keys = { '<leader>tm', '<leader>tt' }
