@@ -172,7 +172,6 @@ return require('packer').startup(function()
     { 'romainl/vim-dichromatic' },
     { 'wadackel/vim-dogrun' },
     { 'romgrk/doom-one.vim' },
-    { 'dracula/vim', as = 'dracula' },
     { 'sainnhe/everforest' },
     { 'fcpg/vim-fahrenheit' },
     { 'jaredgorski/fogbell.vim' },
