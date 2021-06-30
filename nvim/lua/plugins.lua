@@ -109,8 +109,8 @@ return require('packer').startup(function()
   --- Undo History
   use {
     'mbbill/undotree',
-    cmd = 'UndotreeToggle',
-    config = [[vim.g.undotree_SetFocusWhenToggle = 1]]
+    setup = [[require('config.undotree')]],
+    cmd = 'UndotreeToggle'
   }
 
   --- Diff swap files
