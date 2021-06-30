@@ -81,7 +81,8 @@ return require('packer').startup(function()
   use {
     {
       'junegunn/vim-easy-align',
-      config = [[require('config.easy-align')]]
+      setup = [[require('config.easy-align')]],
+      event = 'VimEnter'
     },
     {
       'dhruvasagar/vim-table-mode',
