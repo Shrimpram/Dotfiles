@@ -53,7 +53,11 @@ return require('packer').startup(function()
   }
 
   -- Better movement
-  use { 'justinmk/vim-sneak', config = [[require('config.sneak')]] }
+  use {
+    'justinmk/vim-sneak',
+    setup = [[require('config.sneak')]],
+    event = 'VimEnter'
+  }
 
   -- Commenting
   use 'tpope/vim-commentary'
