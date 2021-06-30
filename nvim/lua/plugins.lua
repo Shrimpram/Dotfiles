@@ -109,7 +109,7 @@ return require('packer').startup(function()
   --- File Tree (lua NERDTree)
   use {
     'kyazdani42/nvim-tree.lua',
-    config = [[require('config.nvim-tree')]],
+    setup = [[require('config.nvim-tree')]],
     requires = { 'kyazdani42/nvim-web-devicons' }
   }
 
@@ -135,8 +135,8 @@ return require('packer').startup(function()
   --- Async building
   use {
     'neomake/neomake',
-    config = [[require('config.neomake')]],
-    event = 'BufEnter'
+    setup = [[require('config.neomake')]],
+    event = 'VimEnter'
   }
 
   --- Snippets
@@ -144,7 +144,7 @@ return require('packer').startup(function()
     'hrsh7th/vim-vsnip',
     opt = true,
     ft = 'tex',
-    config = [[require('config.vsnip')]],
+    setup = [[require('config.vsnip')]],
     requires = { 'hrsh7th/vim-vsnip-integ', opt = true }
   }
 
