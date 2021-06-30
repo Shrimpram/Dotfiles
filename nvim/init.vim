@@ -77,14 +77,6 @@ let g:lexical#dictionary = ['~/.config/nvim/spell/dwyl-dict.txt']
 let g:lexical#spellfile = ['~/.config/nvim/spell/en.utf-8.add']
 "}}}
 
-"{{{Vimtex
-let g:vimtex_compiler_latexmk_engines = {
-    \ '_'                : '-xelatex',
-    \}
-
-let g:vimtex_view_general_viewer='zathura'
-"}}}
-
 "----------------------------------------------}}}
 
 set background=dark
