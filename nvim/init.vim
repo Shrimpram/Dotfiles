@@ -77,9 +77,6 @@ let g:lexical#dictionary = ['~/.config/nvim/spell/dwyl-dict.txt']
 let g:lexical#spellfile = ['~/.config/nvim/spell/en.utf-8.add']
 "}}}
 
-" Undotree
-nnoremap <silent> <leader>ut :UndotreeToggle<CR>
-
 "{{{Vimtex
 let g:vimtex_compiler_latexmk_engines = {
     \ '_'                : '-xelatex',
