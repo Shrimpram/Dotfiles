@@ -4,8 +4,8 @@ syntax on
 filetype plugin on
 filetype indent on
 
-let mapleader = " "		" Maps leader key (to space)
-let maplocalleader = " "	" Maps local leader key (to space)
+let mapleader = ' '		" Maps leader key (to space)
+let maplocalleader = ' '	" Maps local leader key (to space)
 
 "{{{DIRECTORIES-----------------------------------
 set directory^=~/.local/share/nvim/swap
@@ -43,7 +43,7 @@ set clipboard+=unnamedplus
 
 let os=substitute(system('uname'), '\n', '', '')
 
-if os != 'Darwin'
+if os !=? 'Darwin'
     let s:clip = '/mnt/c/Windows/System32/clip.exe'
     if executable(s:clip)
         augroup WSLYank
@@ -114,7 +114,10 @@ noremap <silent> <C-k> <C-w>k
 noremap <silent> <C-l> <C-w>l
 
 " Runs a script that cleans out tex build files whenever I close out of a .tex file.
-autocmd VimLeave *.tex silent !latexmk -c
+augroup texclean
+    autocmd!
+    autocmd VimLeave *.tex silent !latexmk -c
+augroup END
 
 " Quick way to switch between light and dark mode
 command! Light set background=light
