@@ -134,10 +134,3 @@ command! MLAmd read ~/.config/nvim/templates/MLAmd.md
 "----------------------------------------------}}}
 
 "----------------------------------------------}}}
-
-"{{{SKELETONS-------------------------------------
-augroup templates
-    autocmd!
-    autocmd BufNewFile *.sh 0r ~/.config/nvim/templates/skeleton.sh
-augroup END
-"-------------------------------------------------
