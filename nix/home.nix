@@ -34,6 +34,8 @@
 
     lua53Packages.luacheck
     vim-vint
+    nodePackages.write-good
+    proselint
   ];
 
   programs.home-manager = {
