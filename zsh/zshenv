@@ -4,7 +4,7 @@ if [ -e /Users/shreeram/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/shree
 export GPG_TTY=$TTY
 export KEYID=0x163B16EE76ED24CE
 
-export PAGER="less"
+export PAGER="less -R"
 
 export EDITOR="nvim"
 export VISUAL="nvim"
