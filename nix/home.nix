@@ -14,6 +14,7 @@
     gnused
     haste-client
     htop
+    hyperfine
     lazygit
     neofetch
     nnn
