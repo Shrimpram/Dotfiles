@@ -136,7 +136,7 @@ return require('packer').startup(function()
   use {
     'neomake/neomake',
     setup = [[require('config.neomake')]],
-    config = [[vim.cmd("call neomake#configure#automake('nw', 750)")]],
+    config = [[vim.cmd("call neomake#configure#automake('w')")]],
     event = 'VimEnter'
   }
 
