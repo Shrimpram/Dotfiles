@@ -123,14 +123,4 @@ augroup END
 command! Light set background=light
 command! Dark set background=dark
 
-"{{{TEMPLATES-------------------------------------
-" Template for MLA formatted writing in LaTeX. See the file for the actual template
-command! MLAtex read ~/.config/nvim/templates/MLAtex.tex
-
-command! Mathtex read ~/.config/nvim/templates/Mathtex.tex
-
-" Template for MLA formatted markdown document that compiles with pandoc. See the file for the actual template
-command! MLAmd read ~/.config/nvim/templates/MLAmd.md
-"----------------------------------------------}}}
-
 "----------------------------------------------}}}
