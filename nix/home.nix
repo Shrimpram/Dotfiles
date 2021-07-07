@@ -28,9 +28,6 @@
     wget
     zoxide
 
-    nodejs
-    nodePackages.npm
-
     hugo
 
     lua53Packages.luacheck
