@@ -1,6 +1,7 @@
 nvim/spell/*.txt
 
 nvim/plugin/packer_compiled.vim
+nvim/plugin/packer_compiled.lua
 
 binaries/stow-nvim/**
 
