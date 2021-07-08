@@ -34,6 +34,16 @@
     vim-vint
     nodePackages.write-good
     proselint
+
+
+
+    imagemagick
+    perl532Packages.vidir
+    poppler_utils
+    tesseract
+    texlive.combined.scheme-full
+    youtube-dl
+    xplr
   ];
 
   programs.home-manager = {
