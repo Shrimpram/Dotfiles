@@ -9,8 +9,6 @@ return require('packer').startup(function()
   use {
     'nvim-treesitter/nvim-treesitter',
     requires = {
-      {'nvim-treesitter/nvim-treesitter-refactor'},
-      {'nvim-treesitter/nvim-treesitter-textobjects'},
       {'nvim-treesitter/playground', opt = true}
     },
     config = [[require('config.treesitter')]],
