@@ -30,7 +30,6 @@
 
     hugo
 
-    lua53Packages.luacheck
     vim-vint
     nodePackages.write-good
     proselint
