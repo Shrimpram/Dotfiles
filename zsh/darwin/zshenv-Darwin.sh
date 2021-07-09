@@ -1,2 +1,3 @@
 path+=(/usr/local/bin)
-path+=(/Users/shreeram/Library/Python/3.8/bin)
+eval "$(/opt/homebrew/bin/brew shellenv)"
+path=('/opt/homebrew/bin' $path)
