@@ -1,5 +1,5 @@
 -- Automatically compiles packer after writing to the plugins.lua file
-vim.cmd [[autocmd BufWritePost plugins.lua PackerCompile]]
+vim.cmd [[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]]
 
 return require('packer').startup(function()
 
