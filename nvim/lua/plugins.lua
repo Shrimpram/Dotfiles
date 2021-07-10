@@ -61,12 +61,12 @@ return require('packer').startup(function()
   use 'tpope/vim-commentary'
 
 
-  --- Parentheses text objects
+  -- Parentheses text objects
 
-  -- More text objects for matching parens
+  --- More text objects for matching parens
   use 'wellle/targets.vim'
 
-  -- Add/del/replace parens
+  --- Add/del/replace parens
   use 'machakann/vim-sandwich'
 
 
