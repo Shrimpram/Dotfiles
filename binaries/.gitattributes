@@ -1,3 +1,0 @@
-nvim.deb filter=lfs diff=lfs merge=lfs -text
-exa.deb filter=lfs diff=lfs merge=lfs -text
-gpg-tui.deb filter=lfs diff=lfs merge=lfs -text
