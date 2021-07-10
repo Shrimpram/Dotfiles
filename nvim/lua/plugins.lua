@@ -156,6 +156,12 @@ return require('packer').startup(function()
     cmd = 'StartupTime'
   }
 
+  --- Discord Rich Presence
+  use {
+    'andweeb/presence.nvim',
+    event = 'VimEnter'
+  }
+
 
   -- Aesthetics
 
