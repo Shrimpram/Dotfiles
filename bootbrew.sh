@@ -53,3 +53,17 @@ do
             break;;
     esac
 done
+
+echo "Install casks?"
+select cask in "Yes" "No"
+
+do
+    case $cask in
+        "Yes" )
+            echo "Installing homebrew casks"
+            (cd brew/cask && brew bundle)
+            break;;
+        "No" )
+            break;;
+    esac
+done

@@ -9,5 +9,3 @@ brew "poppler"
 brew "tesseract"
 brew "xplr"
 brew "youtube-dl"
-
-cask "visual-studio-code"
