@@ -1,2 +1,2 @@
-cask "visual-studio-code"
+cask "vscodium"
 cask "raycast"
