@@ -56,8 +56,8 @@ return require('packer').startup(function()
   -- Better movement
   use {
     'justinmk/vim-sneak',
-    setup = [[require('config.sneak')]],
-    event = 'VimEnter'
+    config = [[require('config.sneak')]],
+    keys = { 's', 'S' }
   }
 
   -- Commenting
@@ -70,7 +70,10 @@ return require('packer').startup(function()
   use 'wellle/targets.vim'
 
   --- Add/del/replace parens
-  use 'machakann/vim-sandwich'
+  use {
+    'machakann/vim-sandwich',
+    keys = { 'sa', 'sd', 'sr' }
+  }
 
 
   -- Text formatting
@@ -82,8 +85,8 @@ return require('packer').startup(function()
   use {
     {
       'junegunn/vim-easy-align',
-      setup = [[require('config.easy-align')]],
-      event = 'VimEnter'
+      config = [[require('config.easy-align')]],
+      keys = { 'gl' }
     },
     {
       'dhruvasagar/vim-table-mode',
@@ -110,14 +113,17 @@ return require('packer').startup(function()
   --- File Tree (lua NERDTree)
   use {
     'kyazdani42/nvim-tree.lua',
-    setup = [[require('config.nvim-tree')]],
-    requires = { 'kyazdani42/nvim-web-devicons' }
+    config = [[require('config.nvim-tree')]],
+    requires = { 'kyazdani42/nvim-web-devicons' },
+    keys = { '<leader>nt', '<leader>nf',  },
+
   }
 
   --- Undo History
   use {
     'mbbill/undotree',
-    setup = [[require('config.undotree')]],
+    config = [[require('config.undotree')]],
+    keys = '<leader>ut',
     cmd = 'UndotreeToggle'
   }
 
