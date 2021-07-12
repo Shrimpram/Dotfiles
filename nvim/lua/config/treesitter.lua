@@ -3,7 +3,7 @@ ts_configs.setup {
     ensure_installed = {
         'bash', 'bibtex', 'c', 'c_sharp', 'comment', 'cpp', 'css', 'go',
         'html', 'java', 'javascript', 'json', 'jsonc', 'latex', 'lua',
-        'python', 'regex', 'rust', 'toml', 'yaml'
+        'nix', 'python', 'regex', 'rust', 'toml', 'yaml'
     },
     highlight = {
         enable = true,
