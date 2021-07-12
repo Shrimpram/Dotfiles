@@ -129,9 +129,6 @@ return require('packer').startup(function()
     config = [[require('hardline').setup { theme = 'stella' }]]
   }
 
-  --- Show registers
-  use 'tversteeg/registers.nvim'
-
   --- Async building
   use {
     'neomake/neomake',
