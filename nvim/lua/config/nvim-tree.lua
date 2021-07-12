@@ -1,9 +1,9 @@
 local map = vim.api.nvim_set_keymap
 local let = vim.api.nvim_set_var
 
-map( 'n', [[<leader>nt]], [[:NvimTreeToggle<CR>]], {} )
-map( 'n', '<leader>nr', [[:NvimTreeRefresh<CR>]], {} )
-map( 'n', '<leader>nf', [[:NvimTreeFindFile<CR>]], {} )
+map( 'n', [[<leader>nt]], [[<CMD>NvimTreeToggle<CR>]], {noremap = true, silent = true} )
+map( 'n', [[<leader>nr]], [[<CMD>NvimTreeRefresh<CR>]], {noremap = true, silent = true} )
+map( 'n', [[<leader>nf]], [[<CMD>NvimTreeFindFile<CR>]], {noremap = true, silent = true} )
 
 let( 'nvim_tree_ignore', { '.git', '.cache' } ) -- empty by default
 
