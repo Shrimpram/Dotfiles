@@ -7,5 +7,7 @@ map( 'v', '<leader>fl', [[<CMD>Telescope grep_string theme=get_ivy<CR>]], {norem
 map( 'n', '<leader>ft', [[<CMD>Telescope file_browser theme=get_ivy<CR>]], {noremap = true, silent = true} )
 map( 'n', '<leader>fq', [[<CMD>Telescope quickfix theme=get_ivy<CR>]], {noremap = true, silent = true} )
 map( 'n', '<leader>fb', [[<CMD>Telescope buffers show_all_buffers=true sort_lastused=true theme=get_ivy<CR>]], {noremap = true, silent = true} )
+map( 'n', [[""]], [[<CMD>Telescope registers show_all_buffers=true sort_lastused=true theme=get_ivy<CR>]], {noremap = true, silent = true} )
+map( 'i', [[<C-r><C-r>]], [[<CMD>Telescope registers show_all_buffers=true sort_lastused=true theme=get_ivy<CR>]], {noremap = true, silent = true} )
 
 vim.cmd([[command! Colorscheme Telescope colorscheme theme=get_ivy]])
