@@ -6,6 +6,14 @@ return require('packer').startup(function()
 
   use 'wbthomason/packer.nvim'
 
+  use {
+    'kristijanhusak/orgmode.nvim',
+    config = [[require('orgmode').setup{
+      org_agenda_files = '~/dotfiles/org/*',
+      org_default_notes_file = '~/dotfiles/org/inbox.org',
+    }]]
+  }
+
   -- Treesitter
   use {
     'nvim-treesitter/nvim-treesitter',
