@@ -149,7 +149,7 @@ return require('packer').startup(function()
     'hrsh7th/vim-vsnip',
     opt = true,
     ft = 'tex',
-    setup = [[require('config.vsnip')]],
+    config = [[require('config.vsnip')]],
     requires = { 'hrsh7th/vim-vsnip-integ', opt = true }
   }
 
