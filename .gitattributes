@@ -1,3 +1,5 @@
 nvim/spell/** filter=git-crypt diff=git-crypt
+org/** filter=git-crypt diff=git-crypt
+
 *.deb filter=lfs diff=lfs merge=lfs -text
 binaries/stow-*/** filter=lfs diff=lfs merge=lfs -text
