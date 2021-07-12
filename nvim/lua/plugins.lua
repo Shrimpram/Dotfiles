@@ -1,3 +1,4 @@
+local map = vim.api.nvim_set_keymap
 -- Automatically compiles packer after writing to the plugins.lua file
 vim.cmd [[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]]
 
@@ -27,6 +28,7 @@ return require('packer').startup(function()
       'TimUntersberger/neogit',
       requires = { 'nvim-lua/plenary.nvim', opt = true },
       config = [[require('neogit').setup{}]],
+      setup = map( 'n', '<leader>g', [[<CMD>Neogit<CR>]], {noremap = true, silent = true} ),
       cmd = 'Neogit'
     },
     {
