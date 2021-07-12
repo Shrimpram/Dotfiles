@@ -180,9 +180,8 @@ return require('packer').startup(function()
 
   --- Focus window
   use {
-    'folke/zen-mode.nvim',
-    config = [[require("zen-mode").setup{}]],
-    cmd = 'ZenMode'
+    'junegunn/goyo.vim',
+    cmd = { 'Goyo' }
   }
 
 
