@@ -124,3 +124,13 @@ command! Light set background=light
 command! Dark set background=dark
 
 "----------------------------------------------}}}
+
+
+function! SynStack()
+  if !exists('*synstack')
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
+nnoremap <silent> <F9> <CMD>call SynStack()<CR>
