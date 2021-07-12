@@ -21,9 +21,6 @@
     ~/.config/nvim/:
       path: nvim/*
       exclude: [ nvim/deprecated-vim-stuff.vim ]
-    ~/.profile:
-      force: true
-      path: profile/profile
     ~/.tmux.conf: tmux/tmux.conf
     ~/.vimrc: vim/vimrc
     ~/.config/zathura/zathurarc: zathura/zathurarc
