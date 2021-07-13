@@ -28,7 +28,7 @@ return require('packer').startup(function()
       'TimUntersberger/neogit',
       requires = { 'nvim-lua/plenary.nvim', opt = true },
       config = [[require('neogit').setup{}]],
-      setup = map( 'n', '<leader>g', [[<CMD>Neogit<CR>]], {noremap = true, silent = true} ),
+      setup = map( 'n', '<leader>ng', [[<CMD>Neogit<CR>]], {noremap = true, silent = true} ),
       cmd = 'Neogit'
     },
     {
