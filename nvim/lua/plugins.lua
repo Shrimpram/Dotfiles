@@ -48,10 +48,7 @@ return require('packer').startup(function()
   -- Org Mode
   use {
     'kristijanhusak/orgmode.nvim',
-    config = [[require('orgmode').setup{
-      org_agenda_files = '~/Sync/org/*',
-      org_default_notes_file = '~/Sync/org/inbox.org',
-    }]]
+    config = [[require('config.orgmode')]]
   }
 
 
