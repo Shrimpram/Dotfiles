@@ -21,7 +21,6 @@
     ~/.config/nvim/:
       path: nvim/*
       exclude: [ nvim/deprecated-vim-stuff.vim ]
-    ~/org: org/
     ~/.tmux.conf: tmux/tmux.conf
     ~/.vimrc: vim/vimrc
     ~/.config/zsh/.zshenv:
