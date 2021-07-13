@@ -6,14 +6,6 @@ return require('packer').startup(function()
 
   use 'wbthomason/packer.nvim'
 
-  use {
-    'kristijanhusak/orgmode.nvim',
-    config = [[require('orgmode').setup{
-      org_agenda_files = '~/dotfiles/org/*',
-      org_default_notes_file = '~/dotfiles/org/inbox.org',
-    }]]
-  }
-
   -- Treesitter
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -52,6 +44,16 @@ return require('packer').startup(function()
     event = 'VimEnter',
     config = [[require('config.telescope')]]
   }
+
+  -- Org Mode
+  use {
+    'kristijanhusak/orgmode.nvim',
+    config = [[require('orgmode').setup{
+      org_agenda_files = '~/Sync/org/*',
+      org_default_notes_file = '~/Sync/org/inbox.org',
+    }]]
+  }
+
 
   -- Better movement
   use {
